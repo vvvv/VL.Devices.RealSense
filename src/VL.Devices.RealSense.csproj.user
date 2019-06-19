@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\vvvv\vvvv_50alpha36.1_x64\vvvv.exe</StartProgram>
+    <StartArguments>/o "C:\libs.VL\VL.OpenCV\vvvv\girlpower\DX9DEMO.v4p"</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\vvvv\vvvv_50alpha38.2_x64\vvvv.exe</StartProgram>
+    <StartArguments>
+    </StartArguments>
+  </PropertyGroup>
+</Project>
