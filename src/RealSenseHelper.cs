@@ -19,5 +19,11 @@ namespace VL.Devices.RealSense
             block.Start(frame => cb(frame));
             return block;
         }
+
+        // Workaround for https://github.com/vvvv/vvvv/issues/4855
+        public static T FirstOrDefaultGeneric<T>(this FrameSet frameSet, Stream stream, Format format = Format.Any) where T : Frame
+        {
+            return frameSet.FirstOrDefault<T>(stream, format);
+    }
     }
 }
