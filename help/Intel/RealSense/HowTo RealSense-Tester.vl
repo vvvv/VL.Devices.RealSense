@@ -703,7 +703,7 @@
             <Pin Id="CgxOLo0fgsVNrByiqNxMaY" Name="Render Time" Kind="OutputPin" />
           </Node>
           <Node Bounds="744,253,125,19" Id="A9YNX6nMU5ePPzngfrXSMD">
-            <p:NodeReference LastCategoryFullName="RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="RealSenseCamera" />
             </p:NodeReference>
@@ -823,7 +823,7 @@
             <Pin Id="HPhIQAfuq2NLXGoKlVgNy4" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="O4Fh7tKiiSxNm57eD7wacn" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Pad Id="VZGoNHCmpmhNKdUfrwX2I3" Comment="Enable PointCloud" Bounds="827,169,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="VZGoNHCmpmhNKdUfrwX2I3" Comment="Enable PointCloud" Bounds="826,170,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -836,8 +836,8 @@
             <Pin Id="NKCbgwHfxOiPC0YyhrNETj" Name="Translation" Kind="InputPin" />
             <Pin Id="RLuFSTTmtUZOrkWYqy9BT1" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="953,-101,91,19" Id="A9ElxbILQOiQXSrPMYCF19">
-            <p:NodeReference LastCategoryFullName="RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
+          <Node Bounds="905,-80,91,19" Id="A9ElxbILQOiQXSrPMYCF19">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ThresholdFilter" />
             </p:NodeReference>
@@ -847,8 +847,8 @@
             <Pin Id="LiisnspuIgOMe5tNptt4Er" Name="Enable" Kind="InputPin" />
             <Pin Id="CLoAFecbTz7NZVwpmcHiTP" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="902,-37,83,19" Id="EfAZHf8fkjOLDsrZwgZhXu">
-            <p:NodeReference LastCategoryFullName="RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
+          <Node Bounds="905,-42,85,19" Id="EfAZHf8fkjOLDsrZwgZhXu">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TemporalFilter" />
             </p:NodeReference>
@@ -869,7 +869,7 @@
             <Pin Id="BuKVqzK1JOgNzs6rrcCrj1" Name="Input 3" Kind="InputPin" />
             <Pin Id="ERhYacRdT07M7keU5H91BF" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="902,14,85,19" Id="LIjsQIUcGcJMBjR8WDjDTH">
+          <Node Bounds="905,9,105,19" Id="LIjsQIUcGcJMBjR8WDjDTH">
             <p:NodeReference LastCategoryFullName="RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="DepthFilters" />
@@ -887,8 +887,8 @@
             <Pin Id="GSUrLdxpvAeOgyapBFJA2x" Name="Enable" Kind="InputPin" />
             <Pin Id="AGMHfULo2Z3NwH5qAMd3e9" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="902,56,91,19" Id="QOFAfjyrMUVQGDxvJeJFB3">
-            <p:NodeReference LastCategoryFullName="RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
+          <Node Bounds="905,51,91,19" Id="QOFAfjyrMUVQGDxvJeJFB3">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DecimationFilter" />
             </p:NodeReference>
@@ -901,8 +901,8 @@
             <Pin Id="U2EFv18Zz1VLRxXbol1Hiv" Name="Enable" Kind="InputPin" />
             <Pin Id="OMbXn88XSNTLnJNdI7dEa8" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="902,107,87,19" Id="Ej7uT6b3Ij5MTEpPMwl40U">
-            <p:NodeReference LastCategoryFullName="RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
+          <Node Bounds="905,102,87,19" Id="Ej7uT6b3Ij5MTEpPMwl40U">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HoleFillingFilter" />
             </p:NodeReference>
@@ -924,15 +924,14 @@
             <Pin Id="QhePNu5sMoyLiy11mESdyL" Name="Distance" Kind="InputPin" />
             <Pin Id="DSeWaFTYHcVPxiZz3GfyDK" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="Kah2IBdgQqxLojnDWz2ctw" Comment="Magnitude" Bounds="1021,21,35,15" ShowValueBox="true" isIOBox="true" Value="4">
+          <Pad Id="Kah2IBdgQqxLojnDWz2ctw" Comment="Magnitude" Bounds="1028,18,35,15" ShowValueBox="true" isIOBox="true" Value="4">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="1098,386,145,19" Id="CivgQT1aeTSMGlBB3EkWm1">
-            <p:NodeReference LastCategoryFullName="RealSense.Settings" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Settings" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="Category" Name="Settings" />
               <Choice Kind="ProcessAppFlag" Name="SetOption" />
             </p:NodeReference>
             <Pin Id="RjDar2q3Xc8Ph91xJW3BVE" Name="Pipeline" Kind="InputPin" />
@@ -1083,6 +1082,7 @@
         <Link Id="MBWmCBke1kQLBuMHixHZst" Ids="CNIAXVR4eOAOFQwCrlgWWP,CrNimazqfwNMVLqiEc5CdV" />
         <Link Id="LQSjSlcqYZRQMvKvPnfph1" Ids="GE4kb87l28YOe1vPecQH6J,UMSYd8HmfHcO4GCp9cBlDg" />
         <Link Id="LixVXLsIj7SMGXRVDZvLwk" Ids="JisBh28BJ7fMTSkonUpHBo,SdRv5ZT0LMILSsxCAvPN6N" />
+        <Link Id="Qh7u5UKKBJFQZea6nlim1O" Ids="CLoAFecbTz7NZVwpmcHiTP,GAs1FP47LS8Mrb4mQj8qdu" />
       </Patch>
     </Node>
   </Patch>
