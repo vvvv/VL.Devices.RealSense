@@ -11,14 +11,14 @@ Clone it into a directory like:
  
     X:\vl-libs\VL.Devices.RealSense
 
-### Build the C# Project
+### 2. Build the C# Project
 Open
 
     X:\vl-libs\VL.Devices.RealSense\src\VL.Devices.RealSense.sln
     
 in VisualStudio and build it. This is necessary for a few things that cannot yet be expressed in vl directly.
 
-### Reference VL.Devices.RealSense.vl
+### 3. Reference VL.Devices.RealSense.vl
 
 In the vl document where you want to have access to the RealSense nodeset, add a dependency to:
 
@@ -26,7 +26,7 @@ In the vl document where you want to have access to the RealSense nodeset, add a
 
 The available RealSense nodes should appear in the nodebrowser under Devices > RealSense.
 
-### Test Patch
+## Test Patch
 
 At the moment we have this tester vl document:
 
