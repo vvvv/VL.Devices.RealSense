@@ -1,5 +1,7 @@
 # VL.Devices.RealSense
-Set of nodes to use [Intel RealSense](https://www.intelrealsense.com/) devices in vl
+Set of nodes to use [Intel RealSense](https://www.intelrealsense.com/) devices in vl.
+
+The development is sponsored by [wirmachenbunt](https://wirmachenbunt.de/).
 
 We are entering testing phase.
 
