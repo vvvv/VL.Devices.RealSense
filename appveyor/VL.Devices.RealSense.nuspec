@@ -24,5 +24,3 @@
     <file src="..\help\**" target="help\" exclude="" />
   </files>
 </package>
-
-bin\Release\VL.Devices.RealSense.dll
