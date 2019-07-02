@@ -8,18 +8,21 @@
     <owners>vvvv</owners>
     <projectUrl>http://vvvv.org</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Set of nodes to use Intel RealSense devices in VL.</summary>
-    <description>Intel RealSense Cameras</description>
+    <summary>Set of nodes to use Intel RealSense devices in VL</summary>
+    <description>Intel RealSense for VL</description>
     <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
     <tags>VL, RealSense</tags>
     <dependencies>
-      <dependency id="Microsoft.Kinect" version="[2.0.1410.19000]" />
+		<dependency id="VL.OpenCV" version="[0.2.102-alpha]" />
     </dependencies>
   </metadata>
   <files>
     <file src="..\lib\net461\Intel.Realsense.dll" target="lib\net461\" exclude="" />
+	<file src="..\lib\net461\VL.Devices.RealSense.dll" target="lib\net461\" exclude="" />	
 	<file src="..\lib-native\x64\realsense2.dll" target="lib-native\x64\" exclude="" />
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
   </files>
 </package>
+
+bin\Release\VL.Devices.RealSense.dll
