@@ -5,7 +5,24 @@ The development is sponsored by [wirmachenbunt](https://wirmachenbunt.de/).
 
 We are entering testing phase.
 
-At the moment you have to build a small C# project in oder to use the library.
+## Using the library
+In order to use this library with vl you have to install the nuget that is available via nuget.org.
+
+Open VL, go to 
+
+    Quad menu > Manage Nugets > Commandline   
+
+and then type:
+
+    nuget install VL.Devices.RealSense -prerelease
+
+Once the VL.Devices.RealSense nuget is installed and referenced in your vl document you'll see the category "RealSense" under "Devices" in the nodebrowser.
+
+VL help patches can be found here:
+
+    "VL.Devices.RealSense\help\"
+
+## Contributing to the development
 
 ### 1. Clone this repository
 
@@ -25,11 +42,3 @@ in VisualStudio and build it. This is necessary for a few things that cannot yet
 In the vl document where you want to have access to the RealSense nodeset, add a dependency to:
 
 	X:\vl-libs\VL.Devices.RealSense\VL.Devices.RealSense.vl
-
-The available RealSense nodes should appear in the nodebrowser under Devices > RealSense.
-
-## Test Patch
-
-At the moment we have this tester vl document:
-
-	X:\vl-libs\VL.Devices.RealSense\help\Intel\RealSense\HowTo RealSense-Tester.vl
