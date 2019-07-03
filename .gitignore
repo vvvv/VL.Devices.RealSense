@@ -1,1 +1,5 @@
 /src/obj/*
+/src/bin/*
+/src/.vs/VL.Devices.RealSense/*
+/src/obj/*
+/lib/net461/*

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="F9gDoWk2zp4P3psjNpf69q" LanguageVersion="2019.1.0-0420-gd786f06fc5" Version="0.128">
+<Document xmlns:p="property" Id="F9gDoWk2zp4P3psjNpf69q" LanguageVersion="2019.1.0-0425-gef454d89b2" Version="0.128">
   <NugetDependency Id="SPARBCxl9pELQXaVXzEMMW" Location="VL.CoreLib" Version="2019.1.0-419" />
   <Patch Id="I34B5vZdUexM4xpGgWMyGT">
     <Canvas Id="E7jI6aAm7iON9pLSVguMYU" DefaultCategory="Main" CanvasType="FullCategory">
@@ -184,7 +184,7 @@
                   <Pin Id="DD256joRzDtNR0NGV7SfeN" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="542,374,93,19" Id="TlWMpvExNQfNTmqmspk3WE">
-                  <p:NodeReference LastCategoryFullName="Main.PointCloudView" LastSymbolSource="HowTo RealSense-Tester.vl">
+                  <p:NodeReference LastCategoryFullName="Main.PointCloudView" LastSymbolSource="Overview.vl">
                     <Choice Kind="ProcessNode" Name="DepthPointCloud" />
                   </p:NodeReference>
                   <Pin Id="UV6gQhM5w0XLnUn0SwTnx0" Name="Camera" Kind="InputPin" />
@@ -236,7 +236,7 @@
                 <Canvas Id="QJ076TNPEiANXmT0CIyg9l" CanvasType="Group">
                   <ControlPoint Id="MyTcF1Q6VNAP6ZVxDrEAnQ" Bounds="223,472" />
                   <Node Bounds="221,405,75,19" Id="I5XQ1iMIQnRMVQVegDOme4">
-                    <p:NodeReference LastCategoryFullName="Main.PointCloudView" LastSymbolSource="HowTo RealSense-Tester.vl">
+                    <p:NodeReference LastCategoryFullName="Main.PointCloudView" LastSymbolSource="Overview.vl">
                       <Choice Kind="ProcessNode" Name="ProjectPoints" />
                     </p:NodeReference>
                     <Pin Id="Ded3hPNkaRwNxZfYPXFNb7" Name="Input" Kind="InputPin" />
@@ -707,6 +707,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="RealSenseCamera" />
             </p:NodeReference>
+            <Pin Id="C5hQVVM1ghMPEPs3cZk0HV" Name="Device" Kind="InputPin" />
             <Pin Id="Ed4HZdclw46PkziElhwvo1" Name="Color Resolution" Kind="InputPin" />
             <Pin Id="UYh08T4BE2NOuuitDTA91U" Name="Depth Resolution" Kind="InputPin" />
             <Pin Id="DQtBBIVyVrELpL6PAU2T5m" Name="Enable Color" Kind="InputPin" />
@@ -727,12 +728,12 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="Nvw0jiXmaEiOme30CKDFYi" Name="Processing Blocks" Kind="InputPin" />
+            <Pin Id="Nvw0jiXmaEiOme30CKDFYi" Name="Depth Filters" Kind="InputPin" />
             <Pin Id="AIP4v28SKMPP12vdanSFxM" Name="Align To" Kind="InputPin" />
             <Pin Id="NG2FFwxVTgPNeTA0KIHnar" Name="Enable" Kind="InputPin" />
             <Pin Id="TR12MTAoomMPzXxkSPX9GU" Name="Output" Kind="OutputPin" />
             <Pin Id="JdTUPgKl36gPYhdGm1VJyz" Name="Pipeline Profile" Kind="OutputPin" />
-            <Pin Id="C6ZXeC33zg8OkPB9kUyeCK" Name="Status" Kind="OutputPin" />
+            <Pin Id="C6ZXeC33zg8OkPB9kUyeCK" Name="IsRunning" Kind="OutputPin" />
           </Node>
           <Pad Id="DmYByVg7SSYPCY3Hpc4tPT" Comment="Enable" Bounds="1003,170,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -809,7 +810,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <Pin Id="HQAsM88jUcMLCnQXRzWn34" Name="Bounds" Kind="InputPin" DefaultValue="1436, 73, 385, 356">
+            <Pin Id="HQAsM88jUcMLCnQXRzWn34" Name="Bounds" Kind="InputPin" DefaultValue="1440, 73, 385, 356">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -829,7 +830,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="914,523,87,19" Id="Je6knquDwVuMWZ7Jmzw9MC">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo RealSense-Tester.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="Overview.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PointCloudView" />
             </p:NodeReference>
@@ -916,7 +917,7 @@
             <Pin Id="Pvj35VmDALuPYSoEMeLq9U" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="687,523,60,19" Id="RUQYe5RgFsVO2hj1WmBnu6">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo RealSense-Tester.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="Overview.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PipetView" />
             </p:NodeReference>
@@ -1017,8 +1018,8 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="L9hX2k0oW3WPkRqg3al9Mp" Comment="Align To" Bounds="926,231,47,1" ShowValueBox="true" isIOBox="true" Value="Depth">
-            <p:TypeAnnotation LastCategoryFullName="RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+          <Pad Id="L9hX2k0oW3WPkRqg3al9Mp" Comment="Align To" Bounds="926,231,47,1" ShowValueBox="true" isIOBox="true" Value="Color">
+            <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="TypeFlag" Name="Stream" />
             </p:TypeAnnotation>
           </Pad>
@@ -1040,6 +1041,20 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="MdcP2RtX3OWPfKefIr81l4" Comment="IsRunning" Bounds="946,289,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MzGQ3YJHdb4Lrs6eSyKXox" Comment="Color Resolution" Bounds="361,156,41,28" ShowValueBox="true" isIOBox="true" Value="640, 480">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="M8MgAPSbgWJOura20kLtQS" Comment="Device" Bounds="90,171,204,15" ShowValueBox="true" isIOBox="true" Value="Intel RealSense D435 (838212073627)">
+            <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="TypeFlag" Name="RealSenseDevice" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Mf9OyxCEUz8NOdVWadeuFv" Bounds="-155,176" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings />
+          </Pad>
         </Canvas>
         <Patch Id="DFlF1wMJScHMryuPZ7qpLF" Name="Create" />
         <Patch Id="DfiGTdtNV7fQboyAJXasAN" Name="Update" />
@@ -1059,7 +1074,6 @@
         <Link Id="NLnvmd2SG1mLqCXK7mi6Wd" Ids="JdTUPgKl36gPYhdGm1VJyz,RjDar2q3Xc8Ph91xJW3BVE" />
         <Link Id="EmchU6R7KwPMHonFhxqp4u" Ids="CsBmBoNYYnqQYCUcWrCc4v,T1W6aa3BeyRNYCzxcsYpLw" />
         <Link Id="P3mhn8L8XeaLGVQ8K0hhRW" Ids="I6oB4H8yHN6PASqZkm0Sbj,FUmxpWd03mDMajL1wfUIAU" />
-        <Link Id="ITPLqv243fkQGaDLxIC2wY" Ids="TR12MTAoomMPzXxkSPX9GU,NKPu6pkIsRZMxvvRs5c4tE" />
         <Link Id="HQiPkXmYEYhPIasGsteKCu" Ids="IGzrWXbGwkuP2RcacYPh82,V1wL03BlJv3QNwh8XJgoSt" />
         <Link Id="Dwo2gTpNyf9LHDbUtldtMA" Ids="TR12MTAoomMPzXxkSPX9GU,Hvr28NrayykMdeWt4uVfn4" />
         <Link Id="QOJ1EV3SOqkPue17ZOokcg" Ids="SeAyJaMAnxVM0Msp2pql6q,F8teuRMdEhGOmTCXbGgXmx" />
@@ -1083,6 +1097,10 @@
         <Link Id="LQSjSlcqYZRQMvKvPnfph1" Ids="GE4kb87l28YOe1vPecQH6J,UMSYd8HmfHcO4GCp9cBlDg" />
         <Link Id="LixVXLsIj7SMGXRVDZvLwk" Ids="JisBh28BJ7fMTSkonUpHBo,SdRv5ZT0LMILSsxCAvPN6N" />
         <Link Id="Qh7u5UKKBJFQZea6nlim1O" Ids="CLoAFecbTz7NZVwpmcHiTP,GAs1FP47LS8Mrb4mQj8qdu" />
+        <Link Id="NpUOaQIWJHdNuDajJd5MOp" Ids="C6ZXeC33zg8OkPB9kUyeCK,MdcP2RtX3OWPfKefIr81l4" />
+        <Link Id="M9vY00zYfQCM4kMxJnoxHj" Ids="MzGQ3YJHdb4Lrs6eSyKXox,Ed4HZdclw46PkziElhwvo1" />
+        <Link Id="OueFtJ6pLVTPVBfURAIuij" Ids="TR12MTAoomMPzXxkSPX9GU,NKPu6pkIsRZMxvvRs5c4tE" />
+        <Link Id="UADQWH9B1ZAOysBlR8uMcg" Ids="M8MgAPSbgWJOura20kLtQS,C5hQVVM1ghMPEPs3cZk0HV" />
       </Patch>
     </Node>
   </Patch>
@@ -1091,4 +1109,5 @@
   <NugetDependency Id="QmOCqchQiRPLHMXakkUseY" Location="VL.EditingFramework" Version="2019.1.0-0411-gf6daa4918b" />
   <NugetDependency Id="TDA9ixqqHYnM3nQPuUIzoA" Location="VL.Devices.Kinect2" Version="0.1.13-alpha" />
   <DocumentDependency Id="Rdrz5rvpIuBL3tVMOxlGcj" Location="../../../VL.Devices.RealSense.vl" />
+  <NugetDependency Id="IStpBBnesi2ME0Mas3eWRc" Location="VL.Core" Version="2019.1.0-0411-gf6daa4918b" />
 </Document>
