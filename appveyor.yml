@@ -19,6 +19,9 @@ branches:
   only:
     - master
 
+only_commits:
+  message: /build/
+
 # enable patching of AssemblyInfo.* files
 assembly_info:
   patch: true
