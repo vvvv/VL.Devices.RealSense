@@ -5,8 +5,6 @@ The development is sponsored by [wirmachenbunt](https://wirmachenbunt.de/).
 
 We are entering testing phase.
 
-At the moment you have to build a small C# project in oder to use the library.
-
 ## Using the library
 In order to use this library with vl you have to install the nuget that is available via nuget.org.
 
