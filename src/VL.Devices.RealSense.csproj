@@ -60,6 +60,7 @@
     <Compile Include="ColorImage.cs" />
     <Compile Include="FrameExtensions.cs" />
     <Compile Include="Enums.cs" />
+    <Compile Include="ObservableHelper.cs" />
     <Compile Include="RealSenseFrameData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RealSenseHelper.cs" />
