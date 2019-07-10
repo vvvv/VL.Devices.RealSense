@@ -16,7 +16,9 @@ and then type:
 
     nuget install VL.Devices.RealSense -prerelease
 
-Once the VL.Devices.RealSense nuget is installed and referenced in your vl document you'll see the category "RealSense" under "Devices" in the nodebrowser.
+For more about installing and referencing nugets [read here](https://vvvv.gitbooks.io/the-gray-book/content/en/reference/libraries/dependencies.html#_manage_nugets).
+
+Once the VL.Devices.RealSense nuget is installed and referenced in your vl document you'll see the category "RealSense" under "Devices" in the nodebrowser. 
 
 VL help patches can be found here:
 
