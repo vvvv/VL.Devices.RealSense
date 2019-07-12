@@ -5,21 +5,51 @@ using System.Text;
 using System.Threading.Tasks;
 using VL.Lib.Collections;
 using VL.Core;
+using Intel.RealSense;
+using System.Reactive.Linq;
 
 namespace VL.Devices.RealSense
 {
 
-    public class RealSenseDeviceDefinition : ManualDynamicEnumDefinitionBase<RealSenseDeviceDefinition>
+    public class RealSenseDeviceDefinition : DynamicEnumDefinitionBase<RealSenseDeviceDefinition>
     {
 
-        //add this to get a node that can access the Instance from everywhere
-        public static RealSenseDeviceDefinition Instance => ManualDynamicEnumDefinitionBase<RealSenseDeviceDefinition>.Instance;
-        override protected bool AutoSortAlphabetically => false;
+        //inform the system that the enum has changed
+        protected override IObservable<object> GetEntriesChangedObservable()
+        {
+            return Observable.Empty<object>();
+        }
+
+        protected override IReadOnlyDictionary<string, object> GetEntries()
+        {
+            Dictionary<string, object> cameraNames = new Dictionary<string, object>();
+
+            DeviceList devices;
+
+            using (var ctx = new Context())
+            {
+                devices = ctx.QueryDevices();
+            }
+
+            foreach (var device in devices)
+            {
+                var cameraName = device.Info.GetInfo(CameraInfo.Name);
+                var serialNumber = device.Info.GetInfo(CameraInfo.SerialNumber);
+
+                cameraNames[cameraName + ": " + serialNumber] = serialNumber; 
+            }
+
+            return cameraNames;
+        }
+
+        //optionally disable alphabetic sorting
+        protected override bool AutoSortAlphabetically => false; //true is the default
     }
 
     [Serializable]
     public class RealSenseDevice : DynamicEnumBase<RealSenseDevice, RealSenseDeviceDefinition>
     {
+        //return the current enum entries
         public RealSenseDevice(string value) : base(value)
         {
         }
