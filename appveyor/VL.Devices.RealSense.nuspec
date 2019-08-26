@@ -11,7 +11,7 @@
     <summary>Set of nodes to use Intel RealSense devices in VL</summary>
     <description>Intel RealSense for VL</description>
     <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
-    <tags>VL, RealSense</tags>
+    <tags>VL, RealSense, camera, video, depth</tags>
     <dependencies>
 		<dependency id="VL.OpenCV" version="[0.2.102-alpha]" />
     </dependencies>
