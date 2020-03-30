@@ -1,10 +1,11 @@
 ﻿using Intel.RealSense;
 using System;
+using System.Buffers;
 using VL.Lib.Basics.Imaging;
 
 namespace VL.Devices.RealSense
 {
-    class RealSenseFrameData : IImageData
+    class RealSenseFrameData : MemoryManager<byte>, IImageData
     {
         readonly VideoFrame frame;
 
@@ -19,6 +20,25 @@ namespace VL.Devices.RealSense
         public int Size => ScanSize * frame.Height;
 
         public int ScanSize { get; }
-        public void Dispose() { }
+
+        public ReadOnlyMemory<byte> Bytes => Memory;
+
+        public override unsafe Span<byte> GetSpan()
+        {
+            return new Span<byte>(Pointer.ToPointer(), Size);
+        }
+
+        public override unsafe MemoryHandle Pin(int elementIndex = 0)
+        {
+            return new MemoryHandle(Pointer.ToPointer(), pinnable: this);
+        }
+
+        public override void Unpin()
+        {
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+        }
     }
 }
