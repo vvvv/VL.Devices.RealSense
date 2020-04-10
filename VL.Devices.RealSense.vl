@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="B3rGtyZDXvLOgYGrDxnNa6" LanguageVersion="2019.1.0-0428-g00cfe1d8c4" Version="0.128">
-  <NugetDependency Id="DOfXRi7MKyxNeGRyD8tI9g" Location="VL.CoreLib" Version="2019.1.0-418" />
+<Document xmlns:p="property" Id="B3rGtyZDXvLOgYGrDxnNa6" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="DOfXRi7MKyxNeGRyD8tI9g" Location="VL.CoreLib" Version="2020.1.0" />
   <Patch Id="QC65oeU7EANNM5KfSEYMcT">
     <Canvas Id="D1nHjsj3mzlNOpT1n6i9K7" DefaultCategory="Devices.RealSense" CanvasType="FullCategory">
       <Canvas Id="IoCc0ICIZtZM01JqAumDzg" Name="Internal" Position="357,196">
@@ -34,7 +34,6 @@
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
-                <p:ValueBoxSettings />
               </Pad>
               <Node Bounds="521,378,189,583" Id="HZwRUUF7fiXMpI7CDRjPqX">
                 <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
@@ -143,11 +142,13 @@
                           <CategoryReference Kind="Category" Name="Primitive" />
                         </p:NodeReference>
                         <Pin Id="BsUPJMkA4ggMYBGGrfWxyt" Name="Condition" Kind="InputPin" />
+                        <ControlPoint Id="RSPM2ul45IlNINuOiYjV2l" Bounds="820,1324" Alignment="Bottom" />
+                        <ControlPoint Id="RScbjZ2WyPSL25p9gF9goE" Bounds="852,1161" Alignment="Top" />
                         <Patch Id="ElpK5aarencPAMYw6jkPG3" ManuallySortedPins="true">
                           <Patch Id="R5B6MoonFUYLg0OumbctzC" Name="Create" ManuallySortedPins="true" />
                           <Patch Id="PP3elR1CMbmNtka426vIgt" Name="Then" ManuallySortedPins="true" />
                           <Node Bounds="755,1176,69,26" Id="DEsnYmHJy4COSClfdwC4a7">
-                            <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSet" LastSymbolSource="Intel.RealSense.dll">
+                            <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSet" LastSymbolSource="Intel.Realsense.dll">
                               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                               <Choice Kind="OperationCallFlag" Name="ColorFrame" />
                             </p:NodeReference>
@@ -165,8 +166,6 @@
                             <Pin Id="VZFMmvXbc8WOu99c2900tn" Name="Result" Kind="OutputPin" />
                           </Node>
                         </Patch>
-                        <ControlPoint Id="RSPM2ul45IlNINuOiYjV2l" Bounds="820,1324" Alignment="Bottom" />
-                        <ControlPoint Id="RScbjZ2WyPSL25p9gF9goE" Bounds="852,1161" Alignment="Top" />
                       </Node>
                       <Node Bounds="850,1112,45,19" Id="A2ehB6aQcFHPGhD178nqtd">
                         <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
@@ -211,12 +210,12 @@
               <Node Bounds="358,1639,170,19" Id="Ebc6oo2tM6YLbOgg5A92P3">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                  <FullNameCategoryReference ID="Control" />
                 </p:NodeReference>
                 <Pin Id="NZh2OysYE1fQRdkDmSXQId" Name="Condition" Kind="InputPin" />
-                <Pin Id="IQm1R2OmPecNN8G1ZlNLju" Name="False" Kind="InputPin" />
-                <Pin Id="CrqrCsMzA0NLKxabTxiXl3" Name="True" Kind="InputPin" />
+                <Pin Id="IQm1R2OmPecNN8G1ZlNLju" Name="Input" Kind="InputPin" />
+                <Pin Id="CrqrCsMzA0NLKxabTxiXl3" Name="Input 2" Kind="InputPin" />
                 <Pin Id="BZChlDBqGpiL2O2YRdKs0e" Name="Output" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="Usx7exSZcGvOgWFDnVF1uD" Bounds="360,1592" />
@@ -590,6 +589,17 @@
                 </Pin>
                 <Pin Id="JKQngepEXf6Ms8dhRKKMV5" Name="Dispose Cached Outputs" Kind="InputPin" />
                 <Pin Id="CKPmFj9np2VPwYtky6K9mh" Name="Has Changed" Kind="OutputPin" />
+                <ControlPoint Id="SdK6Jylxub8Od6gBxQUkoH" Bounds="712,1329" Alignment="Bottom" />
+                <ControlPoint Id="Ce4QKw1SvqkNbblpEEanws" Bounds="1106,334" Alignment="Top" />
+                <ControlPoint Id="CqavthFh1OqQQSABdXpVTs" Bounds="1204,334" Alignment="Top" />
+                <ControlPoint Id="DT8hD2MO2K6MHrU3mErC4Q" Bounds="1683,334" Alignment="Top" />
+                <ControlPoint Id="R8KMwztxf9lOv4DXIIG0N3" Bounds="843,334" Alignment="Top" />
+                <ControlPoint Id="TNEWRIMiy8FN8YXAY8Tcfv" Bounds="915,334" Alignment="Top" />
+                <ControlPoint Id="M1ZIlJtAekmOB7cLYqTHcY" Bounds="996,334" Alignment="Top" />
+                <ControlPoint Id="U3kuIj2C9mvLhXsMZWth7A" Bounds="1295,334" Alignment="Top" />
+                <ControlPoint Id="NDcgI0FTQ5EOKCwPOEiL6h" Bounds="1397,334" Alignment="Top" />
+                <ControlPoint Id="QMqdBOCjtvxNijjoQVbMue" Bounds="1504,334" Alignment="Top" />
+                <ControlPoint Id="PDqRcIDLTTKOvahHWIO80z" Bounds="1787,334" Alignment="Top" />
                 <Patch Id="EMc6bTilD1UONJItOyCglC" ManuallySortedPins="true">
                   <Node Bounds="704,500,145,26" Id="SVbTLB5aH2wMICNrhLHq19">
                     <p:NodeReference LastCategoryFullName="Intel.RealSense.Config" LastSymbolSource="Intel.RealSense.dll">
@@ -763,7 +773,7 @@
                     <Pin Id="CGE11OZVXg8N0nQxrc11No" Name="Result" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="705,1024,125,26" Id="RGGQSwBIvFGMSOpLLBilxe">
-                    <p:NodeReference LastCategoryFullName="Intel.RealSense.Config" LastSymbolSource="Intel.RealSense.dll">
+                    <p:NodeReference LastCategoryFullName="Intel.RealSense.Config" LastSymbolSource="Intel.Realsense.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="EnableStream" />
                       <PinReference Kind="InputPin" Name="Stream_type" />
@@ -797,7 +807,7 @@
                     <Pin Id="U4M4aQfQvrxLSuo0TxX9VZ" Name="Output" Kind="StateOutputPin" />
                   </Node>
                   <Node Bounds="710,1320,76,26" Id="NhR1xO2UUNXPuXedzG0B1m">
-                    <p:NodeReference LastCategoryFullName="Intel.RealSense.Config" LastSymbolSource="Intel.RealSense.dll">
+                    <p:NodeReference LastCategoryFullName="Intel.RealSense.Config" LastSymbolSource="Intel.Realsense.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="EnableDevice" />
                     </p:NodeReference>
@@ -822,7 +832,7 @@
                     </p:TypeAnnotation>
                   </Pad>
                   <Node Bounds="706,1140,125,26" Id="Dew4ygbz0YNPIqmHiMRCam">
-                    <p:NodeReference LastCategoryFullName="Intel.RealSense.Config" LastSymbolSource="Intel.RealSense.dll">
+                    <p:NodeReference LastCategoryFullName="Intel.RealSense.Config" LastSymbolSource="Intel.Realsense.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="EnableStream" />
                       <PinReference Kind="InputPin" Name="Stream_type" />
@@ -843,17 +853,6 @@
                     </p:TypeAnnotation>
                   </Pad>
                 </Patch>
-                <ControlPoint Id="SdK6Jylxub8Od6gBxQUkoH" Bounds="712,1329" Alignment="Bottom" />
-                <ControlPoint Id="Ce4QKw1SvqkNbblpEEanws" Bounds="1106,334" Alignment="Top" />
-                <ControlPoint Id="CqavthFh1OqQQSABdXpVTs" Bounds="1204,334" Alignment="Top" />
-                <ControlPoint Id="DT8hD2MO2K6MHrU3mErC4Q" Bounds="1683,334" Alignment="Top" />
-                <ControlPoint Id="R8KMwztxf9lOv4DXIIG0N3" Bounds="843,334" Alignment="Top" />
-                <ControlPoint Id="TNEWRIMiy8FN8YXAY8Tcfv" Bounds="915,334" Alignment="Top" />
-                <ControlPoint Id="M1ZIlJtAekmOB7cLYqTHcY" Bounds="996,334" Alignment="Top" />
-                <ControlPoint Id="U3kuIj2C9mvLhXsMZWth7A" Bounds="1295,334" Alignment="Top" />
-                <ControlPoint Id="NDcgI0FTQ5EOKCwPOEiL6h" Bounds="1397,334" Alignment="Top" />
-                <ControlPoint Id="QMqdBOCjtvxNijjoQVbMue" Bounds="1504,334" Alignment="Top" />
-                <ControlPoint Id="PDqRcIDLTTKOvahHWIO80z" Bounds="1787,334" Alignment="Top" />
               </Node>
               <ControlPoint Id="LmAFb6XUoHlNL30MSCqe0q" Bounds="844,291" />
               <ControlPoint Id="CQK9mEvgFPaQE6RcupvGqu" Bounds="915,307" />
@@ -885,11 +884,13 @@
                   <CategoryReference Kind="Category" Name="Primitive" />
                 </p:NodeReference>
                 <Pin Id="KGBMRwOcKP2LVuQtibwlkK" Name="Condition" Kind="InputPin" />
+                <ControlPoint Id="VFiea7JHRGRLveevF5LS2f" Bounds="714,1470" Alignment="Top" />
+                <ControlPoint Id="LWWMpr092JMOrv1vRJUgqn" Bounds="713,1675" Alignment="Bottom" />
                 <Patch Id="ADjL76Q6vu4OY7JxrlZfZn" ManuallySortedPins="true">
                   <Patch Id="MlD0xt2h2WqOmjc9ZbcuCJ" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="FgfCzuUwTZuNvlyEyN4xm8" Name="Then" ManuallySortedPins="true" />
                   <Node Bounds="712,1535,98,26" Id="BewHSY2NtS6Nsv5QF2VADq">
-                    <p:NodeReference LastCategoryFullName="Intel.RealSense.Config" LastSymbolSource="Intel.RealSense.dll">
+                    <p:NodeReference LastCategoryFullName="Intel.RealSense.Config" LastSymbolSource="Intel.Realsense.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="DisableAllStreams" />
                     </p:NodeReference>
@@ -906,11 +907,9 @@
                     <Pin Id="DHG6gUzQwzDM8tBO3AFtJL" Name="Output" Kind="StateOutputPin" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="VFiea7JHRGRLveevF5LS2f" Bounds="714,1470" Alignment="Top" />
-                <ControlPoint Id="LWWMpr092JMOrv1vRJUgqn" Bounds="713,1675" Alignment="Bottom" />
               </Node>
               <Node Bounds="544,1479,98,26" Id="JtaQ4uvnrCtNdxAUrYziQ9">
-                <p:NodeReference LastCategoryFullName="Intel.RealSense.Config" LastSymbolSource="Intel.RealSense.dll">
+                <p:NodeReference LastCategoryFullName="Intel.RealSense.Config" LastSymbolSource="Intel.Realsense.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="DisableAllStreams" />
                 </p:NodeReference>
@@ -1138,6 +1137,8 @@
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
               <Pin Id="C3EMrTT6rcOMnD02e9S9ad" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="OCALc5OEh8dNxmmPH5xJeF" Bounds="853,535" Alignment="Bottom" />
+              <ControlPoint Id="AFgewknZsWVNcdB7fO9S3Y" Bounds="872,428" Alignment="Top" />
               <Patch Id="Iroh2UGlNFiNuBxt3lR1rM" ManuallySortedPins="true">
                 <Patch Id="DbShmtZNw53MXnuFmaqLLv" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="VjVIZ9XokQLMqXtHP17lx4" Name="Then" ManuallySortedPins="true" />
@@ -1150,7 +1151,7 @@
                   <Pin Id="VNtyTGusPa6MydKEQA06No" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="851,447,94,26" Id="BkbLsOJb0UhPoHWUIWna1J">
-                  <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+                  <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="DisposeWith" />
                   </p:NodeReference>
@@ -1159,8 +1160,6 @@
                   <Pin Id="LIpqDSpKrHkM4JeEqpwOkd" Name="Output" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="OCALc5OEh8dNxmmPH5xJeF" Bounds="853,535" Alignment="Bottom" />
-              <ControlPoint Id="AFgewknZsWVNcdB7fO9S3Y" Bounds="872,428" Alignment="Top" />
             </Node>
             <Link Id="VeX05srbtYrOSVLyPARkRc" Ids="KLVAhrcVVECNvRU39e0ywn,C3EMrTT6rcOMnD02e9S9ad" />
             <Link Id="BjKTdeCivKTNO8mGXic7IE" Ids="AFgewknZsWVNcdB7fO9S3Y,OCALc5OEh8dNxmmPH5xJeF" IsFeedback="true" />
@@ -1178,6 +1177,8 @@
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
               <Pin Id="NzewOfzMdu7NfWVg7At6pi" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="Pasqi1mOMqcLgQ8moAUbsW" Bounds="1063,551" Alignment="Bottom" />
+              <ControlPoint Id="GehUvaAFpiLM7tdzRm2agm" Bounds="1062,373" Alignment="Top" />
               <Patch Id="FvqAPjkNJxUM08kc0ZzBh7" ManuallySortedPins="true">
                 <Patch Id="Sk4jcwZrI3iLGcHqrOQ9Xo" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="OzPIBdGJZp2PhAaJhnWeLA" Name="Then" ManuallySortedPins="true" />
@@ -1190,7 +1191,7 @@
                   <Pin Id="O1yrZPXHfbiNmudjbuUgX3" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1061,459,94,26" Id="Feq3Fbso4e8P6ONIxzBy9r">
-                  <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+                  <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="DisposeWith" />
                   </p:NodeReference>
@@ -1209,8 +1210,6 @@
                   <Pin Id="QuB6HZIRp55PTYEwhosKXj" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="Pasqi1mOMqcLgQ8moAUbsW" Bounds="1063,551" Alignment="Bottom" />
-              <ControlPoint Id="GehUvaAFpiLM7tdzRm2agm" Bounds="1062,373" Alignment="Top" />
             </Node>
             <Link Id="O305eripF4nLxJJeicD5uJ" Ids="GehUvaAFpiLM7tdzRm2agm,Pasqi1mOMqcLgQ8moAUbsW" IsFeedback="true" />
             <Link Id="OXUcqa1AUq4OkFRwywGgt7" Ids="O1yrZPXHfbiNmudjbuUgX3,Pasqi1mOMqcLgQ8moAUbsW" />
@@ -1268,11 +1267,13 @@
                   <Choice Kind="TypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
               </Pin>
+              <ControlPoint Id="N25FMh1t3IvL1phNGtwW4c" Bounds="1255,527" Alignment="Bottom" />
+              <ControlPoint Id="V4Cdm69CstxM4pIZJM5qcN" Bounds="1255,459" Alignment="Top" />
               <Patch Id="NudADDYx7xpMlorLhmSipR" ManuallySortedPins="true">
                 <Patch Id="FVlqVVUtF0oQKLhNAyVomJ" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="RGgIrfpkZzzLrjPbfz5eik" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="1253,481,94,26" Id="HDArxi1LpExLiWmENlBz38">
-                  <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+                  <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="DisposeWith" />
                   </p:NodeReference>
@@ -1291,8 +1292,6 @@
                   <Pin Id="FwzcnyUNDcWMvPFFZ7XiH5" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="N25FMh1t3IvL1phNGtwW4c" Bounds="1255,527" Alignment="Bottom" />
-              <ControlPoint Id="V4Cdm69CstxM4pIZJM5qcN" Bounds="1255,459" Alignment="Top" />
             </Node>
             <Node Bounds="1173,275,72,26" Id="OIssJjpcNW1NamXTpeSJtJ">
               <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSet" LastSymbolSource="Intel.RealSense.dll">
@@ -1456,7 +1455,6 @@
                           <Choice Kind="TypeFlag" Name="Boolean" />
                           <FullNameCategoryReference ID="Primitive" />
                         </p:TypeAnnotation>
-                        <p:ValueBoxSettings />
                       </Pad>
                     </Patch>
                     <ControlPoint Id="DULSRAsPgZsOcmXnJD8MZS" Bounds="709,696" Alignment="Top" />
@@ -1541,7 +1539,6 @@
               <Pad Id="GdJuHCJ6mzQPZ6Xa66dbNc" SlotId="CgHWl6XOlwVMMgvrXGlhPe" Bounds="699,1155" />
               <Pad Id="KKbysobJuZUMpNrCMrT0bK" SlotId="CgHWl6XOlwVMMgvrXGlhPe" Bounds="707,185" />
               <ControlPoint Id="CB5qcM6XYKWLJ7PZSKwiUt" Bounds="711,1226" />
-              <ControlPoint Id="GFGZrTHp2ioPSEXXK4HnlT" Bounds="978,1221" />
               <Pad Id="BGEShO5BWkoPHgxs47NZqq" SlotId="UvYaMiMoF5mMM19ZpwQYjC" Bounds="866,1140" />
               <Pad Id="GySwV7zkREbPZSP9eBRTR5" SlotId="UvYaMiMoF5mMM19ZpwQYjC" Bounds="899,291" />
               <Node Bounds="785,899,37,19" Id="TtQq0snU46OPamhbmEzxqm">
@@ -1662,7 +1659,6 @@
               <Pin Id="I79tDmUhWNXNdPXpEylex5" Name="Enable" Kind="InputPin" Bounds="938,203" />
               <Pin Id="FuYjubH4KcGN21KOn6C4of" Name="Pipeline" Kind="OutputPin" Bounds="607,811" />
               <Pin Id="OBVXclj10IbPxgE0RF5oR1" Name="Pipeline Profile" Kind="OutputPin" Bounds="707,807" />
-              <Pin Id="C35LkCdghwNMJXGDmfSpo1" Name="IsRunnung" Kind="OutputPin" Bounds="1379,784" />
             </Patch>
             <ProcessDefinition Id="AalwUAw41JGODr2N0OKC1R" HasStateOut="true">
               <Fragment Id="B5WulVQmLPRLTthHwzzLME" Patch="DKz0gsfejuYNxrGv9FGqzK" Enabled="true" />
@@ -1692,7 +1688,6 @@
             <Link Id="HCTqrZQzvW0N42yoVeC9fh" Ids="CB5qcM6XYKWLJ7PZSKwiUt,OBVXclj10IbPxgE0RF5oR1" IsHidden="true" />
             <Link Id="MxsUiwKxXJpQXQehEhhIQs" Ids="J75KB9QJQoBPmm9h5iTgKJ,LgJ3imVkoNULmU7mcSHFmU" />
             <Link Id="L9Ty8v5GCwhMTnYKE3x37k" Ids="ERMmhsreiRiMbVjEi1LTus,RScDWE717PsLoSg2pDlpoW" IsFeedback="true" />
-            <Link Id="AmhLagZaJN2M33JJWiECfQ" Ids="GFGZrTHp2ioPSEXXK4HnlT,C35LkCdghwNMJXGDmfSpo1" IsHidden="true" />
             <Link Id="ElvifOb38q7NwrSDMKZzBE" Ids="HYQP0KQlpKaLjdkOrKdO2g,NIdbO4MDsMJMigyhOpYEGb" />
             <Link Id="IIcHe3ZDqxjLaflwlfjqz9" Ids="GySwV7zkREbPZSP9eBRTR5,ERMmhsreiRiMbVjEi1LTus" />
             <Link Id="D4afIvuM8qGLcJavAhhgnt" Ids="F8TYq4xHSn9P8157wZX3Rj,TyzKalgn8fvMSgnuQAO8Uv" />
@@ -1703,7 +1698,6 @@
             <Link Id="V31riyiBKiILECunvUTnDe" Ids="MxwevijQNkmPTZWSpXNbAW,TjTlgmgQebGOaAJogKCflC" IsFeedback="true" />
             <Link Id="FqL5HdbcN0SNhoj78gcrj9" Ids="RScDWE717PsLoSg2pDlpoW,MxwevijQNkmPTZWSpXNbAW" />
             <Link Id="CuhYZNTrKjnNbceumwjV3y" Ids="TjTlgmgQebGOaAJogKCflC,BGEShO5BWkoPHgxs47NZqq" />
-            <Link Id="SHKs79S9rRtONrWFFi17MC" Ids="TjTlgmgQebGOaAJogKCflC,GFGZrTHp2ioPSEXXK4HnlT" />
             <Link Id="HbQ5joxjwJoPEvPslZxW1b" Ids="Jn7dwLDIpvxMbk0M3sW5IR,CPaOuz1SusDLDRe99iHSlL" />
             <Link Id="I8x9GnfId1uLycv8RRl2n0" Ids="SJKTPsgf2wHP4IpeckRwhj,E1C2qaq8Y9jNdBmAGjL0fk" IsFeedback="true" />
             <Link Id="Nvy7VOSsDveNpn1FPPhdEb" Ids="IgMf13F4emwMf7CzbcyySU,SJKTPsgf2wHP4IpeckRwhj" />
@@ -1742,7 +1736,7 @@
             <Link Id="AebyzkMvWSGO70BE5ceB1v" Ids="Nw3646FvUeYPVq83M38Ivi,NBVI5aiIZpSOOsNXX5BbkD" />
             <Patch Id="HLMPHcIFEtyL325cb5kNbi" Name="GetPipeline">
               <Pin Id="CQ07y5OhtYTMnAyY9T6og8" Name="Output" Kind="OutputPin" />
-              <Pin Id="UdO1D9fp4ZWLVU9O53JO1l" Name="IsRunnung" Kind="OutputPin" />
+              <Pin Id="UdO1D9fp4ZWLVU9O53JO1l" Name="IsRunning" Kind="OutputPin" />
             </Patch>
             <Link Id="J5ox5CnNHGoQVnv8abZl24" Ids="Dzj2GjxTFrvNYZKb1PQQw7,CQ07y5OhtYTMnAyY9T6og8" IsHidden="true" />
             <Link Id="ER21z09UREUNggctQFnoQ2" Ids="PvKut5hc2M4Pqba9rjPxb3,Dzj2GjxTFrvNYZKb1PQQw7" />
@@ -1799,6 +1793,9 @@
                 <Pin Id="C7Hbg2NVqHIOLmLCMKAEq6" Name="Force" Kind="InputPin" />
                 <Pin Id="EbG4kNxZmc7NZEMZVAUZxn" Name="Dispose Cached Outputs" Kind="InputPin" />
                 <Pin Id="M7tAj8EXPFNMOxrYLGpXA2" Name="Has Changed" Kind="OutputPin" />
+                <ControlPoint Id="CqIzBLkqz2WM3XNgfgIh6X" Bounds="616,1023" Alignment="Bottom" />
+                <ControlPoint Id="BUCSm1rVORNOVgaZeBmzeu" Bounds="662,406" Alignment="Top" />
+                <ControlPoint Id="GBjLK5iIOBPMdnyVrNymAn" Bounds="488,406" Alignment="Top" />
                 <Patch Id="QX4zHtXSqEiLFxiZK9NNVb" ManuallySortedPins="true">
                   <Patch Id="Oh5QnlWa9GwMQIZcga44M3" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="JNmtrWuQOExMeIWXv9hNsJ" Name="Then" ManuallySortedPins="true" />
@@ -1809,11 +1806,13 @@
                       <CategoryReference Kind="Category" Name="Primitive" />
                     </p:NodeReference>
                     <Pin Id="Af8xbLrLYG9PjyKRPdnes3" Name="Condition" Kind="InputPin" />
+                    <ControlPoint Id="Hta9FhggrYvMWy373et9GU" Bounds="616,1003" Alignment="Bottom" />
+                    <ControlPoint Id="JP8lrUZQS6fO3h9BVokiiU" Bounds="551,495" Alignment="Top" />
                     <Patch Id="BxOjwvCcHyvNP7mguIvcfu" ManuallySortedPins="true">
                       <Patch Id="FlmhpMU3xkEN8TDQVha0i6" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="PjDxl5ZLsf3M6Zt4G14AOH" Name="Then" ManuallySortedPins="true" />
                       <Node Bounds="487,512,67,26" Id="I13JNgWVGf8LiVKo40IPoi">
-                        <p:NodeReference LastCategoryFullName="Intel.RealSense.PipelineProfile" LastSymbolSource="Intel.RealSense.dll">
+                        <p:NodeReference LastCategoryFullName="Intel.RealSense.PipelineProfile" LastSymbolSource="Intel.Realsense.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="Device" />
                         </p:NodeReference>
@@ -1920,8 +1919,6 @@
                         </p:TypeAnnotation>
                       </Pad>
                     </Patch>
-                    <ControlPoint Id="Hta9FhggrYvMWy373et9GU" Bounds="616,1003" Alignment="Bottom" />
-                    <ControlPoint Id="JP8lrUZQS6fO3h9BVokiiU" Bounds="551,495" Alignment="Top" />
                   </Node>
                   <Node Bounds="475,448,65,19" Id="GOvGKlRd3zKMCkkRFiQxXr">
                     <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
@@ -1933,9 +1930,6 @@
                     <Pin Id="P4mlCjCTeblNnAeWewUYfD" Name="Not Assigned" Kind="OutputPin" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="CqIzBLkqz2WM3XNgfgIh6X" Bounds="616,1023" Alignment="Bottom" />
-                <ControlPoint Id="BUCSm1rVORNOVgaZeBmzeu" Bounds="662,406" Alignment="Top" />
-                <ControlPoint Id="GBjLK5iIOBPMdnyVrNymAn" Bounds="488,406" Alignment="Top" />
               </Node>
               <ControlPoint Id="Uoi7oS5vwl6MZhsGjS9CKX" Bounds="491,362" />
               <ControlPoint Id="EW4P7GXvKXZLDuDaxxrubB" Bounds="663,359" />
@@ -2143,8 +2137,8 @@
                 <Pin Id="P2Ocru3wj01OFORZyOO2Z6" Name="State Output" Kind="OutputPin" />
                 <Pin Id="Jx9OauX8DH1NxtVWBpQjfm" Name="Pipeline" Kind="OutputPin" />
                 <Pin Id="K7d9uInH8VCMYqrK3OBKfv" Name="Pipeline Profile" Kind="OutputPin" />
-                <Pin Id="JMkgtH7tbJGLQeJmWkXmQ0" Name="IsRunnung" Kind="OutputPin" />
                 <Pin Id="H5eDt5jIYaFMNvttCPp7MD" Name="Output" Kind="OutputPin" />
+                <Pin Id="JMkgtH7tbJGLQeJmWkXmQ0" Name="IsRunning" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="EEqAi9y2kaVPMWFsdOdDt5" Bounds="1057,175" />
               <ControlPoint Id="Kexh2mErfK4LxAiKpZmHut" Bounds="536,183" />
@@ -2236,7 +2230,7 @@
                     <Pin Id="L4BhcVrt9yPMXc4bZYXQuy" Name="Input" Kind="StateInputPin" />
                     <Pin Id="BtutsR1WwfAMG7P20JWCYz" Name="State Output" Kind="StateOutputPin" />
                     <Pin Id="COFrm77TllIP8TdLWMW25P" Name="Output" Kind="OutputPin" />
-                    <Pin Id="A5NDdJiromROHLWuVfknFa" Name="IsRunnung" Kind="OutputPin" />
+                    <Pin Id="A5NDdJiromROHLWuVfknFa" Name="IsRunning" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="64,753,516,865" Id="NZa0FzuHeytPG1jG8LnFRM">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -2385,12 +2379,12 @@
                               <Node Bounds="415,908,45,19" Id="Iq8wSxOiToULfJKLJLOKIR">
                                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                                  <Choice Kind="OperationCallFlag" Name="Switch" />
-                                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                                  <Choice Kind="OperationNode" Name="Switch (Boolean)" />
+                                  <FullNameCategoryReference ID="Control" />
                                 </p:NodeReference>
                                 <Pin Id="H7nR01q7cVXNpSyf3xKzwg" Name="Condition" Kind="InputPin" />
-                                <Pin Id="FQAYanZpNuNNhWlRx0j2XH" Name="False" Kind="InputPin" />
-                                <Pin Id="OS7u0t86aOuMir7W2l08G9" Name="True" Kind="InputPin" />
+                                <Pin Id="FQAYanZpNuNNhWlRx0j2XH" Name="Input" Kind="InputPin" />
+                                <Pin Id="OS7u0t86aOuMir7W2l08G9" Name="Input 2" Kind="InputPin" />
                                 <Pin Id="GAquI5EhU1INSRBdE0iNBJ" Name="Output" Kind="OutputPin" />
                               </Node>
                             </Patch>
@@ -2471,7 +2465,7 @@
                   <Patch Id="CYOB79qXCfyOAK7VEs0lzy" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="GxKs1CZpI9aMiNrtPEDiHz" Name="Then" ManuallySortedPins="true" />
                   <Node Bounds="-667,517,104,26" Id="G8XOvxcA7ctN645UG6C61M">
-                    <p:NodeReference LastCategoryFullName="Intel.RealSense.Context" LastSymbolSource="Intel.RealSense.dll">
+                    <p:NodeReference LastCategoryFullName="Intel.RealSense.Context" LastSymbolSource="Intel.Realsense.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="OnDevicesChanged" />
                     </p:NodeReference>
@@ -2530,7 +2524,6 @@
                           <Choice Kind="TypeFlag" Name="Boolean" />
                           <FullNameCategoryReference ID="Primitive" />
                         </p:TypeAnnotation>
-                        <p:ValueBoxSettings />
                       </Pad>
                     </Patch>
                   </Node>
@@ -2745,7 +2738,7 @@
                 <ControlPoint Id="RTTJTSy6dSsNkV8xUFfYbg" Bounds="514,502" Alignment="Bottom" />
               </Node>
               <Node Bounds="496,290,88,26" Id="FeFDTNKGDNIOQF6TV2en7g">
-                <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSetExtensions" LastSymbolSource="Intel.RealSense.dll">
+                <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSetExtensions" LastSymbolSource="Intel.Realsense.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="AsFrameSet" />
                 </p:NodeReference>
@@ -2795,6 +2788,8 @@
                 <Pin Id="FdGfpnL0Au6NiOYVhLyUI6" Name="Force" Kind="InputPin" />
                 <Pin Id="Q0Hsey7PdWOPu53fsvYAwK" Name="Dispose Cached Outputs" Kind="InputPin" />
                 <Pin Id="Hw7kdckW1yCLXF14skly9C" Name="Has Changed" Kind="OutputPin" />
+                <ControlPoint Id="EbiJlpo9T4zNEsFej41j0y" Bounds="487,347" Alignment="Top" />
+                <ControlPoint Id="VzNuL5t0e51PKxgYqf6dha" Bounds="787,655" Alignment="Bottom" />
                 <Patch Id="EJiRJVCdRXUN6vlmLm6Wwb" ManuallySortedPins="true">
                   <Patch Id="PGHXtX5j6pZO6jPbxVf7Sh" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="S03vfUtgAXtL7HvMh58ZOH" Name="Then" ManuallySortedPins="true" />
@@ -2863,7 +2858,7 @@
                     <Pin Id="MAvwKgV8jTwLNZ6iQJbJZY" Name="Processing Blocks" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="485,368,67,26" Id="QrIhLWzhkQ2OFsuHwIgVkv">
-                    <p:NodeReference LastCategoryFullName="Intel.RealSense.PipelineProfile" LastSymbolSource="Intel.RealSense.dll">
+                    <p:NodeReference LastCategoryFullName="Intel.RealSense.PipelineProfile" LastSymbolSource="Intel.Realsense.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="Device" />
                     </p:NodeReference>
@@ -2872,8 +2867,6 @@
                     <Pin Id="Bevtv8pknjEM5gAvIahRYT" Name="Device" Kind="OutputPin" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="EbiJlpo9T4zNEsFej41j0y" Bounds="487,347" Alignment="Top" />
-                <ControlPoint Id="VzNuL5t0e51PKxgYqf6dha" Bounds="787,655" Alignment="Bottom" />
               </Node>
               <ControlPoint Id="HyS2nx6UIfAPxFZUgbgBvJ" Bounds="487,299" />
               <ControlPoint Id="VRo2Ccf80ODMgTGaqcBbCI" Bounds="787,726" />
@@ -3630,11 +3623,15 @@
                   <Choice Kind="TypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
               </Pin>
+              <ControlPoint Id="TDJhi8xa5bXPpIHJ0sP482" Bounds="2166,1132" Alignment="Bottom" />
+              <ControlPoint Id="PF6NmbNURqDOxg0avOTO7l" Bounds="2256,279" Alignment="Top" />
+              <ControlPoint Id="QtOHtP7YTAzMkzT6VlxS4a" Bounds="2226,1132" Alignment="Bottom" />
+              <ControlPoint Id="IqHh3qOdkLaLc6sHj47dZQ" Bounds="2226,279" Alignment="Top" />
               <Patch Id="Ds6RjiCFSUrNdnIcNVQfhr" ManuallySortedPins="true">
                 <Patch Id="SWJFr7jbWLMOFT7cliQXF0" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="CUrU72GMlfqNYu9dcjq2vA" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="1973,414,88,26" Id="CY76YNKCZQWLJJ7Yg3WX29">
-                  <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSetExtensions" LastSymbolSource="Intel.RealSense.dll">
+                  <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSetExtensions" LastSymbolSource="Intel.Realsense.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="AsFrameSet" />
                   </p:NodeReference>
@@ -3660,7 +3657,7 @@
                   <Pin Id="FJN8OkZf2gWQEMG0hrkxJD" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1973,460,94,26" Id="FMUD1f7wDZgNeR6sGVRDGX">
-                  <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+                  <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="DisposeWith" />
                   </p:NodeReference>
@@ -3702,6 +3699,10 @@
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="ACyQcjCTYkKPBtb4zmTnQm" Name="Condition" Kind="InputPin" />
+                  <ControlPoint Id="ClTrr26gULwQYsq1ov1jKy" Bounds="2167,1106" Alignment="Bottom" />
+                  <ControlPoint Id="KpILTjgwEcOOHVSJ57rxrH" Bounds="2254,659" Alignment="Top" />
+                  <ControlPoint Id="Gb3X4qCtPZBOtmfjllaRrp" Bounds="2227,1106" Alignment="Bottom" />
+                  <ControlPoint Id="RoUQbGcDpQiQIDeVsneNUM" Bounds="2227,659" Alignment="Top" />
                   <Patch Id="Nw5fNrCjqNTL6BfhEPBYE5" ManuallySortedPins="true">
                     <Patch Id="NAItcVkUZqwPl0KWV1d53W" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="UvS2DohTP9VMbY8q8YPz7Z" Name="Then" ManuallySortedPins="true" />
@@ -3767,7 +3768,7 @@
                       <ControlPoint Id="GFzTsUI1FeYNphGHwEXdUG" Bounds="2172,939" Alignment="Top" />
                     </Node>
                     <Node Bounds="2009,1065,94,26" Id="Jxn9PxfcSsmM3nvsum1dPq">
-                      <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+                      <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="DisposeWith" />
                       </p:NodeReference>
@@ -3790,7 +3791,7 @@
                       </p:TypeAnnotation>
                     </Pad>
                     <Node Bounds="2006,732,67,26" Id="HVg8cSZlTLmMiDcIOFvox9">
-                      <p:NodeReference LastCategoryFullName="Intel.RealSense.Points" LastSymbolSource="Intel.RealSense.dll">
+                      <p:NodeReference LastCategoryFullName="Intel.RealSense.Points" LastSymbolSource="Intel.Realsense.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="VertexData" />
                       </p:NodeReference>
@@ -3820,7 +3821,6 @@
                         <Choice Kind="TypeFlag" Name="Boolean" />
                         <FullNameCategoryReference ID="Primitive" />
                       </p:TypeAnnotation>
-                      <p:ValueBoxSettings />
                     </Pad>
                     <Pad Id="I292RPS0ngJMuonBxAqJth" Bounds="2108,850">
                       <p:TypeAnnotation>
@@ -3831,13 +3831,8 @@
                           </TypeReference>
                         </p:TypeArguments>
                       </p:TypeAnnotation>
-                      <p:ValueBoxSettings />
                     </Pad>
                   </Patch>
-                  <ControlPoint Id="ClTrr26gULwQYsq1ov1jKy" Bounds="2167,1106" Alignment="Bottom" />
-                  <ControlPoint Id="KpILTjgwEcOOHVSJ57rxrH" Bounds="2254,659" Alignment="Top" />
-                  <ControlPoint Id="Gb3X4qCtPZBOtmfjllaRrp" Bounds="2227,1106" Alignment="Bottom" />
-                  <ControlPoint Id="RoUQbGcDpQiQIDeVsneNUM" Bounds="2227,659" Alignment="Top" />
                 </Node>
                 <Node Bounds="1903,296,74,26" Id="Hsg9l3lNU2jL3gzqHuKJqW">
                   <p:NodeReference LastCategoryFullName="Intel.RealSense.ProcessingBlock" LastSymbolSource="Intel.RealSense.dll">
@@ -3856,7 +3851,7 @@
                   <Pin Id="O1Hz4gHHk1sMqfVfSyQUP0" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1973,361,94,26" Id="U5z8vhAeMOAOcGr2wHFwK2">
-                  <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+                  <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="DisposeWith" />
                   </p:NodeReference>
@@ -3865,10 +3860,6 @@
                   <Pin Id="D2Kcoq9IeztL0NxqU5y8sR" Name="Output" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="TDJhi8xa5bXPpIHJ0sP482" Bounds="2166,1132" Alignment="Bottom" />
-              <ControlPoint Id="PF6NmbNURqDOxg0avOTO7l" Bounds="2256,279" Alignment="Top" />
-              <ControlPoint Id="QtOHtP7YTAzMkzT6VlxS4a" Bounds="2226,1132" Alignment="Bottom" />
-              <ControlPoint Id="IqHh3qOdkLaLc6sHj47dZQ" Bounds="2226,279" Alignment="Top" />
             </Node>
             <Link Id="ItKqURCRb7XM6TsKrzJpiT" Ids="OkFc1ICAoZ8P1AZLsSCwoq,AUMpAGBryAONt5LMo5HQYR" />
             <Link Id="FV5YOuPDaiLPSHXE69CVAQ" Ids="VTFl2bRGHjvL45d2NRw4Z6,BrbkxpH01jOMnjWxDMcgLn" />
@@ -3904,7 +3895,7 @@
             <Pin Id="J1oKQnibQjjMYDsguG05HP" Name="Enable" Kind="InputPin" Bounds="2247,879" />
             <Pin Id="QcNGOfjmaVwPAH3AYJMRQF" Name="FrameSet" Kind="InputPin" Bounds="2028,872" />
             <Node Bounds="1922,161,56,26" Id="DC7dxJxzRMKLkOYPkJjnBh">
-              <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSet" LastSymbolSource="Intel.RealSense.dll">
+              <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSet" LastSymbolSource="Intel.Realsense.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="AsFrame" />
               </p:NodeReference>
@@ -3913,7 +3904,7 @@
               <Pin Id="OV5sSVDl9ioNNdBSappaNv" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="1973,205,94,26" Id="THqJbGlcco8QAQr0TigCVy">
-              <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+              <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="DisposeWith" />
               </p:NodeReference>
@@ -3964,7 +3955,7 @@
           </p:NodeReference>
           <Patch Id="FWjgL4LztLRNrDHorOAGF0">
             <Node Bounds="1506,324,72,26" Id="EcX8hKl16kEPPSPH0drMre">
-              <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSet" LastSymbolSource="Intel.RealSense.dll">
+              <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSet" LastSymbolSource="Intel.Realsense.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="DepthFrame" />
               </p:NodeReference>
@@ -3985,7 +3976,7 @@
               <Pin Id="S6td4VqlEDlNYjzja7SBAn" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="1577,618,94,26" Id="CPxokFz3INjMPfeiLyw2xp">
-              <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+              <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="DisposeWith" />
               </p:NodeReference>
@@ -4124,6 +4115,9 @@
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
               <Pin Id="HJEcMsjR0mUQHw77h0Phzk" Name="Break" Kind="OutputPin" />
+              <ControlPoint Id="AMQy5lulDP9LzKLF9neHfD" Bounds="541,1140" Alignment="Top" />
+              <ControlPoint Id="CszcZ51OrO9O0GkNUSOaak" Bounds="612,1470" Alignment="Bottom" />
+              <ControlPoint Id="JyVm12W9RAHLT9ZWs7xiGj" Bounds="615,1140" Alignment="Top" />
               <Patch Id="NKsue6vETs9MQWWMnuHW53" ManuallySortedPins="true">
                 <Patch Id="F9gc3g6C6Y6L84xlGfZVrn" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="GwN3rwcHHedMXngxgWdTpO" Name="Update" ManuallySortedPins="true" />
@@ -4135,6 +4129,8 @@
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="K5eRjCf1ClDQbw2W5iJAaW" Name="Condition" Kind="InputPin" />
+                  <ControlPoint Id="TQslxUUT231LOm3YstfvT4" Bounds="612,1318" Alignment="Top" />
+                  <ControlPoint Id="S7CyTdUw473MwpWueoTuvR" Bounds="612,1442" Alignment="Bottom" />
                   <Patch Id="CUzZiXJlBTlOY9CypaEeDT" ManuallySortedPins="true">
                     <Patch Id="LD4Hv6hP6gALjYZRtnOZjP" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="V77DowaMUh5QbNQtAYqF76" Name="Then" ManuallySortedPins="true" />
@@ -4155,7 +4151,7 @@
                       <Pin Id="FC8vkM7nv6ELediD6dwtb3" Name="Result" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="610,1394,94,26" Id="T8pRoOlcKD5MLtUCW6DhDI">
-                      <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+                      <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="DisposeWith" />
                       </p:NodeReference>
@@ -4164,8 +4160,6 @@
                       <Pin Id="TaRo1A1JqmmPyS2Ic0ZXP3" Name="Output" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="TQslxUUT231LOm3YstfvT4" Bounds="612,1318" Alignment="Top" />
-                  <ControlPoint Id="S7CyTdUw473MwpWueoTuvR" Bounds="612,1442" Alignment="Bottom" />
                 </Node>
                 <Node Bounds="528,1173,65,19" Id="M3RKS3TYmwEN2lWH0j7acT">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
@@ -4227,12 +4221,9 @@
                   <Pin Id="F75UyFUfjKqLbKnrnDj4W8" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="AMQy5lulDP9LzKLF9neHfD" Bounds="541,1140" Alignment="Top" />
-              <ControlPoint Id="CszcZ51OrO9O0GkNUSOaak" Bounds="612,1470" Alignment="Bottom" />
-              <ControlPoint Id="JyVm12W9RAHLT9ZWs7xiGj" Bounds="615,1140" Alignment="Top" />
             </Node>
             <Node Bounds="563,1029,56,26" Id="RFLyJqJo1M7MRD2iV6np9F">
-              <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSet" LastSymbolSource="Intel.RealSense.dll">
+              <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSet" LastSymbolSource="Intel.Realsense.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="AsFrame" />
               </p:NodeReference>
@@ -4249,7 +4240,7 @@
               <Pin Id="IjQq1naE7WmMviDHPPLD6p" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="609,1490,88,26" Id="ApBuKCinS1ILIZfhwiIL24">
-              <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSetExtensions" LastSymbolSource="Intel.RealSense.dll">
+              <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSetExtensions" LastSymbolSource="Intel.Realsense.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="AsFrameSet" />
               </p:NodeReference>
@@ -4257,7 +4248,7 @@
               <Pin Id="CpfiWChQYAbLyBeeR8o9r8" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="609,1548,94,26" Id="V5sCnFnaD7tPfIIqepfvmS">
-              <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+              <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="DisposeWith" />
               </p:NodeReference>
@@ -4266,7 +4257,7 @@
               <Pin Id="AaCifbnECXCL82x8tD0UUr" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="614,1073,94,26" Id="CtnLeFIncyVP9PeSmST57t">
-              <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+              <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="DisposeWith" />
               </p:NodeReference>
@@ -4333,39 +4324,25 @@
           </p:Interfaces>
           <Patch Id="Nrns2rhmeLeLFDOACXvQBf">
             <Canvas Id="HTXSwGZk5fuP6HQOkeTEOv" CanvasType="Group">
-              <Pad Id="AmyexPx8HnpOIn2gSLrfHA" SlotId="Cr4XhdXyd5LMgxWmv9oUEu" Bounds="600,314">
-                <p:ValueBoxSettings />
-              </Pad>
-              <Pad Id="L9t6MRBIhx5Lgq8YHqRTHo" SlotId="LTE8KvGXoaROSdZsirF8Ed" Bounds="693,314">
-                <p:ValueBoxSettings />
-              </Pad>
-              <Pad Id="IotxTdni3vFNqy5WLadUbw" SlotId="Cbe71dZVXL2MGTkkdl3z8y" Bounds="935,312">
-                <p:ValueBoxSettings />
-              </Pad>
+              <Pad Id="AmyexPx8HnpOIn2gSLrfHA" SlotId="Cr4XhdXyd5LMgxWmv9oUEu" Bounds="600,314" />
+              <Pad Id="L9t6MRBIhx5Lgq8YHqRTHo" SlotId="LTE8KvGXoaROSdZsirF8Ed" Bounds="693,314" />
+              <Pad Id="IotxTdni3vFNqy5WLadUbw" SlotId="Cbe71dZVXL2MGTkkdl3z8y" Bounds="935,312" />
               <ControlPoint Id="TMJ7YE5csgvPMbXKy5nF2F" Bounds="935,282" />
               <ControlPoint Id="CTYPetEbKu4PfQJClgTcdb" Bounds="935,342" />
               <ControlPoint Id="O6gJenJ0JQ7LUStmhrOrcL" Bounds="693,284" />
               <ControlPoint Id="CVhWHHYIIELLNaBmZdKhtZ" Bounds="693,344" />
               <ControlPoint Id="K22XAbCg7ZULe3dMIU77Gn" Bounds="600,284" />
               <ControlPoint Id="LmDgVPFCit4Ovn5DiBSKlM" Bounds="600,344" />
-              <Pad Id="VhUa5PCg6LzNAmM0wXMwrK" SlotId="FDjY4dlyFQ2ONbyvZWK0dF" Bounds="1094,310">
-                <p:ValueBoxSettings />
-              </Pad>
+              <Pad Id="VhUa5PCg6LzNAmM0wXMwrK" SlotId="FDjY4dlyFQ2ONbyvZWK0dF" Bounds="1094,310" />
               <ControlPoint Id="A7FWBMAS7qHOI0fCka8yIu" Bounds="1094,280" />
               <ControlPoint Id="NAwAD0EhldvNApqgzDhhbW" Bounds="1094,340" />
-              <Pad Id="NLNzy4yrLy5OvKhUQbsBDH" SlotId="SW6UmcdbCBEPUCp3b4J8im" Bounds="1249,309">
-                <p:ValueBoxSettings />
-              </Pad>
+              <Pad Id="NLNzy4yrLy5OvKhUQbsBDH" SlotId="SW6UmcdbCBEPUCp3b4J8im" Bounds="1249,309" />
               <ControlPoint Id="P5FwH0KSTfuNOcZILYrs1E" Bounds="1249,279" />
               <ControlPoint Id="MyhOClVHc1RMG8UjvHs5bu" Bounds="1249,339" />
-              <Pad Id="TuxZPmyFv6FLRsnLGKRNHF" SlotId="L1ZR2EhJNwqMgv5UsUfT9V" Bounds="808,311">
-                <p:ValueBoxSettings />
-              </Pad>
+              <Pad Id="TuxZPmyFv6FLRsnLGKRNHF" SlotId="L1ZR2EhJNwqMgv5UsUfT9V" Bounds="808,311" />
               <ControlPoint Id="TXW2XxQhLSjNODb6snKvu8" Bounds="808,281" />
               <ControlPoint Id="DW1kx09ttvKL6vUmbvhPsb" Bounds="808,341" />
-              <Pad Id="T3OYgK1J2wFMyKHXcLAQgY" SlotId="TlFo5Wrg063P1M4869BHgo" Bounds="1385,307">
-                <p:ValueBoxSettings />
-              </Pad>
+              <Pad Id="T3OYgK1J2wFMyKHXcLAQgY" SlotId="TlFo5Wrg063P1M4869BHgo" Bounds="1385,307" />
               <ControlPoint Id="HA89pqKWpqML4klpHSo1am" Bounds="1385,337" />
               <ControlPoint Id="Q0VTsNzy7gUN6Sz1zqcECo" Bounds="1386,270" />
             </Canvas>
@@ -5496,7 +5473,7 @@
                 <ControlPoint Id="KFVJ1roTeKeMva1XImCnWG" Bounds="-1127,1617" />
                 <ControlPoint Id="QejnQks9YIePMr9KEpmMzh" Bounds="-1175,1909" />
                 <Node Bounds="-1251,1662,81,26" Id="RFI0Is6F7SJMhIV6sevOpi">
-                  <p:NodeReference LastCategoryFullName="Intel.RealSense.Sensor" LastSymbolSource="Intel.RealSense.dll">
+                  <p:NodeReference LastCategoryFullName="Intel.RealSense.Sensor" LastSymbolSource="Intel.Realsense.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="StreamProfiles" />
                   </p:NodeReference>
@@ -5723,6 +5700,8 @@
                   <Choice Kind="TypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
               </Pin>
+              <ControlPoint Id="HlT6CnpKzO8L1g1eg9jHTA" Bounds="2698,801" Alignment="Bottom" />
+              <ControlPoint Id="SPOzwVaKwzCPeu9pGKSLtc" Bounds="2782,265" Alignment="Top" />
               <Patch Id="HYxQnuv7xvDMXYA9OlXkdZ" ManuallySortedPins="true">
                 <Patch Id="J7xC9TrF2lZQdAY0bzNlzj" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="R1RtfkDu2QVLRQ2LtGYfb2" Name="Then" ManuallySortedPins="true" />
@@ -5773,11 +5752,13 @@
                       <Choice Kind="TypeFlag" Name="Boolean" />
                     </p:TypeAnnotation>
                   </Pin>
+                  <ControlPoint Id="PLWnw4OK7NjPIJpEDEtH8Q" Bounds="2839,699" Alignment="Bottom" />
+                  <ControlPoint Id="DWImtVI862INqJ5K4uRPyh" Bounds="2839,501" Alignment="Top" />
                   <Patch Id="TnfNzSa0ewtPHlDJiVGHXC" ManuallySortedPins="true">
                     <Patch Id="FvhEI5fACOHLrWtTZjmNSV" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="UUiqlOiY8vVPaV5U9LZFWP" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="2773,567,94,26" Id="N67PMvwLabMN3iNvFXKoRX">
-                      <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+                      <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="DisposeWith" />
                       </p:NodeReference>
@@ -5814,8 +5795,6 @@
                       <Pin Id="KsTAa7EhPbnNUtM5ylKD8R" Name="Output" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="PLWnw4OK7NjPIJpEDEtH8Q" Bounds="2839,699" Alignment="Bottom" />
-                  <ControlPoint Id="DWImtVI862INqJ5K4uRPyh" Bounds="2839,501" Alignment="Top" />
                 </Node>
                 <Node Bounds="2766,430,65,19" Id="TfpWnFnJkzPNYEkp4iQUOn">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
@@ -5837,11 +5816,13 @@
                       <Choice Kind="TypeFlag" Name="Boolean" />
                     </p:TypeAnnotation>
                   </Pin>
+                  <ControlPoint Id="DaPKILpTtpKPG5ozbKlOVt" Bounds="2636,705" Alignment="Bottom" />
+                  <ControlPoint Id="MlXvwc0Zzc5Lxpng7dSJVR" Bounds="2613,498" Alignment="Top" />
                   <Patch Id="PxhmG5dPMq6QGCP5K3VQUu" ManuallySortedPins="true">
                     <Patch Id="NDX9MXlIEvlM8Z2Lt4VZEq" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="KwHFEQ3AGuVQDz1Zhr1WED" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="2571,578,94,26" Id="Mw5I6TZBWiSNGrFFCjN3L3">
-                      <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.RealSense.dll">
+                      <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="DisposeWith" />
                       </p:NodeReference>
@@ -5878,8 +5859,6 @@
                       <Pin Id="Qh8CiWrC8xXOcOq1sTaUxE" Name="Output" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="DaPKILpTtpKPG5ozbKlOVt" Bounds="2636,705" Alignment="Bottom" />
-                  <ControlPoint Id="MlXvwc0Zzc5Lxpng7dSJVR" Bounds="2613,498" Alignment="Top" />
                 </Node>
                 <Node Bounds="2583,413,65,19" Id="OCaJdqleI7AQQUB7RBHUet">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
@@ -5901,8 +5880,6 @@
                   <Pin Id="DgQHYqw8OPILE7S6AjRAWS" Name="Output" Kind="StateOutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="HlT6CnpKzO8L1g1eg9jHTA" Bounds="2698,801" Alignment="Bottom" />
-              <ControlPoint Id="SPOzwVaKwzCPeu9pGKSLtc" Bounds="2782,265" Alignment="Top" />
             </Node>
             <ControlPoint Id="HSiv2VW4LAZMqEaOBXm3Xz" Bounds="2658,87" />
             <Link Id="Scn8EuZfBSTLnbxusSpXs7" Ids="HSiv2VW4LAZMqEaOBXm3Xz,UILhkIIjbxcQRAGsQJsKwi" />
@@ -8002,7 +7979,7 @@
               <ControlPoint Id="FHXsl9YIwPBNQy67kg6bcL" Bounds="703,743" />
               <Link Id="St81P6y4c7nL8abw2jbhsu" Ids="FHXsl9YIwPBNQy67kg6bcL,JAppJwWugQ5P9ySffcVpdt" IsHidden="true" />
               <Node Bounds="702,686,106,26" Id="KPt5TRBhwecLUAZphfrMgG">
-                <p:NodeReference LastCategoryFullName="Intel.RealSense.AutoExposureROI" LastSymbolSource="Intel.RealSense.dll">
+                <p:NodeReference LastCategoryFullName="Intel.RealSense.AutoExposureROI" LastSymbolSource="Intel.Realsense.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="SetRegionOfInterest" />
                 </p:NodeReference>
@@ -8019,7 +7996,7 @@
                 <Pin Id="BWFFxpxUqCOOM0cEElHRdk" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="591,629,116,19" Id="BbxrybZObdSPIjNbBCHTdv">
-                <p:NodeReference LastCategoryFullName="Intel.RealSense.Sensor" LastSymbolSource="Intel.RealSense.dll">
+                <p:NodeReference LastCategoryFullName="Intel.RealSense.Sensor" LastSymbolSource="Intel.Realsense.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="AutoExposureSettings" />
                 </p:NodeReference>
@@ -8054,7 +8031,7 @@
               <ControlPoint Id="SVxmzHWb8ctMZpb4rhcz7Z" Bounds="1132,754" />
               <Link Id="DUw2SxVqiecMoReKRtHGmS" Ids="SVxmzHWb8ctMZpb4rhcz7Z,JWgGDaP93s6MlRSYn6CZsk" IsHidden="true" />
               <Node Bounds="916,629,116,26" Id="Sk25JTcCsGaNUAfrS9JFFS">
-                <p:NodeReference LastCategoryFullName="Intel.RealSense.Sensor" LastSymbolSource="Intel.RealSense.dll">
+                <p:NodeReference LastCategoryFullName="Intel.RealSense.Sensor" LastSymbolSource="Intel.Realsense.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="AutoExposureSettings" />
                 </p:NodeReference>
@@ -10646,12 +10623,8 @@
         </p:NodeReference>
         <Patch Id="RANBrbV6di4NPLxV4sgkec">
           <Canvas Id="DFPE2JM3yAVONtsxCxbkoH" CanvasType="Group">
-            <Pad Id="PIfLQATJdvLMUBA5shnk5w" SlotId="IaKubEoLXCGLxrS7xATGXl" Bounds="661,315">
-              <p:ValueBoxSettings />
-            </Pad>
-            <Pad Id="SfX5wROuxTYNBHyt5lFNLA" SlotId="DNIkVanMWw6PI4swkjI0cd" Bounds="564,316">
-              <p:ValueBoxSettings />
-            </Pad>
+            <Pad Id="PIfLQATJdvLMUBA5shnk5w" SlotId="IaKubEoLXCGLxrS7xATGXl" Bounds="661,315" />
+            <Pad Id="SfX5wROuxTYNBHyt5lFNLA" SlotId="DNIkVanMWw6PI4swkjI0cd" Bounds="564,316" />
             <ControlPoint Id="IquCaIpYwqFOCMhQaaCQxA" Bounds="564,286" />
             <ControlPoint Id="SAkRWzmWZ8NPUDOkJjUjKb" Bounds="564,346" />
             <ControlPoint Id="E47Bcyb03lpQI7KJFEmtp2" Bounds="661,285" />
@@ -10710,18 +10683,14 @@
         </ProcessDefinition>
       </Patch>
     </Node>
-    <Pin Id="JqogqEch84PNKSDXYPTsFt" Name="Input" Kind="InputPin" Bounds="672,688" />
-    <Pin Id="Rs6xV2c2c49M7m4BB7Ddx7" Name="ROI" Kind="InputPin" Bounds="1063,720" />
-    <Pin Id="HmoPq9W3FE0NorV21doFaa" Name="Depth Scale" Kind="OutputPin" Bounds="677,817" />
-    <Pin Id="N5OQ0GbjR6cMEqPIFpqQkp" Name="ROI" Kind="OutputPin" Bounds="928,874" />
   </Patch>
   <PlatformDependency Id="GgZ04bRydoKLCEJ0EJoZ9U" Location="System" />
   <PlatformDependency Id="MEi00LwOVkJQJln6BsocKF" Location="System.Runtime" />
   <PlatformDependency Id="St20cYQsuDvMrEwLnbYFXM" Location="System.Runtime.InteropServices" />
-  <NugetDependency Id="MBwkEfA6Y4FNTTjLfxAsYw" Location="VL.Core" Version="2019.1.0-0411-gf6daa4918b" />
+  <NugetDependency Id="MBwkEfA6Y4FNTTjLfxAsYw" Location="VL.Core" Version="2020.1.0" />
   <PlatformDependency Id="CP2SRXNk7y3M1h6x3HA9bf" Location="../../vvvv-private/vvvv50/VVVV.Gamma/src/bin/Debug/net472/System.Reactive.dll" />
   <PlatformDependency Id="D4Vj6IfleIZOCATx6fd6iF" Location="./lib/net461/VL.Devices.RealSense.dll" />
   <NugetDependency Id="Nc3urxtBLbsMvto17eNjDc" Location="VL.OpenCV" Version="0.2.102-alpha" />
-  <NugetDependency Id="Q8TeXsbAfT6L1JoI1oADAs" Location="VL.Skia" Version="2019.1.0-0411-gf6daa4918b" />
+  <NugetDependency Id="Q8TeXsbAfT6L1JoI1oADAs" Location="VL.Skia" Version="2020.1.0" />
   <PlatformDependency Id="OjarwE48LezNbmTLvA3HOK" Location="./lib/net461/Intel.Realsense.dll" />
 </Document>
