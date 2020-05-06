@@ -5915,7 +5915,7 @@
     ************************ DecimationFilter ************************
 
 -->
-          <Node Name="DecimationFilter" Bounds="527,343" Id="T0piYZGF3NyNHVRY8lNfHx">
+          <Node Name="DecimationFilter" Bounds="527,343" Id="T0piYZGF3NyNHVRY8lNfHx" Summary="Effectively reduces the depth scene complexity." Remarks="The image size is scaled down proportionally in both dimensions to preserve the aspect ratio. Magnitude: 2-8.">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
@@ -6117,7 +6117,7 @@
     ************************ HoleFillingFilter ************************
 
 -->
-          <Node Name="HoleFillingFilter" Bounds="527,385" Id="R7YFKUSDFn6MNXFYTe05SZ">
+          <Node Name="HoleFillingFilter" Bounds="527,385" Id="R7YFKUSDFn6MNXFYTe05SZ" Summary="The filter implements several methods to rectify missing data in the resulting image." Remarks="Modes: &#xD;&#xA;0 - Use the value from the left neighbor pixel to fill the hole&#x9;&#xD;&#xA;1 - Use the value from the neighboring pixel which is furthest away from the sensor&#x9;&#xD;&#xA;2 - Use the value from the neighboring pixel closest to the sensor">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
