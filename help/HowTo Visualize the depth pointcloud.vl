@@ -196,7 +196,7 @@
               <p:stepsize p:Type="Single">0.001</p:stepsize>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="259,685,145,19" Id="KqQu9Wvbg6fOay5o4ZBGWB">
+          <Node Bounds="239,682,165,19" Id="KqQu9Wvbg6fOay5o4ZBGWB">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -205,6 +205,11 @@
             <Pin Id="JTXrhzm5Ug8MISAau5o3d2" Name="Bounds" Kind="InputPin" DefaultValue="1147, 40, 747, 613">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="VwwJoy3qnqlNNjioBt0tHa" Name="Bound to Document" Kind="InputPin" DefaultValue="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="DGfkYPw0TB2OnHzHQmszdy" Name="Input" Kind="InputPin" />
@@ -222,12 +227,12 @@
             <Pin Id="TinwAJ9tD9qPwFRWy3tHnu" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="RW97FBdLCEtNwYlhNXXFsr" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Node Bounds="300,346,66,19" Id="OrGEPK2q4gcL6s1AfoTLJy">
+          <Node Bounds="299,346,66,19" Id="OrGEPK2q4gcL6s1AfoTLJy">
             <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PointCloud" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="Fa2ZwfVWdCVLeEUPchuQ9f" Name="Input" Kind="InputPin" />
             <Pin Id="CPoYAsRPEpyO7wmu5A7e4t" Name="Enable" Kind="InputPin" />
             <Pin Id="B7ENe7t764yP3XdeoRPniA" Name="Output" Kind="OutputPin" />
@@ -288,7 +293,7 @@
             </Pin>
             <Pin Id="HFagFZC6RfNN5Sp3ncSGHO" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="301,175,145,19" Id="Qqb0vd0geSWNCTV551UdPM">
+          <Node Bounds="299,175,145,19" Id="Qqb0vd0geSWNCTV551UdPM">
             <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RealSense" />
@@ -305,18 +310,17 @@
             <Pin Id="VZj6j5urlvsLHVhbth7SaM" Name="Profile" Kind="OutputPin" />
             <Pin Id="POn3oC6MUB8MKAQS9aBxm3" Name="Error" Kind="OutputPin" />
           </Node>
-          <Node Bounds="301,263,45,19" Id="FvTVoADX57ePNrQglKnxta">
+          <Node Bounds="299,263,91,19" Id="FvTVoADX57ePNrQglKnxta">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DecimationFilter" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="CI3vNBlP2MNQcoG40lyR0x" Name="Input" Kind="InputPin" />
             <Pin Id="VQaEAdm8iHnMioIT7VJ8dx" Name="Magnitude" Kind="InputPin" />
             <Pin Id="BS1isQamAP7PtMFn6q8E5o" Name="Enable" Kind="InputPin" />
             <Pin Id="JZkKkHbGSy8LYPAUOFjSQO" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="FppY6qYeuXyOVzThbPFcQH" Comment="Magnitude" Bounds="346,237,35,15" ShowValueBox="true" isIOBox="true" Value="8">
+          <Pad Id="FppY6qYeuXyOVzThbPFcQH" Comment="Magnitude" Bounds="344,237,35,15" ShowValueBox="true" isIOBox="true" Value="8">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>

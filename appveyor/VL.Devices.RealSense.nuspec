@@ -10,12 +10,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Set of nodes to use Intel RealSense devices in VL</summary>
     <description>Intel RealSense for VL</description>
-    <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
+    <copyright>Copyright © 2020 by vvvv group. All rights reserved.</copyright>
     <tags>VL, RealSense, camera, video, depth, tracking</tags>
 	<license type="expression">LGPL-3.0-only</license>
-    <dependencies>
-		<dependency id="VL.OpenCV" version="[0.2.102-alpha]" />
-    </dependencies>
   </metadata>
   <files>
     <file src="..\lib\net461\Intel.Realsense.dll" target="lib\net461\" exclude="" />

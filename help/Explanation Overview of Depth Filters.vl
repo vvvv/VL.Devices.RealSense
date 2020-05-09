@@ -15,8 +15,8 @@
       </p:NodeReference>
       <Patch Id="HMZ663BKFw2NO7S9qXmXKJ">
         <Canvas Id="Vlb536SjsKhNIu5sD2yogp" CanvasType="Group">
-          <Pad Id="Mf9OyxCEUz8NOdVWadeuFv" Bounds="-594,114,20,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="628,174,145,19" Id="Kw0y6WgdBi3NwDAkkwMBjS">
+          <Pad Id="Mf9OyxCEUz8NOdVWadeuFv" Bounds="-594,9,20,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="628,159,145,19" Id="Kw0y6WgdBi3NwDAkkwMBjS">
             <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RealSense" />
@@ -33,12 +33,12 @@
             <Pin Id="I3eqOFtsD9rOL2ZjdFWnXp" Name="Profile" Kind="OutputPin" />
             <Pin Id="NV9lYrZ1eofN5Ta4kkflvS" Name="Error" Kind="OutputPin" />
           </Node>
-          <Pad Id="R5TEof5Tn8JNb0o6hwA1Sm" Comment="Enable" Bounds="769,136,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="R5TEof5Tn8JNb0o6hwA1Sm" Comment="Enable" Bounds="769,121,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1174,234,145,19" Id="St8UkaiVdTGOVBRX57WAy1">
+          <Node Bounds="1174,129,145,19" Id="St8UkaiVdTGOVBRX57WAy1">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.Settings" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SetOption" />
@@ -57,23 +57,23 @@
             <Pin Id="Ne6VFF5vLksNuSog4q7Aq0" Name="Read Only" Kind="OutputPin" />
             <Pin Id="N3SJuDP2FmmNRWqBPxZFQM" Name="Is Supported" Kind="OutputPin" />
           </Node>
-          <Pad Id="Vz1PzGqarqnNaIqEjvzWN7" Comment="Option" Bounds="1245,176,167,15" ShowValueBox="true" isIOBox="true" Value="LaserPower">
+          <Pad Id="Vz1PzGqarqnNaIqEjvzWN7" Comment="Option" Bounds="1245,71,167,15" ShowValueBox="true" isIOBox="true" Value="LaserPower">
             <p:TypeAnnotation LastCategoryFullName="Intel.RealSense" LastSymbolSource="Intel.RealSense.dll">
               <Choice Kind="TypeFlag" Name="Option" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="O1eEFZ5MCxMMxGZ1WURJTQ" Comment="Description" Bounds="1176,279,186,41" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="MF5E46edOR6Laq3Bh4pon5" Comment="Stream" Bounds="1209,155,79,15" ShowValueBox="true" isIOBox="true" Value="Depth">
+          <Pad Id="O1eEFZ5MCxMMxGZ1WURJTQ" Comment="Description" Bounds="1176,174,186,41" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MF5E46edOR6Laq3Bh4pon5" Comment="Stream" Bounds="1209,50,79,15" ShowValueBox="true" isIOBox="true" Value="Depth">
             <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="TypeFlag" Name="Stream" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Ip0KCRcOEKfQGksk3zE1zb" Comment="" Bounds="1280,204,35,15" ShowValueBox="true" isIOBox="true" Value="150">
+          <Pad Id="Ip0KCRcOEKfQGksk3zE1zb" Comment="" Bounds="1280,99,35,15" ShowValueBox="true" isIOBox="true" Value="150">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="G5yzA9R2pekM7jwdSDqlAw" Comment="Apply" Bounds="1340,200,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="G5yzA9R2pekM7jwdSDqlAw" Comment="Apply" Bounds="1340,95,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -81,7 +81,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="1178,346,105,19" Id="NFzJ7zC58VOQQwXTvSb23E">
+          <Node Bounds="1178,241,105,19" Id="NFzJ7zC58VOQQwXTvSb23E">
             <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GetIntrinsics" />
@@ -95,14 +95,14 @@
             <Pin Id="O3B53yEkLUoMyEUWzyghKo" Name="Distortion Model" Kind="OutputPin" />
             <Pin Id="GJcegdh4RiYMqXRDPOByND" Name="Distortion coefficients" Kind="OutputPin" />
           </Node>
-          <Pad Id="F0470VC7KMKNncWcBzWTGZ" Comment="Stream" Bounds="1280,326,79,15" ShowValueBox="true" isIOBox="true" Value="Color">
+          <Pad Id="F0470VC7KMKNncWcBzWTGZ" Comment="Stream" Bounds="1280,221,79,15" ShowValueBox="true" isIOBox="true" Value="Color">
             <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="TypeFlag" Name="Stream" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="K5orf7wahsJMPhUWOWGwYK" Comment="FOV" Bounds="1200,408,35,28" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="RlV9f5pCRJ2O50mvatqCYb" Comment="Error" Bounds="770,216,61,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="457,276,91,19" Id="QmRSXoMP97JOjYn0SrUJlK">
+          <Pad Id="K5orf7wahsJMPhUWOWGwYK" Comment="FOV" Bounds="1200,303,35,28" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RlV9f5pCRJ2O50mvatqCYb" Comment="Error" Bounds="770,201,61,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="80,229,91,19" Id="QmRSXoMP97JOjYn0SrUJlK">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DecimationFilter" />
@@ -112,18 +112,7 @@
             <Pin Id="SNQg8XJ5cUaPi1O9JyClTi" Name="Enable" Kind="InputPin" />
             <Pin Id="U0yQA0LNONjOpMurok7li3" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="457,305,45,19" Id="SRL8i7agdMuPNlMj8jgXBF">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="Category" Name="DepthFilters" />
-              <Choice Kind="ProcessAppFlag" Name="Align" />
-            </p:NodeReference>
-            <Pin Id="GJg6wXXDwQyMoXTcAmGAcv" Name="Input" Kind="InputPin" />
-            <Pin Id="CIPSETYj5NyOjfOxgG694i" Name="Align To" Kind="InputPin" />
-            <Pin Id="HRtTBNzPiYdLB6exRZcAHM" Name="Enable" Kind="InputPin" />
-            <Pin Id="BbX2lFivWwHPP9BqFq7khz" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="457,427,87,19" Id="KRRMyjCBummMl8SnIQRqtK">
+          <Node Bounds="80,393,87,19" Id="KRRMyjCBummMl8SnIQRqtK">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="DepthFilters" />
@@ -134,7 +123,7 @@
             <Pin Id="VwMgE50491gMiICc0AH1os" Name="Enable" Kind="InputPin" />
             <Pin Id="NhXFHs63OSFOOKaG8bHFaW" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="457,334,105,19" Id="EiZujRUJIbKQaOunqM6l1H">
+          <Node Bounds="80,272,105,19" Id="EiZujRUJIbKQaOunqM6l1H">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="DepthFilters" />
@@ -144,10 +133,11 @@
             <Pin Id="RYWw51Z3k2uNAjR72bZ6ac" Name="Magnitude" Kind="InputPin" />
             <Pin Id="JhVXU2pCcjbMvNvunaaoDF" Name="Smooth Alpha" Kind="InputPin" />
             <Pin Id="MBfQcrXqOR2QUMqeehSdkl" Name="Smooth Delta" Kind="InputPin" />
+            <Pin Id="AgBE0DChy01L6bVc4OFXi6" Name="Hole Filling" Kind="InputPin" />
             <Pin Id="Vqrwt03WW3kNWbwV9LfJ6k" Name="Enable" Kind="InputPin" />
             <Pin Id="LfqlW1fL1KIMK8h4Cnhwtq" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="457,365,105,19" Id="HgMvmvtA3jJOQxF1hKJD6V">
+          <Node Bounds="80,318,105,19" Id="HgMvmvtA3jJOQxF1hKJD6V">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="DepthFilters" />
@@ -159,7 +149,7 @@
             <Pin Id="HtcMK80Ik4iQE7evcq1t7y" Name="Enable" Kind="InputPin" />
             <Pin Id="JMkbIosob9cPPqrmZYNyv1" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="457,396,105,19" Id="QyP0v6FkJSSMY5Dn8fTsSY">
+          <Node Bounds="80,355,105,19" Id="QyP0v6FkJSSMY5Dn8fTsSY">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="DepthFilters" />
@@ -171,7 +161,7 @@
             <Pin Id="VHccCFN0ZLuPXcSUi8WdHt" Name="Enable" Kind="InputPin" />
             <Pin Id="CKcfScdPw8hMJDqn8Yeq02" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="OxcKj7NSpMbMVwYBdOdxP1" Bounds="68,279,313,40" ShowValueBox="true" isIOBox="true" Value="post-processing filters to enhance the quality of depth data and reduce noise levels.">
+          <Pad Id="OxcKj7NSpMbMVwYBdOdxP1" Bounds="68,174,313,40" ShowValueBox="true" isIOBox="true" Value="post-processing filters to enhance the quality of depth data and reduce noise levels.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -180,7 +170,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LXxjC3UU1LKQC1Sf1N8U61" Bounds="68,347,322,181" ShowValueBox="true" isIOBox="true" Value="There are no software-imposed constrains that mandate the order in which the filters shall be applied. At the same time the recommended scheme [..] is elaborated below:&#xD;&#xA;&#xD;&#xA;Depth Frame &gt;&gt; Decimation Filter &gt;&gt; Depth2Disparity Transform** -&gt; Spatial Filter &gt;&gt; Temporal Filter &gt;&gt; Disparity2Depth Transform** &gt;&gt; Hole Filling Filter &gt;&gt; Filtered Depth. ">
+          <Pad Id="LXxjC3UU1LKQC1Sf1N8U61" Bounds="67,495,322,181" ShowValueBox="true" isIOBox="true" Value="There are no software-imposed constrains that mandate the order in which the filters shall be applied. At the same time the recommended scheme [..] is elaborated below:&#xD;&#xA;&#xD;&#xA;Depth Frame &gt;&gt; Decimation Filter &gt;&gt; Depth2Disparity Transform** -&gt; Spatial Filter &gt;&gt; Temporal Filter &gt;&gt; Disparity2Depth Transform** &gt;&gt; Hole Filling Filter &gt;&gt; Filtered Depth. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -189,7 +179,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Sj0xbSAJzPoP9oAZDEZ9zr" Bounds="68,237,184,31" ShowValueBox="true" isIOBox="true" Value="Depth Filters are:">
+          <Pad Id="Sj0xbSAJzPoP9oAZDEZ9zr" Bounds="68,132,184,31" ShowValueBox="true" isIOBox="true" Value="Depth Filters are:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -198,7 +188,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="628,276,91,19" Id="QptAc6UeIMtO6jXcQBMbku">
+          <Node Bounds="628,261,91,19" Id="QptAc6UeIMtO6jXcQBMbku">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DecimationFilter" />
@@ -208,12 +198,12 @@
             <Pin Id="GU7sQAwlRdkNjXKHiBV7r5" Name="Enable" Kind="InputPin" />
             <Pin Id="S9lJFujzNCHMl9gm7sIsNU" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="NoW05lU7wvbOh9n4EwaBZW" Comment="Magnitude" Bounds="673,252,35,15" ShowValueBox="true" isIOBox="true" Value="8">
+          <Pad Id="NoW05lU7wvbOh9n4EwaBZW" Comment="Magnitude" Bounds="673,237,35,15" ShowValueBox="true" isIOBox="true" Value="8">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="628,326,105,19" Id="EVVmy93yuT8Lsbe1QIUiFD">
+          <Node Bounds="628,311,105,19" Id="EVVmy93yuT8Lsbe1QIUiFD">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="DepthFilters" />
@@ -223,10 +213,11 @@
             <Pin Id="KC4ZszeDJA5MX2ettbRYLg" Name="Magnitude" Kind="InputPin" />
             <Pin Id="G2wuUo5jZFwOtkHRqx7yMS" Name="Smooth Alpha" Kind="InputPin" />
             <Pin Id="NEiv95hX1azLFsi4NhCoIm" Name="Smooth Delta" Kind="InputPin" />
+            <Pin Id="NWfXZnvyhSsL8kekDg3mdj" Name="Hole Filling" Kind="InputPin" />
             <Pin Id="L3L9YtwTr7LPxUVVoOO2gs" Name="Enable" Kind="InputPin" />
             <Pin Id="SMWgJk9FRTDQJORvB6n5iM" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="628,374,105,19" Id="AUw6wg8vX4TLy6YW3i9mFX">
+          <Node Bounds="628,359,105,19" Id="AUw6wg8vX4TLy6YW3i9mFX">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="DepthFilters" />
@@ -238,7 +229,7 @@
             <Pin Id="CdTGEZYVjxqPtGedqkXnEO" Name="Enable" Kind="InputPin" />
             <Pin Id="OnD4HCDrXbFME10xFj07PP" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="628,422,87,19" Id="Cbk6e2FtT7MP7FIfuj0vYP">
+          <Node Bounds="628,407,87,19" Id="Cbk6e2FtT7MP7FIfuj0vYP">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="DepthFilters" />
@@ -249,7 +240,7 @@
             <Pin Id="PGQidotBnXQMvIwQM7zNK1" Name="Enable" Kind="InputPin" />
             <Pin Id="A3DLx76Q9w5OaeIzoi5pAB" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="628,464,115,19" Id="Jrq4klvqjPTLpVSAz5FDJK">
+          <Node Bounds="628,449,115,19" Id="Jrq4klvqjPTLpVSAz5FDJK">
             <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ColorizedDepthImage" />
@@ -259,7 +250,7 @@
             <Pin Id="Q7xxIwTRZLYPycn5IptYCW" Name="Color Scheme" Kind="InputPin" />
             <Pin Id="S7PzBhB6JiFNeFLlekpRrR" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="628,501,67,26" Id="IXVVq9tx80fQPwDYIm4jBM">
+          <Node Bounds="628,486,67,26" Id="IXVVq9tx80fQPwDYIm4jBM">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FromImage" />
@@ -271,7 +262,7 @@
             <Pin Id="TVdTz8GtO3MPNhnFft0m2g" Name="Discard Higher Bits" Kind="InputPin" />
             <Pin Id="Q0PGUzYefnmMIuaMloOiJY" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="627,656,125,19" Id="PY72PqcZOKlNRzIysgWqfK">
+          <Node Bounds="627,641,125,19" Id="PY72PqcZOKlNRzIysgWqfK">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawImage" />
@@ -286,7 +277,7 @@
             <Pin Id="RGs5PH7PygnMmWBE0YbxHp" Name="Output" Kind="OutputPin" />
             <Pin Id="DlpeBePHHH9N8zhI38o8mz" Name="Actual Bounds" Kind="OutputPin" />
           </Node>
-          <Node Bounds="683,751,165,19" Id="DesfrmVEkUtPcbx7GZWLq3">
+          <Node Bounds="683,736,165,19" Id="DesfrmVEkUtPcbx7GZWLq3">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -312,7 +303,7 @@
             <Pin Id="Ty6oa5XYTciL64MMreJn5o" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="KwfI22qiNTuO7hWzIB3LP9" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Pad Id="VeSCfRudVJwOrIbcAdlhM2" Bounds="70,542,95,19" ShowValueBox="true" isIOBox="true" Value="For more info:">
+          <Pad Id="VeSCfRudVJwOrIbcAdlhM2" Bounds="69,690,95,19" ShowValueBox="true" isIOBox="true" Value="For more info:">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -321,7 +312,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="F70IuWIEBhmNmq48kMbids" Bounds="74,569,316,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/IntelRealSense/librealsense/blob/master/doc/post-processing-filters.md">
+          <Pad Id="F70IuWIEBhmNmq48kMbids" Bounds="73,717,316,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/IntelRealSense/librealsense/blob/master/doc/post-processing-filters.md">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -330,7 +321,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="779,462,71,19" Id="LY9aaegg7wCLFHKgDHIuOU">
+          <Node Bounds="779,447,71,19" Id="LY9aaegg7wCLFHKgDHIuOU">
             <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DepthImage" />
@@ -338,7 +329,7 @@
             <Pin Id="P3SlH0B9s8hP7SQOhKJmuD" Name="Input" Kind="InputPin" />
             <Pin Id="Arq2F3DajpINnAV7Ezm9Ty" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="779,497,67,26" Id="TSt6hSPLF4SQRLX5yu4lr3">
+          <Node Bounds="779,482,67,26" Id="TSt6hSPLF4SQRLX5yu4lr3">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FromImage" />
@@ -350,7 +341,7 @@
             <Pin Id="TZ5fJdgy7gFQUK9otleKtK" Name="Discard Higher Bits" Kind="InputPin" />
             <Pin Id="Jx1hLUrrf0aPwKEWI9lfOW" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="781,654,125,19" Id="RhVXWI8y6dwPsx1KJQhZYD">
+          <Node Bounds="781,639,125,19" Id="RhVXWI8y6dwPsx1KJQhZYD">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawImage" />
@@ -365,7 +356,7 @@
             <Pin Id="G80wT2MCi1yO9tvFdbpIwC" Name="Output" Kind="OutputPin" />
             <Pin Id="QI6knTbb1h7Qb5wPp6GCe2" Name="Actual Bounds" Kind="OutputPin" />
           </Node>
-          <Node Bounds="723,705,44,19" Id="Ru8ZLAbsy1bMBzDB3Km8JY">
+          <Node Bounds="723,690,44,19" Id="Ru8ZLAbsy1bMBzDB3Km8JY">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Group" />
@@ -374,20 +365,88 @@
             <Pin Id="FUHgFM0dnKqPmV6Rgixib1" Name="Input 2" Kind="InputPin" />
             <Pin Id="LO7fRGERBnbM8l55Wr4IwR" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="JlZgtQrvMjpOWSZyDvhFwu" Comment="Position" Bounds="649,573,35,28" ShowValueBox="true" isIOBox="true" Value="-0.7, 0">
+          <Pad Id="JlZgtQrvMjpOWSZyDvhFwu" Comment="Position" Bounds="649,558,35,28" ShowValueBox="true" isIOBox="true" Value="-0.7, 0">
             <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="U4iFthw0KQ7LiEXaziVp4T" Comment="Position" Bounds="802,569,35,28" ShowValueBox="true" isIOBox="true" Value="0.7, 0">
+          <Pad Id="U4iFthw0KQ7LiEXaziVp4T" Comment="Position" Bounds="802,554,35,28" ShowValueBox="true" isIOBox="true" Value="0.7, 0">
             <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="LqBzK8MfXTLNSh4Zgmfl9m" Comment="Size" Bounds="692,609,35,28" ShowValueBox="true" isIOBox="true" Value="0.75, 0.75">
+          <Pad Id="LqBzK8MfXTLNSh4Zgmfl9m" Comment="Size" Bounds="692,594,35,28" ShowValueBox="true" isIOBox="true" Value="0.75, 0.75">
             <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="L3BPObO1sLRLrOWo2KW96R" Comment="Enable" Bounds="760,364,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="HbSj9gNl2lYME3ZaLdTN7J" Bounds="800,381,146,19" ShowValueBox="true" isIOBox="true" Value="&lt; Try to switch On/Off">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="N0maZB9izjdMPprtpFZo9T" Bounds="70,468,144,19" ShowValueBox="true" isIOBox="true" Value="From the Inte's docs:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VvdwHPocqEjP0I53zvYRKo" Bounds="211,234,209,37" ShowValueBox="true" isIOBox="true" Value="- Reduces the point's count by scaling down the deph image.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FL4MSfLAbrmOYZJTq4f7Xr" Bounds="211,276,192,39" ShowValueBox="true" isIOBox="true" Value="- Enhances the smoothness of the reconstructed data">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JIm32cBfXeNOGZlIMTryqI" Bounds="211,322,241,20" ShowValueBox="true" isIOBox="true" Value="- Improves the depth data persistency">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RkLvymrl9WwMFDrDny3CaT" Bounds="211,361,241,20" ShowValueBox="true" isIOBox="true" Value="- Depth cut-off">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JDKc8rSxTX1OVj8ZruFusf" Bounds="211,401,130,19" ShowValueBox="true" isIOBox="true" Value="- Fills the holes">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="DFlF1wMJScHMryuPZ7qpLF" Name="Create" />
@@ -423,6 +482,7 @@
         <Link Id="KxfSpgfvo5nP3DypQ68Wbh" Ids="U4iFthw0KQ7LiEXaziVp4T,AFTSLew70mbNxvjRn6NPId" />
         <Link Id="Iw9szzADWjtOQFkNZcQUWY" Ids="LqBzK8MfXTLNSh4Zgmfl9m,UnYQFEe6oP6P7mHJqINI8P" />
         <Link Id="HCpghbmhSLcOmAI8Q3paiR" Ids="LqBzK8MfXTLNSh4Zgmfl9m,McYWql0ESUlMvwVjOm5Aw1" />
+        <Link Id="MipPaSPTszlOnD1JXMqh8I" Ids="L3BPObO1sLRLrOWo2KW96R,PGQidotBnXQMvIwQM7zNK1" />
       </Patch>
     </Node>
   </Patch>
