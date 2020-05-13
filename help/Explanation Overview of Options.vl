@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="F9gDoWk2zp4P3psjNpf69q" LanguageVersion="2020.1.1.107" Version="0.128">
+  <NugetDependency Id="SPARBCxl9pELQXaVXzEMMW" Location="VL.CoreLib" Version="2020.1.1-0104-gfc43b7deff" />
+  <Patch Id="I34B5vZdUexM4xpGgWMyGT">
+    <Canvas Id="E7jI6aAm7iON9pLSVguMYU" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="F6HgFp2jdKHOdJ0KZnBVwx">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="HMZ663BKFw2NO7S9qXmXKJ">
+        <Canvas Id="Vlb536SjsKhNIu5sD2yogp" CanvasType="Group">
+          <Pad Id="Mf9OyxCEUz8NOdVWadeuFv" Bounds="-598,207,20,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="I4lJOrXmYMfLjE7X21V30B" Comment="Device" Bounds="368,120,203,15" ShowValueBox="true" isIOBox="true" Value="Intel RealSense D435I: 843112074228">
+            <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="TypeFlag" Name="RealSenseDevice" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="366,422,216,19" Id="Kw0y6WgdBi3NwDAkkwMBjS">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RealSense" />
+            </p:NodeReference>
+            <Pin Id="LRkyffoNe9WPFynKYSvFCi" Name="Device" Kind="InputPin" />
+            <Pin Id="ODWN35IzkwLPNZDlH3U9Sh" Name="Color Resolution" Kind="InputPin" />
+            <Pin Id="E3COk9TKOPtMlbZIKi1nAp" Name="Depth Resolution" Kind="InputPin" />
+            <Pin Id="AOSw5GFKJwENilZYF2u5Ed" Name="Options" Kind="InputPin" />
+            <Pin Id="VknHPK4DdOMNfoan6Fas4c" Name="Enabled" Kind="InputPin" />
+            <Pin Id="PjywjQRmYVtMti609Mshwm" Name="Output" Kind="OutputPin" />
+            <Pin Id="I3eqOFtsD9rOL2ZjdFWnXp" Name="Profile" Kind="OutputPin" />
+            <Pin Id="NV9lYrZ1eofN5Ta4kkflvS" Name="Error" Kind="OutputPin" />
+          </Node>
+          <Pad Id="R5TEof5Tn8JNb0o6hwA1Sm" Comment="Enable" Bounds="579,371,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="1173,417,61,19" Id="St8UkaiVdTGOVBRX57WAy1">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SetOption" />
+            </p:NodeReference>
+            <Pin Id="CrHezKb8xI9Mj4TdiyGCGN" Name="Stream" Kind="InputPin" />
+            <Pin Id="IzOxTwhJGdlPgLY2IgSSvs" Name="Option" Kind="InputPin" />
+            <Pin Id="Mqky9aSdtzBPo0Bh1hibWs" Name="Value" Kind="InputPin" />
+            <Pin Id="VqV8rE8ILFtNgds3bI0huX" Name="Output" Kind="OutputPin" />
+            <Pin Id="E7aYQfYDxxeM7pZAW4nnu6" Name="Is Supported" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Vz1PzGqarqnNaIqEjvzWN7" Comment="Option" Bounds="1202,376,167,15" ShowValueBox="true" isIOBox="true" Value="LaserPower">
+            <p:TypeAnnotation LastCategoryFullName="Intel.RealSense" LastSymbolSource="Intel.Realsense.dll">
+              <Choice Kind="TypeFlag" Name="Option" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="MF5E46edOR6Laq3Bh4pon5" Comment="Stream" Bounds="1173,350,79,15" ShowValueBox="true" isIOBox="true" Value="Depth">
+            <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="TypeFlag" Name="Stream" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Ip0KCRcOEKfQGksk3zE1zb" Comment="" Bounds="1231,402,44,15" ShowValueBox="true" isIOBox="true" Value="-40">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="536,559,105,19" Id="NFzJ7zC58VOQQwXTvSb23E">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GetIntrinsics" />
+            </p:NodeReference>
+            <Pin Id="PGPfCzerwieOeoBYiZ0xud" Name="Input" Kind="InputPin" />
+            <Pin Id="Cfcers1JEpDM7iyxugscFr" Name="Stream" Kind="InputPin" />
+            <Pin Id="HjWzrpkiDMCOz8B1yT997w" Name="Size" Kind="OutputPin" />
+            <Pin Id="Hje2QLpAhbEPdVpDXJYXsl" Name="FOV" Kind="OutputPin" />
+            <Pin Id="JJ7ZJtXeE8JMBCHQO3EoOn" Name="Focal Length" Kind="OutputPin" />
+            <Pin Id="ImKc3OTp3a3LxtoDtw3sKD" Name="Principal Point" Kind="OutputPin" />
+            <Pin Id="O3B53yEkLUoMyEUWzyghKo" Name="Distortion Model" Kind="OutputPin" />
+            <Pin Id="GJcegdh4RiYMqXRDPOByND" Name="Distortion coefficients" Kind="OutputPin" />
+          </Node>
+          <Pad Id="F0470VC7KMKNncWcBzWTGZ" Comment="Stream" Bounds="638,539,79,15" ShowValueBox="true" isIOBox="true" Value="Color">
+            <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="TypeFlag" Name="Stream" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="K5orf7wahsJMPhUWOWGwYK" Comment="FOV" Bounds="558,621,35,28" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RlV9f5pCRJ2O50mvatqCYb" Comment="Error" Bounds="579,464,140,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="366,501,69,19" Id="B3zQhl6oxStPl9EL4aXWqy">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
+            </p:NodeReference>
+            <Pin Id="VU3ARYSEGH2N785q0vs7ub" Name="Input" Kind="InputPin" />
+            <Pin Id="U87svL38owaMPgI5nmIPkJ" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="VyIsTwdpPkSP3BxjTwZOxG" Bounds="629,119,262,42" ShowValueBox="true" isIOBox="true" Value="&lt; If you have multiple RealSense Camera attached, select on of those here.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="366,604,125,19" Id="BhlHUScfrGfOeiH7NOKkEg">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DrawImage" />
+            </p:NodeReference>
+            <Pin Id="LQkfGLO7YugOdDb4Fj4O8i" Name="Image" Kind="InputPin" />
+            <Pin Id="FMBFAARTx77PVwEkNTiUGM" Name="Position" Kind="InputPin" />
+            <Pin Id="C1HukITAbfsNLtIFv1ID56" Name="Size" Kind="InputPin" />
+            <Pin Id="GRFJuSZRYdXP0LCBgfW8kA" Name="Size Mode" Kind="InputPin" />
+            <Pin Id="JlL21uh2hxNOxnGQtEwzCM" Name="Anchor" Kind="InputPin" />
+            <Pin Id="OHvsiCfGhDKPio2BlRFzJI" Name="Paint" Kind="InputPin" />
+            <Pin Id="LCeEwaIz2gHOegpNeMlzQr" Name="Enabled" Kind="InputPin" />
+            <Pin Id="KNZ1PLWaSCXLjLNPtvLEzg" Name="Output" Kind="OutputPin" />
+            <Pin Id="HlocokQOdDJNQ8VBuBEB3I" Name="Actual Bounds" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="366,537,67,26" Id="REqFGxbpjzhNPumGFgM4TS">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromImage" />
+              <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+            </p:NodeReference>
+            <Pin Id="JyzHG5Sh2i0PLldm2XNOdo" Name="Input" Kind="InputPin" />
+            <Pin Id="DqefFBCqyIcPzRiAVGIITq" Name="Discard Higher Bits" Kind="InputPin" />
+            <Pin Id="G6bd5pyoSKaPe7RzjGKjUY" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1171,249,-63,19" Id="Jf76nFYldFeMXNFtoO58te">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SetOption" />
+            </p:NodeReference>
+            <Pin Id="OOsMtrHwlMAOqQS76pSlyO" Name="Stream" Kind="InputPin" />
+            <Pin Id="QTQMgVw5D4bNFQENaNpJeG" Name="Option" Kind="InputPin" />
+            <Pin Id="MoKZWyzEHJsLOv85S7sf8h" Name="Value" Kind="InputPin" />
+            <Pin Id="LArt9mHAuhdMhPrYqKXOhx" Name="Output" Kind="OutputPin" />
+            <Pin Id="Df4IDN85uGAP9PZ4dPl32E" Name="Is Supported" Kind="OutputPin" />
+          </Node>
+          <Pad Id="ATFZUqigVnoM7HuH7Ek6Ib" Comment="Option" Bounds="1200,203,69,12" ShowValueBox="true" isIOBox="true" Value="Contrast">
+            <p:TypeAnnotation LastCategoryFullName="Intel.RealSense" LastSymbolSource="Intel.Realsense.dll">
+              <Choice Kind="TypeFlag" Name="Option" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="SWU0npOyoXmOZFCG9fRjfv" Comment="Stream" Bounds="1174,177,79,15" ShowValueBox="true" isIOBox="true" Value="Color">
+            <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="TypeFlag" Name="Stream" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Cn2mzGYwG6kMFrAdTdERyy" Comment="" Bounds="1229,234,47,15" ShowValueBox="true" isIOBox="true" Value="5.88">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="837,530,165,19" Id="H4Kj8Zj9AjgQK7uUsOiMD8">
+            <p:NodeReference>
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GetOption" />
+              <CategoryReference Kind="Category" Name="Options" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="EePor4gack0Oqx1paTQd9w" Name="Profile" Kind="InputPin" />
+            <Pin Id="OsMJ0ZSeUrFN91SgOBcmCT" Name="Stream" Kind="InputPin" />
+            <Pin Id="Bcx7ePtTuRbLqWlCbD2Jkr" Name="Option" Kind="InputPin" />
+            <Pin Id="AYWoFJKQJoyOPBt9fZdcfX" Name="Description" Kind="OutputPin" />
+            <Pin Id="Gj421agkwPFLUSc2uOkjTr" Name="Default Value" Kind="OutputPin" />
+            <Pin Id="AZVMcIBLncmQGZe7Q7Lzdy" Name="Current Value" Kind="OutputPin" />
+            <Pin Id="QjGnQOImR1hOwCDO9ONT1B" Name="Step" Kind="OutputPin" />
+            <Pin Id="CeoT1S8iwJnOSlt5b6K6ka" Name="Min" Kind="OutputPin" />
+            <Pin Id="ArZ3OaPjeNLP640mo5hXCp" Name="Max" Kind="OutputPin" />
+            <Pin Id="V7mO8a1GVZFOyYi9wjDeEO" Name="Read Only" Kind="OutputPin" />
+            <Pin Id="K22h1JutQpJPlF50uPrJEQ" Name="Is Supported" Kind="OutputPin" />
+          </Node>
+          <Pad Id="BKqxkwrP283MY56sjmqEJq" Comment="Stream" Bounds="918,500,79,15" ShowValueBox="true" isIOBox="true" Value="Color">
+            <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="TypeFlag" Name="Stream" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="QzVk7DR3m5oQVdflCzXTeJ" Comment="Is Supported" Bounds="1229,288,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="916,253,71,19" Id="FvvZ6ZZdn2JMl6O5rHcqnf">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SetOption" />
+            </p:NodeReference>
+            <Pin Id="Rq4aQyh58iQN18cCByv0DD" Name="Stream" Kind="InputPin" />
+            <Pin Id="G1GpK5bpDH9OdlGRVa4FAR" Name="Option" Kind="InputPin" DefaultValue="Gain">
+              <p:TypeAnnotation LastCategoryFullName="Intel.RealSense" LastSymbolSource="Intel.Realsense.dll">
+                <Choice Kind="TypeFlag" Name="Option" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="J2yXmXdk8OpPr96SiZT9la" Name="Value" Kind="InputPin" />
+            <Pin Id="LXqFwdiFASPLP3nPAnoR3w" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="L7MZxLZalKoLK2XrP5PSRc" Name="Is Supported" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SAhdgu261uDOxPQvTNWOiX" Comment="Stream" Bounds="920,180,79,15" ShowValueBox="true" isIOBox="true" Value="Color">
+            <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="TypeFlag" Name="Stream" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="DlAKAQTIoPcP2k5U5njuUo" Comment="Option" Bounds="952,208,167,15" ShowValueBox="true" isIOBox="true" Value="Gamma">
+            <p:TypeAnnotation LastCategoryFullName="Intel.RealSense" LastSymbolSource="Intel.Realsense.dll">
+              <Choice Kind="TypeFlag" Name="Option" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Of0gsklKKCdMMefOezZ9tS" Comment="" Bounds="984,233,52,7" ShowValueBox="true" isIOBox="true" Value="100">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Qc7Y7PnlDU8M0rfA8iTXxY" Comment="Description" Bounds="840,585,140,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Cc0u7nOuyEzOz3ODxEKQSf" Comment="Is Supported" Bounds="984,290,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="TEZckAd09yNO82ZXwOCUWv" Comment="Is Supported" Bounds="1231,453,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="916,308,25,19" Id="RzHUkpPQTwRO0Jz0ell909">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Cons" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="Jlu2UpWKFmSPCU2Rikj3gn" Name="Input" Kind="StateInputPin" />
+            <Pin Id="BDuToi1FT4CNHnnD6vK2qP" Name="Input 2" Kind="StateInputPin" />
+            <Pin Id="L8SEgmWg30tLF09gce8GRM" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1114,616" Id="Ppxh6WRardULiPegMtWcFq">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="RealSense" />
+              <CategoryReference Kind="Category" Name="Options" />
+              <Choice Kind="ProcessAppFlag" Name="AutoExposureROI" />
+            </p:NodeReference>
+            <Pin Id="HOoh9NoHyVIMxQNXfSR6NB" Name="Profile" Kind="InputPin" />
+            <Pin Id="Ur9Skvkxs0lMPauWyZKk83" Name="Stream" Kind="InputPin" />
+            <Pin Id="MwKmWOuUtjYMDkPRtWNTgr" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="833,400" Id="QxnZABJ1mJ0LNjhewFKL8b">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FOV" />
+            </p:NodeReference>
+            <Pin Id="AgPRL3yJkKNNXxvo1T6UWf" Name="Input" Kind="InputPin" />
+            <Pin Id="GwxGMW7lns1O2yHokgkZZn" Name="Color FOV" Kind="OutputPin" />
+            <Pin Id="JqmvGwKy2SLPtG2SiwHTZT" Name="Depth FOV" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1106,554" Id="O2GUP7HxBxiQGdqCYVmTL0">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="RealSense" />
+              <Choice Kind="ProcessAppFlag" Name="StreamInfo" />
+            </p:NodeReference>
+            <Pin Id="FY6bsfqzoQhMWqO3d9GSfl" Name="Profile" Kind="InputPin" />
+            <Pin Id="C6A4Sp0EsMxQGPr93uT6RI" Name="Stream" Kind="InputPin" DefaultValue="Depth">
+              <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+                <Choice Kind="TypeFlag" Name="Stream" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="OcHlg9zUcF3QRdqeTtisDk" Name="Extension" Kind="InputPin" DefaultValue="Video">
+              <p:TypeAnnotation LastCategoryFullName="Intel.RealSense" LastSymbolSource="Intel.Realsense.dll">
+                <Choice Kind="TypeFlag" Name="Extension" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="V8ICouZsC44NX10JjkYWUz" Name="Framerate" Kind="OutputPin" />
+            <Pin Id="E0MWRkF1uAqNGSb3J99lK4" Name="Format" Kind="OutputPin" />
+          </Node>
+          <ControlPoint Id="CwYhiV28PNJLY9zpRWuT2u" Bounds="458,442" />
+        </Canvas>
+        <Patch Id="DFlF1wMJScHMryuPZ7qpLF" Name="Create" />
+        <Patch Id="DfiGTdtNV7fQboyAJXasAN" Name="Update" />
+        <ProcessDefinition Id="ElosX2xcMQKN3mVhwGRVVo">
+          <Fragment Id="UoRKjVosAIaQJJYyAnKTth" Patch="DFlF1wMJScHMryuPZ7qpLF" Enabled="true" />
+          <Fragment Id="OcuGCIFTSXyLVglJ7Og92Z" Patch="DfiGTdtNV7fQboyAJXasAN" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="IkvHv9CtxI1NsA0jJXFyrw" Ids="I4lJOrXmYMfLjE7X21V30B,LRkyffoNe9WPFynKYSvFCi" />
+        <Link Id="FWtX7SLaRRLPi3b9Lm4IqJ" Ids="R5TEof5Tn8JNb0o6hwA1Sm,VknHPK4DdOMNfoan6Fas4c" />
+        <Link Id="HHEqO3TDayJMtaSVl2edal" Ids="Vz1PzGqarqnNaIqEjvzWN7,IzOxTwhJGdlPgLY2IgSSvs" />
+        <Link Id="QKhChBahBCKMWx3iAYmkc5" Ids="MF5E46edOR6Laq3Bh4pon5,CrHezKb8xI9Mj4TdiyGCGN" />
+        <Link Id="AV0PdGNR62HObpGBKaStUI" Ids="Ip0KCRcOEKfQGksk3zE1zb,Mqky9aSdtzBPo0Bh1hibWs" />
+        <Link Id="RNbGnpodKYUPhaNwZXFw9h" Ids="F0470VC7KMKNncWcBzWTGZ,Cfcers1JEpDM7iyxugscFr" />
+        <Link Id="KFkHdmJQdHZOD6M1cjDav9" Ids="Hje2QLpAhbEPdVpDXJYXsl,K5orf7wahsJMPhUWOWGwYK" />
+        <Link Id="QMHlaeI7A7WPVeeMiUQ6G7" Ids="NV9lYrZ1eofN5Ta4kkflvS,RlV9f5pCRJ2O50mvatqCYb" />
+        <Link Id="DBJjDfCtQD9PKeFHPvKNLW" Ids="PjywjQRmYVtMti609Mshwm,VU3ARYSEGH2N785q0vs7ub" />
+        <Link Id="DWTGm4D3mf1LEqAb6AsdVe" Ids="U87svL38owaMPgI5nmIPkJ,JyzHG5Sh2i0PLldm2XNOdo" />
+        <Link Id="Ltg9Sz5htSNLtx1J6r1Tt5" Ids="G6bd5pyoSKaPe7RzjGKjUY,LQkfGLO7YugOdDb4Fj4O8i" />
+        <Link Id="NXUHMuZn2aIMt7ncSuxUBh" Ids="ATFZUqigVnoM7HuH7Ek6Ib,QTQMgVw5D4bNFQENaNpJeG" />
+        <Link Id="PYag7VDIKQqQSrADON9oz7" Ids="SWU0npOyoXmOZFCG9fRjfv,OOsMtrHwlMAOqQS76pSlyO" />
+        <Link Id="RuN4th14XJPMh2hiCHdV92" Ids="Cn2mzGYwG6kMFrAdTdERyy,MoKZWyzEHJsLOv85S7sf8h" />
+        <Link Id="CyFfiulfopdNKUPAPvWQJT" Ids="I3eqOFtsD9rOL2ZjdFWnXp,EePor4gack0Oqx1paTQd9w" />
+        <Link Id="RWVjyOY7LqEOi6BvcDQEWp" Ids="BKqxkwrP283MY56sjmqEJq,OsMJ0ZSeUrFN91SgOBcmCT" />
+        <Link Id="JQgLoWI8uqFO2xTAzZSUeJ" Ids="Df4IDN85uGAP9PZ4dPl32E,QzVk7DR3m5oQVdflCzXTeJ" />
+        <Link Id="IikEzLVKimzLUqsh7eQJjT" Ids="SAhdgu261uDOxPQvTNWOiX,Rq4aQyh58iQN18cCByv0DD" />
+        <Link Id="UA4AmYW3A6YOd3TvxQCT2m" Ids="DlAKAQTIoPcP2k5U5njuUo,G1GpK5bpDH9OdlGRVa4FAR" />
+        <Link Id="Hl1oQemyJdKNIz1WratI3R" Ids="Of0gsklKKCdMMefOezZ9tS,J2yXmXdk8OpPr96SiZT9la" />
+        <Link Id="U2dBGvK8qoPOlXdODECpIA" Ids="DlAKAQTIoPcP2k5U5njuUo,Bcx7ePtTuRbLqWlCbD2Jkr" />
+        <Link Id="IbbfhxVAqHFLJiqyVFTrUu" Ids="LXqFwdiFASPLP3nPAnoR3w,Jlu2UpWKFmSPCU2Rikj3gn" />
+        <Link Id="TQ1JOC5TEzlLO99vKaNykr" Ids="AYWoFJKQJoyOPBt9fZdcfX,Qc7Y7PnlDU8M0rfA8iTXxY" />
+        <Link Id="VzN2wsdfNPcMDvsZ4me7Ko" Ids="I3eqOFtsD9rOL2ZjdFWnXp,PGPfCzerwieOeoBYiZ0xud" />
+        <Link Id="TrAnsHaD5mHQdAf7hyucM0" Ids="L7MZxLZalKoLK2XrP5PSRc,Cc0u7nOuyEzOz3ODxEKQSf" />
+        <Link Id="Ak3RL90XS1DLou9tBKb8u3" Ids="E7aYQfYDxxeM7pZAW4nnu6,TEZckAd09yNO82ZXwOCUWv" />
+        <Link Id="Tit80XrLm6sOAKaX4r9z5W" Ids="L8SEgmWg30tLF09gce8GRM,AOSw5GFKJwENilZYF2u5Ed" />
+        <Link Id="AO6VvSsRbbYLznF7o8PJzM" Ids="LArt9mHAuhdMhPrYqKXOhx,BDuToi1FT4CNHnnD6vK2qP" />
+        <Link Id="Cyv9wtkmRx2Pp5ee67oRwc" Ids="I3eqOFtsD9rOL2ZjdFWnXp,AgPRL3yJkKNNXxvo1T6UWf" />
+        <Link Id="KkOEgedoJaNMg0OCdF7hJe" Ids="I3eqOFtsD9rOL2ZjdFWnXp,CwYhiV28PNJLY9zpRWuT2u,FY6bsfqzoQhMWqO3d9GSfl" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="P46lNCmsqRBNDLHA9o3deD" Location="VL.Skia" Version="2020.1.1-0104-gfc43b7deff" />
+  <NugetDependency Id="IStpBBnesi2ME0Mas3eWRc" Location="VL.Core" Version="2020.1.1-0104-gfc43b7deff" />
+  <NugetDependency Id="NMSVuJ2Gp4HQArItUfffVm" Location="VL.Devices.RealSense" Version="0.0.0.0" />
+</Document>
