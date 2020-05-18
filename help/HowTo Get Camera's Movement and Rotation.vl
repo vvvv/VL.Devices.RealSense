@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="DQ3kJx1bIKoPRfae6xmnpC" LanguageVersion="2020.1.2.109" Version="0.128">
+<Document xmlns:p="property" Id="FeHEaZr9YkAQSNdInGnkEL" LanguageVersion="2020.1.1.107" Version="0.128">
   <Patch Id="JBtPzl71qIKNFbTrwnyTGp">
     <Canvas Id="SFmkqv266JHLuOC9PkL2Tn" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -16,7 +16,7 @@
           <Canvas Id="NXRHdQaiLsgQIeOTNfEqLv" CanvasType="Group">
             <ControlPoint Id="Ogbxxt9tkVhPJZX5yAzwFQ" Bounds="223,472" />
             <Node Bounds="221,405,75,19" Id="BYn06zHdVBSPQ52Ab9g1CK">
-              <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Align Color and Depth images.vl">
+              <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Get Camera's Movement and Rotation.vl">
                 <Choice Kind="ProcessNode" Name="ProjectPoints" />
               </p:NodeReference>
               <Pin Id="NCrVxJnACAuNadL1YwGYeE" Name="Input" Kind="InputPin" />
@@ -156,122 +156,42 @@
       </p:NodeReference>
       <Patch Id="AakuIj5uHvGOzeYYASa5w1">
         <Canvas Id="OmMTMn4stX9OcpjNA5bkqW" CanvasType="Group">
-          <Node Bounds="425,565,165,19" Id="KqQu9Wvbg6fOay5o4ZBGWB">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Renderer" />
-              <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
-            </p:NodeReference>
-            <Pin Id="JTXrhzm5Ug8MISAau5o3d2" Name="Bounds" Kind="InputPin" DefaultValue="864, 25, 746, 612">
-              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
-                <Choice Kind="TypeFlag" Name="Rectangle" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="VZqZHNZpj1COfAfUvVW3bW" Name="Bound to Document" Kind="InputPin" DefaultValue="True">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="DGfkYPw0TB2OnHzHQmszdy" Name="Input" Kind="InputPin" />
-            <Pin Id="NxpSDeA8LYxPl8oMGCpcxw" Name="Color" Kind="InputPin" />
-            <Pin Id="ImEbTERW5iJN7L8lnVjShM" Name="Clear" Kind="InputPin" />
-            <Pin Id="JVrBDWqFYtHL0CADrOGFMT" Name="Space" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="VL.Skia" LastSymbolSource="VL.Skia.dll">
-                <Choice Kind="TypeFlag" Name="CommonSpace" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="VGHiaf0nktkLw4LCPTUHRK" Name="Show Cursor" Kind="InputPin" />
-            <Pin Id="DGoYdw8bymhMuwrXvGk5rC" Name="VSync" Kind="InputPin" />
-            <Pin Id="HWarr1OLTUDQTrYVDZuQ5c" Name="Enabled" Kind="InputPin" />
-            <Pin Id="N5J36uqaGAcNj5CE86uwOi" Name="Form" Kind="OutputPin" />
-            <Pin Id="TinwAJ9tD9qPwFRWy3tHnu" Name="ClientBounds" Kind="OutputPin" />
-            <Pin Id="RW97FBdLCEtNwYlhNXXFsr" Name="Render Time" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="464,167,145,19" Id="Qqb0vd0geSWNCTV551UdPM">
+          <Node Bounds="490,241,145,19" Id="Qqb0vd0geSWNCTV551UdPM">
             <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RealSense" />
             </p:NodeReference>
-            <Pin Id="Pyd9RL7SnZgO50iwHPgXBl" Name="Device" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
-                <Choice Kind="TypeFlag" Name="RealSenseDevice" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="EnjGCen6xAcOVr2K2aQEYQ" Name="Color Resolution" Kind="InputPin" />
-            <Pin Id="UABaie9eV24O2NVJNV1C4e" Name="Depth Resolution" Kind="InputPin" />
-            <Pin Id="JtDlQAlEjEMMUjpaYknOCg" Name="Options" Kind="InputPin" />
-            <Pin Id="MRhiGXNy9nIPHR1yNG4FqF" Name="Enabled" Kind="InputPin" />
+            <Pin Id="Pyd9RL7SnZgO50iwHPgXBl" Name="Device" Kind="InputPin" />
+            <Pin Id="LLw3YsxI4OwLX5omOztdnq" Name="Color Resolution" Kind="InputPin" />
+            <Pin Id="AjPtMVEszXpLTHQYcyksRl" Name="Depth Resolution" Kind="InputPin" />
+            <Pin Id="JntpoynBZmALnoQByIyr7P" Name="Options" Kind="InputPin" />
+            <Pin Id="DWUz2koPmhvMMjw4G3k0iq" Name="Enabled" Kind="InputPin" />
             <Pin Id="UgGCxSAMcyWMXhBOZNCdZJ" Name="Output" Kind="OutputPin" />
             <Pin Id="VZj6j5urlvsLHVhbth7SaM" Name="Profile" Kind="OutputPin" />
             <Pin Id="POn3oC6MUB8MKAQS9aBxm3" Name="Error" Kind="OutputPin" />
           </Node>
-          <Node Bounds="464,255,45,19" Id="FvTVoADX57ePNrQglKnxta">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="DecimationFilter" />
-            </p:NodeReference>
-            <Pin Id="CI3vNBlP2MNQcoG40lyR0x" Name="Input" Kind="InputPin" />
-            <Pin Id="VQaEAdm8iHnMioIT7VJ8dx" Name="Magnitude" Kind="InputPin" />
-            <Pin Id="VdMp0X9v3vWNlgrhRoq54e" Name="Enabled" Kind="InputPin" />
-            <Pin Id="JZkKkHbGSy8LYPAUOFjSQO" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Pad Id="FppY6qYeuXyOVzThbPFcQH" Comment="Magnitude" Bounds="509,229,35,15" ShowValueBox="true" isIOBox="true" Value="4">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Integer32" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="464,335,45,19" Id="DztcacXTlsxOW1UmpM6vEf">
+          <Node Bounds="490,294,54,19" Id="FUaYeASzgbxMWyT1KnIw6x">
             <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Align" />
+              <Choice Kind="ProcessAppFlag" Name="IMUData" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
-            <Pin Id="ENbv75HemERO9hqphUF8cM" Name="Input" Kind="InputPin" />
-            <Pin Id="Nw9efNOAv78N94EHyW78Sw" Name="Align To" Kind="InputPin" />
-            <Pin Id="KAaZmm8qYVoMo4jDcVSGhs" Name="Enabled" Kind="InputPin" />
-            <Pin Id="BbYzBBvbQqiMNaqBpwzlev" Name="Output" Kind="OutputPin" />
+            <Pin Id="KfxBNXHmAhsMdbUThaJh0r" Name="Input" Kind="InputPin" />
+            <Pin Id="KwdrAvzr15vN4iYbwJcPop" Name="Enabled" Kind="InputPin" />
+            <Pin Id="STxFbzhLUR6QDN2UBMVo1K" Name="Accelerometer" Kind="OutputPin" />
+            <Pin Id="HCGM1bpvq8dMBfLvGTMukw" Name="Gyroscope" Kind="OutputPin" />
           </Node>
-          <Pad Id="HekKDQdlxEpOo6e0JqMqhS" Comment="Align To" Bounds="486,310,79,15" ShowValueBox="true" isIOBox="true" Value="Depth">
-            <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
-              <Choice Kind="TypeFlag" Name="Stream" />
-            </p:TypeAnnotation>
+          <Pad Id="ISNYvrmHYqwPtr5RlJD9J8" Comment="Accelerometer" Bounds="420,384,60,43" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">4</p:precision>
+            </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="465,466,67,26" Id="BZw1TBTHHljLYdM3ofZLQT">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="FromImage" />
-              <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true">
-                <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
-              </CategoryReference>
-            </p:NodeReference>
-            <Pin Id="FNgBxVFaFrnOWp3M7G0qvm" Name="Input" Kind="InputPin" />
-            <Pin Id="ELLUcNNkBRcO582qZRedAR" Name="Discard Higher Bits" Kind="InputPin" />
-            <Pin Id="LJMr2yGx8whLqr98j1ymKO" Name="Result" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="464,385,69,19" Id="BZn9EHAwwiuL2rOoPrOi3J">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
-            </p:NodeReference>
-            <Pin Id="D4JwU4AOoEjMuEWF8fN0uR" Name="Input" Kind="InputPin" />
-            <Pin Id="AannagEEiXHM7S6kdsaLVp" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="465,512,125,19" Id="D0WURJdlclaOlEFDBRBwtW">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="DrawImage" />
-            </p:NodeReference>
-            <Pin Id="Jw3GK2R1KcrNwv7DiPq6iT" Name="Image" Kind="InputPin" />
-            <Pin Id="BuAFwEDttoVN82NsT4BibX" Name="Position" Kind="InputPin" />
-            <Pin Id="PVzHFvdfKzRLUH37B8ddtF" Name="Size" Kind="InputPin" />
-            <Pin Id="AZOOzFWC8cjLJBE7UipgUO" Name="Size Mode" Kind="InputPin" />
-            <Pin Id="PmfSwvqRIxNOaGoiobaktj" Name="Anchor" Kind="InputPin" />
-            <Pin Id="JWutcPXvXJeQX6gqGJRNeN" Name="Paint" Kind="InputPin" />
-            <Pin Id="L2SBvEVAR91NOs8vUs915v" Name="Enabled" Kind="InputPin" />
-            <Pin Id="PsPbewAKhQ2M8AsyL2vkIQ" Name="Output" Kind="OutputPin" />
-            <Pin Id="QStI4LVlpP9ONhJhdgwh2m" Name="Actual Bounds" Kind="OutputPin" />
-          </Node>
-          <Pad Id="DhCu0dD4DWRLO1WIZzWTZm" Bounds="563,343,287,58" ShowValueBox="true" isIOBox="true" Value="&lt; The Color image is aligned to the Depth. Note, because of the DecimationFilter the Depth is scaled down, so the color image.">
+          <Pad Id="TZVFQ07GjFALgd51e5xQfi" Comment="Gyroscope" Bounds="581,379,59,43" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">4</p:precision>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AkVLlcvwNSGLdfqnDyGiMR" Bounds="129,253,186,19" ShowValueBox="true" isIOBox="true" Value="For more information check:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -280,7 +200,16 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="MOiHeb0U0VhMQqKWgjo6S6" Bounds="710,452,296,42" ShowValueBox="true" isIOBox="true" Value="In oder to fill the holes plug one of these DepthFilters between Decimation and Align:">
+          <Pad Id="KTZbPHQkKosPX1PWrUs2D9" Bounds="129,280,207,19" ShowValueBox="true" isIOBox="true" Value="https://www.intelrealsense.com/how-to-getting-imu-data-from-d435i-and-t265">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="C9SNfumVUoPLGvZGTFN7BO" Bounds="129,349,187,96" ShowValueBox="true" isIOBox="true" Value="Note:&#xD;&#xA;for D435i Camera the IMU sensor is not calibrated.&#xD;&#xA;&#xD;&#xA;Here is the Calibration Tool:&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -289,55 +218,15 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="719,498,87,19" Id="MyX3yBiKHGMP8fmnTAHdi0">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="HoleFillingFilter" />
-            </p:NodeReference>
-            <Pin Id="VlBBLnhZlpgMv1dtGcdSrI" Name="Input" Kind="InputPin" />
-            <Pin Id="Oqjj9on1Xq3NjpYdznJFCW" Name="Mode" Kind="InputPin" />
-            <Pin Id="PjVTl1LzV8tMsHN4ohqgua" Name="Enabled" Kind="InputPin" />
-            <Pin Id="Ej9U6DdcIVGNcRK6aF0khY" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="718,527,65,19" Id="G27Qup8BNhAN9i5t5Xp5fU">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="Category" Name="DepthFilters" />
-              <Choice Kind="ProcessAppFlag" Name="TemporalFilter" />
-            </p:NodeReference>
-            <Pin Id="HjGpW3GozNZOXTxlCz0TVF" Name="Input" Kind="InputPin" />
-            <Pin Id="RC5aWBPARsNQHNgtrZIXeN" Name="Smooth Alpha" Kind="InputPin" />
-            <Pin Id="Bc6yxA3PMYNNLhnnq47sT4" Name="Smooth Delta" Kind="InputPin" />
-            <Pin Id="HAmATBAN3RQL7icXegwbec" Name="Enabled" Kind="InputPin" />
-            <Pin Id="DtdOlo9EBiRMWjX4FNEmC0" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Pad Id="D50TZPFdTf0LhoSuvPgM7y" Bounds="122,427,185,116" ShowValueBox="true" isIOBox="true" Value="After the color and depth are aligned what about running a computer vision on the color image, take the coordinates and measure their depth (distance to the camera).">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="U2plHdyABaxMK4Ip3IBfV1" Bounds="129,449,187,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/IntelRealSense/librealsense/tree/development/tools/rs-imu-calibration#rs-imu-calibration-tool">
+            <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="O2r38l0F5vNQHnQpvc6zB1" Bounds="124,396,73,19" ShowValueBox="true" isIOBox="true" Value="Pro Tip:">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">12</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Node Bounds="134,544,25,19" Id="B3mKwLiDpQZNTR2GnwyuPD">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Pipet" />
-            </p:NodeReference>
-            <Pin Id="UPFbLUU8Zb6MUZxBLqmLtE" Name="Input" Kind="InputPin" />
-            <Pin Id="O8bt2sZ2nqcP91Xkydmwu5" Name="Position" Kind="InputPin" />
-            <Pin Id="VoF8XeqV6WXO2ronw4xt8s" Name="Output" Kind="OutputPin" />
-          </Node>
         </Canvas>
         <Patch Id="OBf4uhw6944MCYyTxqhgHw" Name="Create" />
         <Patch Id="NxXLTAkwOx1ORJkHfOqfie" Name="Update" />
@@ -345,18 +234,13 @@
           <Fragment Id="NtcffWg4QFLOpzj5cbOvVW" Patch="OBf4uhw6944MCYyTxqhgHw" Enabled="true" />
           <Fragment Id="G0CV6osMWniNwnVAfhGsxK" Patch="NxXLTAkwOx1ORJkHfOqfie" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="JwT02gPWd6ANnA9A3CJ168" Ids="UgGCxSAMcyWMXhBOZNCdZJ,CI3vNBlP2MNQcoG40lyR0x" />
-        <Link Id="OL7IigJXqBENrv4FNCDItW" Ids="FppY6qYeuXyOVzThbPFcQH,VQaEAdm8iHnMioIT7VJ8dx" />
-        <Link Id="ViFsQE25oW9PLVb91RyXyG" Ids="HekKDQdlxEpOo6e0JqMqhS,Nw9efNOAv78N94EHyW78Sw" />
-        <Link Id="MIY3ydZoTmTLeqzKlc8eYY" Ids="BbYzBBvbQqiMNaqBpwzlev,D4JwU4AOoEjMuEWF8fN0uR" />
-        <Link Id="I5GGtVxu8hhPXORJQJUwl7" Ids="AannagEEiXHM7S6kdsaLVp,FNgBxVFaFrnOWp3M7G0qvm" />
-        <Link Id="GDr9q0HZb8vPqwaGdUGPWz" Ids="LJMr2yGx8whLqr98j1ymKO,Jw3GK2R1KcrNwv7DiPq6iT" />
-        <Link Id="QD38MpfwMseMPHudzTWdvI" Ids="PsPbewAKhQ2M8AsyL2vkIQ,DGfkYPw0TB2OnHzHQmszdy" />
-        <Link Id="LFyKhe7E8umMWhijQQ7XrN" Ids="JZkKkHbGSy8LYPAUOFjSQO,ENbv75HemERO9hqphUF8cM" />
+        <Link Id="RA8jXfsw59BMFNJnc2dwAF" Ids="UgGCxSAMcyWMXhBOZNCdZJ,KfxBNXHmAhsMdbUThaJh0r" />
+        <Link Id="OBB8vf17jOHOop69iypLba" Ids="STxFbzhLUR6QDN2UBMVo1K,ISNYvrmHYqwPtr5RlJD9J8" />
+        <Link Id="MLavVKckgbkMM2rykcOqg6" Ids="HCGM1bpvq8dMBfLvGTMukw,TZVFQ07GjFALgd51e5xQfi" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.2-0109-gdc2a2201c2" />
-  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.2-0109-gdc2a2201c2" />
+  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.1-0104-gfc43b7deff" />
+  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.1-0104-gfc43b7deff" />
   <NugetDependency Id="I0lXz4TBK4iM7uTgOyHpOI" Location="VL.Devices.RealSense" Version="0.0.0.0" />
 </Document>

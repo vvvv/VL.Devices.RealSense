@@ -24,6 +24,9 @@ namespace VL.Devices.RealSense
         {
             Dictionary<string, object> cameraNames = new Dictionary<string, object>();
 
+            //Add Default Entry
+            cameraNames["Default"] = "Default";
+
             DeviceList devices;
 
             using (var ctx = new Context())
@@ -43,7 +46,7 @@ namespace VL.Devices.RealSense
         }
 
         //optionally disable alphabetic sorting
-        protected override bool AutoSortAlphabetically => false; //true is the default
+        protected override bool AutoSortAlphabetically => true; //true is the default
     }
 
     [Serializable]
