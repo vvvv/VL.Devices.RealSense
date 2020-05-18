@@ -40,10 +40,10 @@
             <Pin Id="NV9lYrZ1eofN5Ta4kkflvS" Name="Error" Kind="OutputPin" />
           </Node>
           <Node Bounds="183,444,66,19" Id="AgbGG5cqUyINTIVONw8Tin">
-            <p:NodeReference LastCategoryFullName="RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="PointCloud" />
               <CategoryReference Kind="Category" Name="RealSense" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="PointCloud" />
             </p:NodeReference>
             <Pin Id="STvU8cbHWD4LZJuAWY0tDH" Name="Input" Kind="InputPin" />
             <Pin Id="IhlWV0uFHPOP0oDeR5GjNO" Name="Enabled" Kind="InputPin" />
@@ -449,6 +449,15 @@
             <Pin Id="FfoXhrOHOMjQWwx6XhsNPA" Name="Reset" Kind="InputPin" />
           </Node>
           <Pad Id="LsuU7ZJxs5mMuqBmD9iKaH" Bounds="806,758,105,19" ShowValueBox="true" isIOBox="true" Value="(experimental)">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">7</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QwBkinLiYCuOCF9rc0rxtf" Bounds="430,479,105,19" ShowValueBox="true" isIOBox="true" Value="(experimental)">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
