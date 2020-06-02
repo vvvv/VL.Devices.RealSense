@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="B3rGtyZDXvLOgYGrDxnNa6" LanguageVersion="2020.1.0.53" Version="0.128">
-  <NugetDependency Id="DOfXRi7MKyxNeGRyD8tI9g" Location="VL.CoreLib" Version="2020.1.0" />
+<Document xmlns:p="property" Id="B3rGtyZDXvLOgYGrDxnNa6" LanguageVersion="2020.1.3.147" Version="0.128">
+  <NugetDependency Id="DOfXRi7MKyxNeGRyD8tI9g" Location="VL.CoreLib" Version="2020.1.3" />
   <Patch Id="QC65oeU7EANNM5KfSEYMcT">
     <Canvas Id="D1nHjsj3mzlNOpT1n6i9K7" DefaultCategory="Devices.RealSense" CanvasType="FullCategory">
       <Canvas Id="IoCc0ICIZtZM01JqAumDzg" Name="Internal" Position="96,142">
@@ -3801,6 +3801,10 @@
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
+              <Pad Id="UgNWPbEgJ34OGej3gBbDjM" Comment="Success" Bounds="705,377,35,35" ShowValueBox="true" isIOBox="true" />
+              <Pad Id="VY563T4KiqIOsNGjywfkxt" Comment="" Bounds="870,377,133,22" ShowValueBox="true" isIOBox="true" />
+              <Pad Id="JDXoVB44sC6LImfT6ZfQdy" Comment="Tag" Bounds="1047,267,95,3" ShowValueBox="true" isIOBox="true" />
+              <Pad Id="IhVQ1surh7qQAcV2wpJbVZ" Comment="" Bounds="737,476,35,35" ShowValueBox="true" isIOBox="true" />
             </Canvas>
             <Patch Id="VLJcXB5bp2yPq4uqSMVsHz" Name="Create">
               <Pin Id="DSqeRmpiCRbNCSaxMC0tbF" Name="Device" Kind="InputPin">
@@ -3827,7 +3831,6 @@
             <Link Id="V7xVgvfjOjbL4q06jUzXt5" Ids="DSqeRmpiCRbNCSaxMC0tbF,Esk3fKDYwEcPzGZNo0SS1p" IsHidden="true" />
             <Link Id="Jxr5yPE6w1bMnEjBj3K8Nn" Ids="Esk3fKDYwEcPzGZNo0SS1p,G2nAz7YuYWeQOSYaNDqQOG" />
             <Link Id="A0J4oGccoe8PljutovmwhH" Ids="KwQQLX5A1EQPel55c67qxf,HseFZKoOETHNzlxsppJBdC" />
-            <Link Id="GVGOmpcvXFJMH745qBoj3C" Ids="U3Ujy0501lHLoMe2M0Nb0X,JT2uYrypfiTLR9SeEeLUum" />
             <Link Id="TWvEeoIQx1nMqZG3R37Ssw" Ids="GzjIr6T1Ip1O5UkQjvV4mm,AezdVuCMYNCNP3XCOGyJIf" />
             <Link Id="ILlUQXWaolGMWb1OqRB68h" Ids="GgyNSW8eKQuPMHIrFNcRhN,K7AEpc0jiknPDHQOZgrfGa" />
             <Slot Id="ObZldodo9Y4MFucc4MJfgV" Name="Pipeline" />
@@ -3884,6 +3887,11 @@
             <Link Id="B7qJMEm3V3AO0sR56yu0zS" Ids="LuQhia0ilHYOR1Xr9oviGU,BjEDtuXDKT1QH6PxItz1sk" />
             <Link Id="JlHTeTnSG8sLeQrXLcvUbn" Ids="JpYtpx5kUYXOLi21p3XVXP,G3R2P8E4y4sO3acvruGIgr" />
             <Link Id="MkitpBZ761rLfJSOwyMXUn" Ids="GjeTvUmAf0QPvTTBZ3vZGl,VAlfBFKdjHyNzy0YP58UYJ" />
+            <Link Id="RKz7ye2FZixLTcx9KKtMS6" Ids="PrBSYN5jkYJPT44xxlNonz,JT2uYrypfiTLR9SeEeLUum" />
+            <Link Id="SiIo3T9Ck4MQMqTvqAW3tZ" Ids="SZ8ZkChQgQSM1hl1cSzydr,UgNWPbEgJ34OGej3gBbDjM" />
+            <Link Id="CMiIUbhgrk7M2TC4P7nhxx" Ids="LuQhia0ilHYOR1Xr9oviGU,VY563T4KiqIOsNGjywfkxt" />
+            <Link Id="KPIs6XCHbusNVv11yevtZe" Ids="PrBSYN5jkYJPT44xxlNonz,JDXoVB44sC6LImfT6ZfQdy" />
+            <Link Id="Sr7k74hfPZhMhwUttGkS6e" Ids="GjeTvUmAf0QPvTTBZ3vZGl,IhVQ1surh7qQAcV2wpJbVZ" />
           </Patch>
         </Node>
         <!--
@@ -8832,7 +8840,7 @@
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="GcUGuHV9SpROBBG9KvmjUd" Name="Enable IMU" Kind="InputPin" Bounds="1067,311" DefaultValue="True" Visibility="Optional">
+            <Pin Id="GcUGuHV9SpROBBG9KvmjUd" Name="Enable IMU" Kind="InputPin" Bounds="1067,311" DefaultValue="False" Visibility="Optional">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -11432,7 +11440,7 @@
   <PlatformDependency Id="GgZ04bRydoKLCEJ0EJoZ9U" Location="System" />
   <PlatformDependency Id="MEi00LwOVkJQJln6BsocKF" Location="System.Runtime" />
   <PlatformDependency Id="St20cYQsuDvMrEwLnbYFXM" Location="System.Runtime.InteropServices" />
-  <NugetDependency Id="MBwkEfA6Y4FNTTjLfxAsYw" Location="VL.Core" Version="2020.1.0" />
+  <NugetDependency Id="MBwkEfA6Y4FNTTjLfxAsYw" Location="VL.Core" Version="2020.1.3" />
   <PlatformDependency Id="CP2SRXNk7y3M1h6x3HA9bf" Location="../../vvvv-private/vvvv50/VVVV.Gamma/src/bin/Debug/net472/System.Reactive.dll" />
   <PlatformDependency Id="D4Vj6IfleIZOCATx6fd6iF" Location="./lib/net461/VL.Devices.RealSense.dll" />
   <PlatformDependency Id="OjarwE48LezNbmTLvA3HOK" Location="./lib/net461/Intel.Realsense.dll" />
