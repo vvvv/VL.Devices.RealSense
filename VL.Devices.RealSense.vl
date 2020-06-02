@@ -3801,10 +3801,6 @@
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
-              <Pad Id="UgNWPbEgJ34OGej3gBbDjM" Comment="Success" Bounds="705,377,35,35" ShowValueBox="true" isIOBox="true" />
-              <Pad Id="VY563T4KiqIOsNGjywfkxt" Comment="" Bounds="870,377,133,22" ShowValueBox="true" isIOBox="true" />
-              <Pad Id="JDXoVB44sC6LImfT6ZfQdy" Comment="Tag" Bounds="1047,267,95,3" ShowValueBox="true" isIOBox="true" />
-              <Pad Id="IhVQ1surh7qQAcV2wpJbVZ" Comment="" Bounds="737,476,35,35" ShowValueBox="true" isIOBox="true" />
             </Canvas>
             <Patch Id="VLJcXB5bp2yPq4uqSMVsHz" Name="Create">
               <Pin Id="DSqeRmpiCRbNCSaxMC0tbF" Name="Device" Kind="InputPin">
@@ -3888,10 +3884,6 @@
             <Link Id="JlHTeTnSG8sLeQrXLcvUbn" Ids="JpYtpx5kUYXOLi21p3XVXP,G3R2P8E4y4sO3acvruGIgr" />
             <Link Id="MkitpBZ761rLfJSOwyMXUn" Ids="GjeTvUmAf0QPvTTBZ3vZGl,VAlfBFKdjHyNzy0YP58UYJ" />
             <Link Id="RKz7ye2FZixLTcx9KKtMS6" Ids="PrBSYN5jkYJPT44xxlNonz,JT2uYrypfiTLR9SeEeLUum" />
-            <Link Id="SiIo3T9Ck4MQMqTvqAW3tZ" Ids="SZ8ZkChQgQSM1hl1cSzydr,UgNWPbEgJ34OGej3gBbDjM" />
-            <Link Id="CMiIUbhgrk7M2TC4P7nhxx" Ids="LuQhia0ilHYOR1Xr9oviGU,VY563T4KiqIOsNGjywfkxt" />
-            <Link Id="KPIs6XCHbusNVv11yevtZe" Ids="PrBSYN5jkYJPT44xxlNonz,JDXoVB44sC6LImfT6ZfQdy" />
-            <Link Id="Sr7k74hfPZhMhwUttGkS6e" Ids="GjeTvUmAf0QPvTTBZ3vZGl,IhVQ1surh7qQAcV2wpJbVZ" />
           </Patch>
         </Node>
         <!--
