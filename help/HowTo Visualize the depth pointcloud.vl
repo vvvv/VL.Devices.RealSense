@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FSTgYRHcEkLOThlIQrLEdw" LanguageVersion="2020.1.2.109" Version="0.128">
+<Document xmlns:p="property" Id="FSTgYRHcEkLOThlIQrLEdw" LanguageVersion="2020.1.2.135" Version="0.128">
   <Patch Id="JBtPzl71qIKNFbTrwnyTGp">
     <Canvas Id="SFmkqv266JHLuOC9PkL2Tn" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -202,7 +202,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <Pin Id="JTXrhzm5Ug8MISAau5o3d2" Name="Bounds" Kind="InputPin" DefaultValue="860, 73, 745, 612">
+            <Pin Id="JTXrhzm5Ug8MISAau5o3d2" Name="Bounds" Kind="InputPin" DefaultValue="1142, 61, 613, 499">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -364,8 +364,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.2-0109-gdc2a2201c2" />
-  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.2-0109-gdc2a2201c2" />
+  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.2" />
+  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.2" />
   <NugetDependency Id="U98q7v2PBvcP5vzK579zef" Location="VL.Skia3d" Version="0.1.6-alpha" />
   <NugetDependency Id="I0lXz4TBK4iM7uTgOyHpOI" Location="VL.Devices.RealSense" Version="0.0.0.0" />
 </Document>
