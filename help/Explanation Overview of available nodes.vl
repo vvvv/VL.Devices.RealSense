@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="PJ5RP8N18OLPR1l628Yh8e" LanguageVersion="2020.1.2.135" Version="0.128">
-  <NugetDependency Id="SPARBCxl9pELQXaVXzEMMW" Location="VL.CoreLib" Version="2020.1.2" />
+<Document xmlns:p="property" Id="PJ5RP8N18OLPR1l628Yh8e" LanguageVersion="2020.1.3.147" Version="0.128">
+  <NugetDependency Id="SPARBCxl9pELQXaVXzEMMW" Location="VL.CoreLib" Version="2020.1.3" />
   <Patch Id="I34B5vZdUexM4xpGgWMyGT">
     <Canvas Id="E7jI6aAm7iON9pLSVguMYU" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -16,12 +16,12 @@
       <Patch Id="HMZ663BKFw2NO7S9qXmXKJ">
         <Canvas Id="Vlb536SjsKhNIu5sD2yogp" CanvasType="Group">
           <Pad Id="Mf9OyxCEUz8NOdVWadeuFv" Bounds="-674,105" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="I4lJOrXmYMfLjE7X21V30B" Comment="Device" Bounds="292,134,203,15" ShowValueBox="true" isIOBox="true" Value="Default">
+          <Pad Id="I4lJOrXmYMfLjE7X21V30B" Comment="Device" Bounds="293,134,203,15" ShowValueBox="true" isIOBox="true" Value="Default">
             <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="TypeFlag" Name="RealSenseDevice" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="291,290,225,19" Id="Kw0y6WgdBi3NwDAkkwMBjS">
+          <Node Bounds="291,290,224,19" Id="Kw0y6WgdBi3NwDAkkwMBjS">
             <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RealSense" />
@@ -29,6 +29,10 @@
             <Pin Id="LRkyffoNe9WPFynKYSvFCi" Name="Device" Kind="InputPin" />
             <Pin Id="OKARzzENPBSMNfn1KQnYdM" Name="Color Resolution" Kind="InputPin" />
             <Pin Id="QLzvInL1ltqPXfXbdmgG2Q" Name="Depth Resolution" Kind="InputPin" />
+            <Pin Id="FYLHkj17a22PsT1alrXljR" Name="Enable Color" Kind="InputPin" />
+            <Pin Id="FhDwTx0s7DlQNgMrDrlF5x" Name="Enable Depth" Kind="InputPin" />
+            <Pin Id="UedGuMSYdrCPYrM6I9rHfH" Name="Enable Infrared" Kind="InputPin" />
+            <Pin Id="MmZywodBRJIPj5813GEw6Z" Name="Enable IMU" Kind="InputPin" />
             <Pin Id="VrEN4qmD39dPclNJcwqEKK" Name="Options" Kind="InputPin" />
             <Pin Id="JmJyxWhQw7oNQnTTWufLvt" Name="Enabled" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -69,7 +73,7 @@
             <Pin Id="N4wTZMHU7BOMOScxfBMfQ0" Name="Accelerometer" Kind="OutputPin" />
             <Pin Id="AkoLVRRT9RgPl5BYQ1bEZA" Name="Gyroscope" Kind="OutputPin" />
           </Node>
-          <Pad Id="RlV9f5pCRJ2O50mvatqCYb" Comment="Error" Bounds="512,356,189,-6" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RlV9f5pCRJ2O50mvatqCYb" Comment="Error" Bounds="512,329,189,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="QnFDpaHgMdfLmSBbLkiWt4" Bounds="295,413,118,25" ShowValueBox="true" isIOBox="true" Value="Depth Filters">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -246,7 +250,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="403,226,61,19" Id="KxauetCEWpcOJsO5o2ZxWF">
+          <Node Bounds="430,227,61,19" Id="KxauetCEWpcOJsO5o2ZxWF">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SetOption" />
@@ -257,7 +261,7 @@
             <Pin Id="VMgNzAousd7O5nIuYExXez" Name="Output" Kind="StateOutputPin" />
             <Pin Id="MbMuryHI185PhF9Js50ApG" Name="Is Supported" Kind="OutputPin" />
           </Node>
-          <Node Bounds="456,256,45,19" Id="CtdNzEZbMjpNsiBNDGDDRm">
+          <Node Bounds="483,257,45,19" Id="CtdNzEZbMjpNsiBNDGDDRm">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Cons" />
@@ -268,7 +272,7 @@
             <Pin Id="U58LGScMBZaOH7QhjPpQDI" Name="Result" Kind="OutputPin" />
             <Pin Id="VEUano3ylEeMFntIGdjKmj" Name="Input 3" Kind="InputPin" />
           </Node>
-          <Node Bounds="476,226,61,19" Id="GUmWkn0ZstaLCtFVEGpl6R">
+          <Node Bounds="503,227,61,19" Id="GUmWkn0ZstaLCtFVEGpl6R">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SetOption" />
@@ -279,7 +283,7 @@
             <Pin Id="Q1diUqf4dgrLWPncqQGbFa" Name="Output" Kind="StateOutputPin" />
             <Pin Id="HER7fFzIndYMCzyylRj1Z4" Name="Is Supported" Kind="OutputPin" />
           </Node>
-          <Pad Id="JOdyUeQbX34NJNy5XvUzJn" Bounds="393,199,106,25" ShowValueBox="true" isIOBox="true" Value="Set Options">
+          <Pad Id="JOdyUeQbX34NJNy5XvUzJn" Bounds="423,197,106,25" ShowValueBox="true" isIOBox="true" Value="Set Options">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -358,7 +362,7 @@
             <Pin Id="CSMxRLgSzTTLOqVDA4Ntb9" Name="Stream" Kind="InputPin" />
             <Pin Id="DpgiLJkf1nfMm78CxnAozu" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="550,226,109,19" Id="Hhf8QjVVdjWL1yojn2vysk">
+          <Node Bounds="578,227,109,19" Id="Hhf8QjVVdjWL1yojn2vysk">
             <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SetAutoExposureROI" />
@@ -367,15 +371,6 @@
             <Pin Id="EtwapuTNQXmOVnIAVq44MK" Name="ROI" Kind="InputPin" />
             <Pin Id="TxtifKQZfQyQVfO11sOktp" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="DDi9Q1P9mb8ONNYO4x7UiE" Bounds="534,295,299,42" ShowValueBox="true" isIOBox="true" Value="&lt; MiddleClick the node and choose &quot;Configure&quot; to Enable / Disable individual Streams.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Pad Id="Fckm5aA0gmvQJl9SxFy447" Bounds="805,443,44,25" ShowValueBox="true" isIOBox="true" Value="Get">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -466,6 +461,17 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="930,542,35,19" Id="K3JGK7cKuUuLWN8vtuahXp">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Devices" />
+              <CategoryReference Kind="Category" Name="RealSense" />
+              <Choice Kind="ProcessAppFlag" Name="FOV" />
+            </p:NodeReference>
+            <Pin Id="A8aTZiSqD9lOJvFdLjPm2h" Name="Input" Kind="InputPin" />
+            <Pin Id="RXHR8KsKLakNoV8wMSrXVi" Name="Color FOV" Kind="OutputPin" />
+            <Pin Id="OYMzDMQaYxaMC05TYhEm2U" Name="Depth FOV" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="DFlF1wMJScHMryuPZ7qpLF" Name="Create" />
         <Patch Id="DfiGTdtNV7fQboyAJXasAN" Name="Update" />
@@ -487,10 +493,14 @@
         <Link Id="Afhbln2mYwzOe4ry5jJW5z" Ids="PjywjQRmYVtMti609Mshwm,GTLNVru9NDFO0DFVzzC029" />
         <Link Id="CriL2CjjW2CM93J5412Xtv" Ids="PjywjQRmYVtMti609Mshwm,TcAy9eokt8yLjMcCy7OHWj" />
         <Link Id="KdU27N3kiV2NLCnPUjHFKX" Ids="PjywjQRmYVtMti609Mshwm,STvU8cbHWD4LZJuAWY0tDH" />
+        <Link Id="UMwb8pAUmgyMUo2uFiETj2" Ids="U0yQA0LNONjOpMurok7li3,TomNaxbiqM0QQXrjuSpOdG" />
+        <Link Id="CnMtSBLFQfbMoMcLyXPtYz" Ids="LfqlW1fL1KIMK8h4Cnhwtq,Ryw2qxrTmqEMEp7V73Kkua" />
+        <Link Id="VxMFDIdbCxqPSw78rpMqLT" Ids="JMkbIosob9cPPqrmZYNyv1,T8yr2tcGv8MMwgxXzxZjTU" />
+        <Link Id="Uc5I4Py3jE9QLzpurKnEdg" Ids="CKcfScdPw8hMJDqn8Yeq02,DzaLqFYcVQXOcoQDdFOu8d" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="P46lNCmsqRBNDLHA9o3deD" Location="VL.Skia" Version="2020.1.2" />
-  <NugetDependency Id="IStpBBnesi2ME0Mas3eWRc" Location="VL.Core" Version="2020.1.2" />
+  <NugetDependency Id="P46lNCmsqRBNDLHA9o3deD" Location="VL.Skia" Version="2020.1.3" />
+  <NugetDependency Id="IStpBBnesi2ME0Mas3eWRc" Location="VL.Core" Version="2020.1.3" />
   <NugetDependency Id="NMSVuJ2Gp4HQArItUfffVm" Location="VL.Devices.RealSense" Version="0.0.0.0" />
 </Document>
