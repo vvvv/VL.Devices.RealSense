@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="AUeZcyP0BPZMj1LWSAvY9H" LanguageVersion="2020.1.1.107" Version="0.128">
+<Document xmlns:p="property" Id="AUeZcyP0BPZMj1LWSAvY9H" LanguageVersion="2020.1.3.147" Version="0.128">
   <Patch Id="JBtPzl71qIKNFbTrwnyTGp">
     <Canvas Id="SFmkqv266JHLuOC9PkL2Tn" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -16,7 +16,7 @@
           <Canvas Id="NXRHdQaiLsgQIeOTNfEqLv" CanvasType="Group">
             <ControlPoint Id="Ogbxxt9tkVhPJZX5yAzwFQ" Bounds="223,472" />
             <Node Bounds="221,405,75,19" Id="BYn06zHdVBSPQ52Ab9g1CK">
-              <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Fill the holes in the Deph image.vl">
+              <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Fill Holes in the Depth image.vl">
                 <Choice Kind="ProcessNode" Name="ProjectPoints" />
               </p:NodeReference>
               <Pin Id="NCrVxJnACAuNadL1YwGYeE" Name="Input" Kind="InputPin" />
@@ -156,7 +156,7 @@
       </p:NodeReference>
       <Patch Id="AakuIj5uHvGOzeYYASa5w1">
         <Canvas Id="OmMTMn4stX9OcpjNA5bkqW" CanvasType="Group">
-          <Node Bounds="262,568,165,19" Id="KqQu9Wvbg6fOay5o4ZBGWB">
+          <Node Bounds="261,568,165,19" Id="KqQu9Wvbg6fOay5o4ZBGWB">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -208,7 +208,7 @@
             </p:NodeReference>
             <Pin Id="CI3vNBlP2MNQcoG40lyR0x" Name="Input" Kind="InputPin" />
             <Pin Id="VQaEAdm8iHnMioIT7VJ8dx" Name="Magnitude" Kind="InputPin" />
-            <Pin Id="BS1isQamAP7PtMFn6q8E5o" Name="Enable" Kind="InputPin" />
+            <Pin Id="ObkFfMF6I1XO2Sd5Kd0BNq" Name="Enabled" Kind="InputPin" />
             <Pin Id="JZkKkHbGSy8LYPAUOFjSQO" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="FppY6qYeuXyOVzThbPFcQH" Comment="Magnitude" Bounds="346,237,35,15" ShowValueBox="true" isIOBox="true" Value="4">
@@ -216,7 +216,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="302,474,67,26" Id="BZw1TBTHHljLYdM3ofZLQT">
+          <Node Bounds="301,474,67,26" Id="BZw1TBTHHljLYdM3ofZLQT">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FromImage" />
@@ -228,7 +228,7 @@
             <Pin Id="ELLUcNNkBRcO582qZRedAR" Name="Discard Higher Bits" Kind="InputPin" />
             <Pin Id="LJMr2yGx8whLqr98j1ymKO" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="302,520,125,19" Id="D0WURJdlclaOlEFDBRBwtW">
+          <Node Bounds="301,520,125,19" Id="D0WURJdlclaOlEFDBRBwtW">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawImage" />
@@ -261,7 +261,7 @@
             <Pin Id="HjGpW3GozNZOXTxlCz0TVF" Name="Input" Kind="InputPin" />
             <Pin Id="RC5aWBPARsNQHNgtrZIXeN" Name="Smooth Alpha" Kind="InputPin" />
             <Pin Id="Bc6yxA3PMYNNLhnnq47sT4" Name="Smooth Delta" Kind="InputPin" />
-            <Pin Id="IZW6MhxLaBINxFYxlQWNoj" Name="Enable" Kind="InputPin" />
+            <Pin Id="PTKsdmzwyqiNZ7nbb64iRm" Name="Enabled" Kind="InputPin" />
             <Pin Id="DtdOlo9EBiRMWjX4FNEmC0" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="301,330,87,19" Id="Qem63KocPYgLykVkw2hsbo">
@@ -272,7 +272,11 @@
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="Bs8EnbFYnHROCA4ojvSts4" Name="Input" Kind="InputPin" />
             <Pin Id="EJIyd2Ffu4tN4a0YkN1TAu" Name="Mode" Kind="InputPin" />
-            <Pin Id="NlUBQAl7JEsNSCmkb9Wskc" Name="Enable" Kind="InputPin" />
+            <Pin Id="B9KnUE5N6l9LAogQq1sKg7" Name="Enabled" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="EhHcvATmtHpLGY2Wqw3JPC" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="301,399,115,19" Id="H7Wm0NYG1gKLbsWBbLJZmy">
@@ -335,7 +339,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.1-0104-gfc43b7deff" />
-  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.1-0104-gfc43b7deff" />
+  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.3" />
+  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.3" />
   <NugetDependency Id="I0lXz4TBK4iM7uTgOyHpOI" Location="VL.Devices.RealSense" Version="0.0.0.0" />
 </Document>
