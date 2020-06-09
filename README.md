@@ -1,9 +1,10 @@
 # VL.Devices.RealSense
-Set of nodes to use [Intel RealSense](https://www.intelrealsense.com/) devices in vl.
+Set of nodes to use [Intel RealSense](https://www.intelrealsense.com/) depth cameras in vl.
 
-The development is sponsored by [wirmachenbunt](https://wirmachenbunt.de/).
+Try it with vvvv, the visual live-programming environment for .NET  
+Download: http://visualprogramming.net
 
-We are entering testing phase.
+The development was sponsored by [wirmachenbunt](https://wirmachenbunt.de/).
 
 ## Using the library
 In order to use this library with vl you have to install the nuget that is available via nuget.org.
