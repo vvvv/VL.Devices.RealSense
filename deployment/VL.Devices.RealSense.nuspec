@@ -8,9 +8,8 @@
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.Devices.RealSense</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Set of nodes to use Intel RealSense devices in VL</summary>
-    <description>Intel RealSense for VL</description>
-    <copyright>Copyright © 2020 by vvvv group. All rights reserved.</copyright>
+    <summary>Intel RealSense for vvvv</summary>
+    <description>Intel RealSense for vvvv</description>
     <tags>VL, RealSense, camera, video, depth, tracking</tags>
 	<license type="expression">LGPL-3.0-only</license>
 	<dependencies>
