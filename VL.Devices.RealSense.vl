@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="B3rGtyZDXvLOgYGrDxnNa6" LanguageVersion="2020.1.3.147" Version="0.128">
-  <NugetDependency Id="DOfXRi7MKyxNeGRyD8tI9g" Location="VL.CoreLib" Version="2020.1.3" />
+<Document xmlns:p="property" Id="B3rGtyZDXvLOgYGrDxnNa6" LanguageVersion="2020.1.7.184" Version="0.128">
+  <NugetDependency Id="DOfXRi7MKyxNeGRyD8tI9g" Location="VL.CoreLib" Version="2020.1.7" />
   <Patch Id="QC65oeU7EANNM5KfSEYMcT">
     <Canvas Id="D1nHjsj3mzlNOpT1n6i9K7" DefaultCategory="Devices.RealSense" CanvasType="FullCategory">
       <Canvas Id="IoCc0ICIZtZM01JqAumDzg" Name="Internal" Position="96,142">
@@ -7315,7 +7315,7 @@
     ************************ IMUData (Reactive) ************************
 
 -->
-        <Node Name="IMUData (Reactive)" Bounds="186,439" Id="MvPMFrrrmnNNG7ugjL3Yc4">
+        <Node Name="IMUData (Reactive)" Bounds="188,490" Id="MvPMFrrrmnNNG7ugjL3Yc4">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -7638,6 +7638,124 @@
             <Link Id="ESuQipTXbAEQHLQCiesTEk" Ids="RZDINcAxEISLiDX93jjpSI,R1QORgyZIbENfpSr40ODFJ" />
             <Link Id="UKwywSutpJ2QDIMhSK3pkb" Ids="R1QORgyZIbENfpSr40ODFJ,Vpc8lFvy4N6N5nDvo3TS2a" />
             <Link Id="SUjTijRS3aBMp2JCN5k1SJ" Ids="Vpc8lFvy4N6N5nDvo3TS2a,CU6uxN4NlIMMpGbWw64hJF" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ InfraredImage (Reactive) ************************
+
+-->
+        <Node Name="InfraredImage (Reactive)" Bounds="185,441" Id="AsWzYtzlVtfNJuciB88leV">
+          <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+            <Choice Kind="ContainerDefinition" Name="Process" />
+          </p:NodeReference>
+          <Patch Id="EfElr4whKggO5129uGiNp3">
+            <Canvas Id="CgJ1XJTwWIxNgA48odUzOK" CanvasType="Group">
+              <ControlPoint Id="DmQR3i6PebkLRFXtq51Qfu" Bounds="577,250" />
+              <ControlPoint Id="JfTvUoq11hFNM5jWBL6dOc" Bounds="564,723" />
+              <Node Bounds="601,296,193,376" Id="LUB3bitlkhWPshLHJrR8Vw">
+                <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                  <Choice Kind="ProcessAppFlag" Name="ForEach" />
+                  <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                </p:NodeReference>
+                <Pin Id="ClnJzUgiRywOQZFlrxIlO3" Name="Messages" Kind="InputPin" />
+                <Pin Id="OhsyQ3MQa3uOcgKEw4ph3I" Name="Reset" Kind="InputPin" />
+                <Pin Id="Vn8ReC7IaXWMAuROp8CXRS" Name="Result" Kind="OutputPin" />
+                <Patch Id="MgGn6e8GEioN8i5jlNZELU" ManuallySortedPins="true">
+                  <Patch Id="R0jwlOmJ5TzMUkvd09VYgg" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="DMyfCcS4EBbMRQ4zqUw3sf" Name="Update" ManuallySortedPins="true">
+                    <Pin Id="Hb6yonWyKqFOeuWabnWDYN" Name="Input 1" Kind="InputPin" />
+                    <Pin Id="S10OQ1KbtSINBCMC3x1sPt" Name="Output" Kind="OutputPin" />
+                  </Patch>
+                  <ControlPoint Id="HDIJ1XSR0tZOZmDG8xTfSO" Bounds="615,304" />
+                  <ControlPoint Id="HCOumQO8MjiQMusMe1aPuH" Bounds="678,665" />
+                  <Node Bounds="613,368,69,26" Id="JmraUT9o2BCMo8pkyTd7yL">
+                    <p:NodeReference LastCategoryFullName="Intel.RealSense.FrameSet" LastSymbolSource="Intel.Realsense.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="FrameSet" />
+                      <Choice Kind="OperationCallFlag" Name="InfraredFrame" />
+                    </p:NodeReference>
+                    <Pin Id="HRHhgFWn0nAPghwm46WVdY" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="PvtYMvKgJJ5MxqlcYpLoqG" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="RB09Na9JDRaLWeBDWThdAq" Name="Infrared Frame" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="664,467,65,19" Id="Orv3MRriStfNW10K94BrVZ">
+                    <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+                    </p:NodeReference>
+                    <Pin Id="JgZkQD9F4VGLMPKIfgN64B" Name="X" Kind="InputPin" />
+                    <Pin Id="IGl6L9U6OB9OO4k1wH0SJz" Name="Result" Kind="OutputPin" />
+                    <Pin Id="Nkw4HKFQDQMNKkgUnAYfMK" Name="Not Assigned" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="664,513,118,121" Id="ONBfrdttbopOZ3bgeEuRn3">
+                    <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                      <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                      <CategoryReference Kind="Category" Name="Primitive" />
+                    </p:NodeReference>
+                    <Pin Id="UAkCPfwTPf6OJnB62almTK" Name="Condition" Kind="InputPin" />
+                    <ControlPoint Id="PveHIKT9qZOOSgOaa0jb8o" Bounds="678,629" Alignment="Bottom" />
+                    <ControlPoint Id="CwDF4d9SmvuN2jQ3BugHWU" Bounds="697,520" Alignment="Top" />
+                    <Patch Id="V6dmRmU48RzOOljsUYSPUg" ManuallySortedPins="true">
+                      <Patch Id="VATZ8QOIDdUNiha3DwlXf4" Name="Create" ManuallySortedPins="true" />
+                      <Patch Id="Hx2hpQFN4byPqeBPJJ8NZS" Name="Then" ManuallySortedPins="true" />
+                      <Node Bounds="676,581,80,26" Id="H62mraXZffaPANXXUjTC5p">
+                        <p:NodeReference LastCategoryFullName="VL.Devices.RealSense.FrameExtensions" LastSymbolSource="VL.Devices.RealSense.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="ToColorImage" />
+                        </p:NodeReference>
+                        <Pin Id="KT2LQ0vYIEFLUeLpgbEq8J" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="IQ1ZbUd0pDAN70wsUsbGhH" Name="Result" Kind="OutputPin" />
+                      </Node>
+                      <Node Bounds="676,539,94,26" Id="PXzcNlgCTzKMka9xGk0GL3">
+                        <p:NodeReference LastCategoryFullName="Intel.RealSense.DisposableExtensions" LastSymbolSource="Intel.Realsense.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="DisposeWith" />
+                        </p:NodeReference>
+                        <Pin Id="NPWF4LYfYZzQZ8uaHAmtrJ" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="DVozrnZ0b8KOHm68vMKhES" Name="Composite" Kind="InputPin" />
+                        <Pin Id="J3F2LUKyQwVPAx6os6Wpep" Name="Output" Kind="OutputPin" />
+                      </Node>
+                    </Patch>
+                  </Node>
+                  <Node Bounds="695,432,79,19" Id="IDhkKVGxoMOPLlAxCCr215">
+                    <p:NodeReference LastCategoryFullName="Graphics.Imaging.Image" LastSymbolSource="VL.Imaging.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="MutableInterfaceType" Name="Image" />
+                      <Choice Kind="OperationCallFlag" Name="CreateDefault" />
+                    </p:NodeReference>
+                    <Pin Id="JfAwJpc1066LzPp27n9fx0" Name="Default" Kind="StateOutputPin" />
+                  </Node>
+                </Patch>
+              </Node>
+            </Canvas>
+            <Patch Id="RmgMNQoZjDIP1I0bXe5VkA" Name="Create" />
+            <Patch Id="N0wVFLQtTpWOHu3v49ufmV" Name="Update">
+              <Pin Id="SmOjEue4is6MUj16nnxbhx" Name="Input" Kind="InputPin" Bounds="578,349" />
+              <Pin Id="PKqxXWwMbXiMXRIRDiIaPG" Name="Output" Kind="OutputPin" Bounds="576,523" />
+            </Patch>
+            <ProcessDefinition Id="OLKFm2rHjhNPSqPfKq9k15">
+              <Fragment Id="RFuKr2m6EClQHdrmh64HEw" Patch="RmgMNQoZjDIP1I0bXe5VkA" Enabled="true" />
+              <Fragment Id="VO83qVttvgFPW8aTQzgtPm" Patch="N0wVFLQtTpWOHu3v49ufmV" Enabled="true" />
+            </ProcessDefinition>
+            <Link Id="To8WmmcDDHkQMPEBqQdtCq" Ids="DmQR3i6PebkLRFXtq51Qfu,ClnJzUgiRywOQZFlrxIlO3" />
+            <Link Id="KRpg8PKUknjNsujqrBCT8K" Ids="SmOjEue4is6MUj16nnxbhx,DmQR3i6PebkLRFXtq51Qfu" IsHidden="true" />
+            <Link Id="Jiths0l5xUmLapMRcSBpTO" Ids="JfTvUoq11hFNM5jWBL6dOc,PKqxXWwMbXiMXRIRDiIaPG" IsHidden="true" />
+            <Link Id="TcnY1EFoCzSMdNjeA3Pc7J" Ids="Hb6yonWyKqFOeuWabnWDYN,HDIJ1XSR0tZOZmDG8xTfSO" IsHidden="true" />
+            <Link Id="Mvec0R1YztlQP80xbqct7b" Ids="HCOumQO8MjiQMusMe1aPuH,S10OQ1KbtSINBCMC3x1sPt" IsHidden="true" />
+            <Link Id="UnfKjIF1kaINN1wq0wPXv1" Ids="Vn8ReC7IaXWMAuROp8CXRS,JfTvUoq11hFNM5jWBL6dOc" />
+            <Link Id="LzBdu9myhGfNYsIy4KLwcw" Ids="IGl6L9U6OB9OO4k1wH0SJz,UAkCPfwTPf6OJnB62almTK" />
+            <Link Id="CpP8sbSFfRWLALZbjEKL6M" Ids="CwDF4d9SmvuN2jQ3BugHWU,PveHIKT9qZOOSgOaa0jb8o" IsFeedback="true" />
+            <Link Id="FlZRHxFgBT9QVLGd00qPUl" Ids="IQ1ZbUd0pDAN70wsUsbGhH,PveHIKT9qZOOSgOaa0jb8o" />
+            <Link Id="NGJu01etywLMJPM7eTR5Ic" Ids="J3F2LUKyQwVPAx6os6Wpep,KT2LQ0vYIEFLUeLpgbEq8J" />
+            <Link Id="MjRlDrUowbWNsPw3oENSlp" Ids="JfAwJpc1066LzPp27n9fx0,CwDF4d9SmvuN2jQ3BugHWU" />
+            <Link Id="QvaKAczVE2fOtcBzVj5t8g" Ids="HDIJ1XSR0tZOZmDG8xTfSO,HRHhgFWn0nAPghwm46WVdY" />
+            <Link Id="D1P2ealLxRzQBlTlPO4NMY" Ids="HDIJ1XSR0tZOZmDG8xTfSO,DVozrnZ0b8KOHm68vMKhES" />
+            <Link Id="TuW9PN66VKRP3M4PfVJn9E" Ids="PveHIKT9qZOOSgOaa0jb8o,HCOumQO8MjiQMusMe1aPuH" />
+            <Link Id="UYTLgYdAwViPqzzZ3I3A5X" Ids="RB09Na9JDRaLWeBDWThdAq,JgZkQD9F4VGLMPKIfgN64B" />
+            <Link Id="M42Z97Jeq0MOUjDmNzbZnf" Ids="RB09Na9JDRaLWeBDWThdAq,NPWF4LYfYZzQZ8uaHAmtrJ" />
           </Patch>
         </Node>
       </Canvas>
@@ -8652,7 +8770,7 @@
     ************************ IMUData ************************
 
 -->
-      <Node Name="IMUData" Bounds="298,514" Id="MBXBxrnd5KVNKXGrZZTGJ7">
+      <Node Name="IMUData" Bounds="298,574" Id="MBXBxrnd5KVNKXGrZZTGJ7">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -10396,7 +10514,7 @@
     ************************ Align ************************
 
 -->
-      <Node Name="Align" Bounds="300,589" Id="EMzxgiFDOCbLtJzPRKrTRb">
+      <Node Name="Align" Bounds="300,649" Id="EMzxgiFDOCbLtJzPRKrTRb">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -11397,6 +11515,59 @@
           <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
         </p:ValueBoxSettings>
       </Pad>
+      <!--
+
+    ************************ InfraredImage ************************
+
+-->
+      <Node Name="InfraredImage" Bounds="298,517" Id="N3eAMfdfxW9LJNyjkWxaB6">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="MANu1tFxSroNZeUtpwzEbb">
+          <Canvas Id="KjROfJhGrZMP97WKxJkBpp" CanvasType="Group">
+            <ControlPoint Id="ILxRNZiOV4aPBtbST4ozD3" Bounds="563,349" />
+            <ControlPoint Id="DEvNozOL3sfOP63bswcRD7" Bounds="563,481,3,0" />
+            <Node Bounds="561,426,91,19" Id="KTwyQ6p4E4fMhCTNFjn2aM">
+              <p:NodeReference LastCategoryFullName="Graphics.Imaging" LastSymbolSource="VL.Imaging.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="HoldLatestCopy" />
+                <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Graphics" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="JN5gKbnpFcfNcJayU1FfXm" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="EtTxZtrqyAFLsqQV7sFvGy" Name="Timeout" Kind="InputPin" />
+              <Pin Id="BYsCN5X3gICNJmRjWsAx2i" Name="Reset" Kind="InputPin" />
+              <Pin Id="NCyNvap5ErNOcCaAM47xZn" Name="Result" Kind="OutputPin" />
+              <Pin Id="T4arJaGlnD6LkQo72MzTCM" Name="Swap Count" Kind="OutputPin" />
+              <Pin Id="CmM0d2nWJovM38zpGgpezy" Name="Drop Count" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="561,385,35,19" Id="BYmjXXQynUHQDvp3JQy2Y8">
+              <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="InfraredImage (Reactive)" />
+              </p:NodeReference>
+              <Pin Id="M7vxGJJHgjULF0xxY6a4Sz" Name="Input" Kind="InputPin" />
+              <Pin Id="N0b7fR1TIqjLAfAqN8aTw0" Name="Output" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="FNRtbr24OrfLYarEjpPe57" Name="Create" />
+          <Patch Id="KgiNKctkTkaO8fbbEUYGHH" Name="Update">
+            <Pin Id="EbW2psGy9oaLDVQbbrGK8V" Name="Input" Kind="InputPin" Bounds="578,349" />
+            <Pin Id="BneKyGDFCWqLNVpU7hMA7J" Name="Output" Kind="OutputPin" Bounds="576,523" />
+          </Patch>
+          <ProcessDefinition Id="HR61Kpbl3ACLsBSPq9hnvy">
+            <Fragment Id="Pk0gA7g1f9LQQwuKoWabfy" Patch="FNRtbr24OrfLYarEjpPe57" Enabled="true" />
+            <Fragment Id="ANwOiN6jwpwM7vbeo5r7Iz" Patch="KgiNKctkTkaO8fbbEUYGHH" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="PGG1hkau1xmMvZ0d76XO2T" Ids="EbW2psGy9oaLDVQbbrGK8V,ILxRNZiOV4aPBtbST4ozD3" IsHidden="true" />
+          <Link Id="PstJoqtym6mNXEsH5Y6mO0" Ids="DEvNozOL3sfOP63bswcRD7,BneKyGDFCWqLNVpU7hMA7J" IsHidden="true" />
+          <Link Id="IHVdcNqNv7vNUQ943NWZtv" Ids="NCyNvap5ErNOcCaAM47xZn,DEvNozOL3sfOP63bswcRD7" />
+          <Link Id="D6i76EPy0jYQGo79uWzNoQ" Ids="ILxRNZiOV4aPBtbST4ozD3,M7vxGJJHgjULF0xxY6a4Sz" />
+          <Link Id="SHAUVeJYCMNOwgtzVtarJ4" Ids="N0b7fR1TIqjLAfAqN8aTw0,JN5gKbnpFcfNcJayU1FfXm" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -11422,7 +11593,7 @@
   <PlatformDependency Id="GgZ04bRydoKLCEJ0EJoZ9U" Location="System" />
   <PlatformDependency Id="MEi00LwOVkJQJln6BsocKF" Location="System.Runtime" />
   <PlatformDependency Id="St20cYQsuDvMrEwLnbYFXM" Location="System.Runtime.InteropServices" />
-  <NugetDependency Id="MBwkEfA6Y4FNTTjLfxAsYw" Location="VL.Core" Version="2020.1.3" />
+  <NugetDependency Id="MBwkEfA6Y4FNTTjLfxAsYw" Location="VL.Core" Version="2020.1.7" />
   <PlatformDependency Id="CP2SRXNk7y3M1h6x3HA9bf" Location="../../vvvv-private/vvvv50/VVVV.Gamma/src/bin/Debug/net472/System.Reactive.dll" />
   <PlatformDependency Id="D4Vj6IfleIZOCATx6fd6iF" Location="./lib/net461/VL.Devices.RealSense.dll" />
   <PlatformDependency Id="OjarwE48LezNbmTLvA3HOK" Location="./lib/net461/Intel.Realsense.dll" />
