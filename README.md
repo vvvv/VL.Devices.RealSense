@@ -15,7 +15,7 @@ Open VL, go to
 
 and then type:
 
-    nuget install VL.Devices.RealSense -prerelease
+    nuget install VL.Devices.RealSense
 
 For more about installing and referencing nugets [read here](https://vvvv.gitbooks.io/the-gray-book/content/en/reference/libraries/dependencies.html#_manage_nugets).
 
