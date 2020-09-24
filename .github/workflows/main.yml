@@ -22,7 +22,7 @@ jobs:
       uses: nuget/setup-nuget@v1
       
     - name: Publish VL Nuget
-      uses: vvvv/PublishVLNuget@1.0.28-alpha
+      uses: vvvv/PublishVLNuget@1.0.28
       with:
         csproj: src\VL.Devices.RealSense.csproj
         nuspec: deployment\VL.Devices.RealSense.nuspec
