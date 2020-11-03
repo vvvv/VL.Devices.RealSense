@@ -1,10 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
+    <LangVersion>8.0</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <OutputPath>..\lib\net461\</OutputPath>
+    <PackageRepositories>$(MsBuildThisFileDirectory)..\..\</PackageRepositories>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Intel.Realsense, Version=2.23.0.0, Culture=neutral, processorArchitecture=AMD64">
