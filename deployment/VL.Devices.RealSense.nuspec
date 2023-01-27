@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.RealSense</id>
-    <version>1.3.2</version>
+    <version>1.4.0</version>
     <title>VL.Devices.RealSense</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
@@ -20,7 +20,7 @@
   <files>
     <file src="..\lib\net461\Intel.Realsense.dll" target="lib\net461\" exclude="" />
 	<file src="..\lib\net461\VL.Devices.RealSense.dll" target="lib\net461\" exclude="" />	
-	<file src="..\lib-native\x64\realsense2.dll" target="lib-native\x64\" exclude="" />
+	<file src="..\runtimes\**" target="runtimes\" exclude="" />
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
 	<file src="nugeticon.png" target="icon\" />
