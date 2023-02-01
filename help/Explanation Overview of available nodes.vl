@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="PJ5RP8N18OLPR1l628Yh8e" LanguageVersion="2020.1.3.147" Version="0.128">
+<Document xmlns:p="property" Id="PJ5RP8N18OLPR1l628Yh8e" LanguageVersion="2022.5.0-0536-gb07a1658b7" Version="0.128">
   <NugetDependency Id="SPARBCxl9pELQXaVXzEMMW" Location="VL.CoreLib" Version="2020.1.3" />
   <Patch Id="I34B5vZdUexM4xpGgWMyGT">
     <Canvas Id="E7jI6aAm7iON9pLSVguMYU" DefaultCategory="Main" CanvasType="FullCategory" />
@@ -17,12 +17,12 @@
         <Canvas Id="Vlb536SjsKhNIu5sD2yogp" CanvasType="Group">
           <Pad Id="Mf9OyxCEUz8NOdVWadeuFv" Bounds="-674,105" ShowValueBox="true" isIOBox="true" />
           <Pad Id="I4lJOrXmYMfLjE7X21V30B" Comment="Device" Bounds="293,134,203,15" ShowValueBox="true" isIOBox="true" Value="Default">
-            <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="TypeFlag" Name="RealSenseDevice" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="291,290,224,19" Id="Kw0y6WgdBi3NwDAkkwMBjS">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RealSense" />
             </p:NodeReference>
@@ -34,17 +34,13 @@
             <Pin Id="UedGuMSYdrCPYrM6I9rHfH" Name="Enable Infrared" Kind="InputPin" />
             <Pin Id="MmZywodBRJIPj5813GEw6Z" Name="Enable IMU" Kind="InputPin" />
             <Pin Id="VrEN4qmD39dPclNJcwqEKK" Name="Options" Kind="InputPin" />
-            <Pin Id="JmJyxWhQw7oNQnTTWufLvt" Name="Enabled" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
+            <Pin Id="JmJyxWhQw7oNQnTTWufLvt" Name="Enabled" Kind="InputPin" />
             <Pin Id="PjywjQRmYVtMti609Mshwm" Name="Output" Kind="OutputPin" />
             <Pin Id="I3eqOFtsD9rOL2ZjdFWnXp" Name="Profile" Kind="OutputPin" />
             <Pin Id="NV9lYrZ1eofN5Ta4kkflvS" Name="Error" Kind="OutputPin" />
           </Node>
           <Node Bounds="183,444,66,19" Id="AgbGG5cqUyINTIVONw8Tin">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="RealSense" NeedsToBeDirectParent="true" />
               <Choice Kind="ProcessAppFlag" Name="PointCloud" />
@@ -54,7 +50,7 @@
             <Pin Id="JdjqyepaAshLBwPXRwFhj7" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="442,444,45,19" Id="VQ0KsUSF2tZLzNCVjSk2sZ">
-            <p:NodeReference LastCategoryFullName="RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Pipet" />
               <CategoryReference Kind="Category" Name="RealSense" NeedsToBeDirectParent="true" />
@@ -64,7 +60,7 @@
             <Pin Id="TnGizmqQKpPQF1WUMMaskN" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="659,444,69,19" Id="M4V8JDAQqiIPToVWYtFide">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="IMUData" />
             </p:NodeReference>
@@ -75,7 +71,7 @@
           </Node>
           <Pad Id="RlV9f5pCRJ2O50mvatqCYb" Comment="Error" Bounds="512,329,189,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="QnFDpaHgMdfLmSBbLkiWt4" Bounds="295,413,118,25" ShowValueBox="true" isIOBox="true" Value="Depth Filters">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -84,7 +80,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="305,444,91,19" Id="QmRSXoMP97JOjYn0SrUJlK">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DecimationFilter" />
             </p:NodeReference>
@@ -94,7 +90,7 @@
             <Pin Id="U0yQA0LNONjOpMurok7li3" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="563,446,45,19" Id="SRL8i7agdMuPNlMj8jgXBF">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Align" />
             </p:NodeReference>
@@ -104,7 +100,7 @@
             <Pin Id="BbX2lFivWwHPP9BqFq7khz" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="305,567,87,19" Id="KRRMyjCBummMl8SnIQRqtK">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="DepthFilters" />
               <Choice Kind="ProcessAppFlag" Name="HoleFillingFilter" />
@@ -115,7 +111,7 @@
             <Pin Id="NhXFHs63OSFOOKaG8bHFaW" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="305,474,105,19" Id="EiZujRUJIbKQaOunqM6l1H">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="DepthFilters" />
               <Choice Kind="ProcessAppFlag" Name="SpatialFilter" />
@@ -129,7 +125,7 @@
             <Pin Id="LfqlW1fL1KIMK8h4Cnhwtq" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="305,505,105,19" Id="HgMvmvtA3jJOQxF1hKJD6V">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="DepthFilters" />
               <Choice Kind="ProcessAppFlag" Name="TemporalFilter" />
@@ -141,7 +137,7 @@
             <Pin Id="JMkbIosob9cPPqrmZYNyv1" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="305,536,105,19" Id="QyP0v6FkJSSMY5Dn8fTsSY">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="DepthFilters" />
               <Choice Kind="ProcessAppFlag" Name="ThresholdFilter" />
@@ -153,7 +149,7 @@
             <Pin Id="CKcfScdPw8hMJDqn8Yeq02" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="HLXOMagNWbSPMPR9mKJ5hF" Bounds="647,413,136,25" ShowValueBox="true" isIOBox="true" Value="Device's Motion">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -162,7 +158,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="VuD8IyWDJMyNpHTvB1Q7cC" Bounds="38,413,104,25" ShowValueBox="true" isIOBox="true" Value="Images">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -171,7 +167,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="48,444,69,19" Id="B3zQhl6oxStPl9EL4aXWqy">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ColorImage" />
             </p:NodeReference>
@@ -179,7 +175,7 @@
             <Pin Id="U87svL38owaMPgI5nmIPkJ" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="48,476,71,19" Id="MnjbfAFSfLhLVc3PKGL42B">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DepthImage" />
             </p:NodeReference>
@@ -187,7 +183,7 @@
             <Pin Id="KHzB1lxB1maPBo5Na4T5XO" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="47,506,115,19" Id="CDVPKjelsiJLTHW3pWNUHp">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ColorizedDepthImage" />
             </p:NodeReference>
@@ -197,7 +193,7 @@
             <Pin Id="Idn4rLrgyelPsbOogAeAxL" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="Hc8SuoKq0K4O7nsieARAcc" Bounds="428,413,106,25" ShowValueBox="true" isIOBox="true" Value="Depth Pipet">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -206,7 +202,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="DZlKaX9uM2IMyCDqOVR5jU" Bounds="172,413,106,25" ShowValueBox="true" isIOBox="true" Value="Pointcloud">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -215,7 +211,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="VyIsTwdpPkSP3BxjTwZOxG" Bounds="553,133,262,42" ShowValueBox="true" isIOBox="true" Value="&lt; If you have multiple RealSense Camera attached, select on of those here.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -224,7 +220,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="CBsamNzwR3eNw019tXMnTm" Bounds="37,646,322,129" ShowValueBox="true" isIOBox="true" Value="Image, Pipet, Motion Nodes are also available as &quot;Reactive&quot; versions in the nodebrowser if you enable &quot;Advanced&quot; nodes.&#xD;&#xA;&#xD;&#xA;The reactive versions allow you to apply computations to the images in a background thread.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -233,7 +229,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Tr9iX6rtFi2NLWIuwr2kT3" Bounds="37,605,73,31" ShowValueBox="true" isIOBox="true" Value="Note:">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -242,7 +238,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="KAl0XoDgfsuOWf9U8MacUM" Bounds="551,414,84,25" ShowValueBox="true" isIOBox="true" Value="Aligning">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -251,7 +247,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="430,227,61,19" Id="KxauetCEWpcOJsO5o2ZxWF">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SetOption" />
             </p:NodeReference>
@@ -262,7 +258,7 @@
             <Pin Id="MbMuryHI185PhF9Js50ApG" Name="Is Supported" Kind="OutputPin" />
           </Node>
           <Node Bounds="483,257,45,19" Id="CtdNzEZbMjpNsiBNDGDDRm">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Cons" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -273,7 +269,7 @@
             <Pin Id="VEUano3ylEeMFntIGdjKmj" Name="Input 3" Kind="InputPin" />
           </Node>
           <Node Bounds="503,227,61,19" Id="GUmWkn0ZstaLCtFVEGpl6R">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SetOption" />
             </p:NodeReference>
@@ -284,7 +280,7 @@
             <Pin Id="HER7fFzIndYMCzyylRj1Z4" Name="Is Supported" Kind="OutputPin" />
           </Node>
           <Pad Id="JOdyUeQbX34NJNy5XvUzJn" Bounds="423,197,106,25" ShowValueBox="true" isIOBox="true" Value="Set Options">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -293,7 +289,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Q0NhI4AStflPTgepEDuHAg" Bounds="802,413,209,25" ShowValueBox="true" isIOBox="true" Value="Options / Device  Info">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -302,7 +298,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="815,490,67,19" Id="B6CZaaOBI8MPhr6QUNx0Fl">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DepthScale" />
             </p:NodeReference>
@@ -311,7 +307,7 @@
             <Pin Id="GNnUOnKhClNOVIOSjfXURK" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="815,463,145,19" Id="QId3c1DU8gkNswoEnuIjhK">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GetOption" />
               <CategoryReference Kind="Category" Name="Options" NeedsToBeDirectParent="true" />
@@ -329,7 +325,7 @@
             <Pin Id="T5R6E8bkKIjPOG1HRTOVNa" Name="Is Supported" Kind="OutputPin" />
           </Node>
           <Node Bounds="815,515,45,19" Id="SGz6zQ1ha9ULRtBAZmZSXP">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Info" />
               <CategoryReference Kind="Category" Name="RealSense" NeedsToBeDirectParent="true" />
@@ -340,7 +336,7 @@
             <Pin Id="JL75CQ4r0eFNaALO5gVUE4" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="815,541,105,19" Id="JwWV0w1Ve8lMCtu6EQ7z8i">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GetIntrinsics" />
             </p:NodeReference>
@@ -354,7 +350,7 @@
             <Pin Id="Mttzbr9TDRKPPpAEfUYyRO" Name="Distortion coefficients" Kind="OutputPin" />
           </Node>
           <Node Bounds="815,569,96,19" Id="IPCMQsdAtZwOP81FTr4oLU">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AutoExposureROI" />
             </p:NodeReference>
@@ -363,7 +359,7 @@
             <Pin Id="DpgiLJkf1nfMm78CxnAozu" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="578,227,109,19" Id="Hhf8QjVVdjWL1yojn2vysk">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SetAutoExposureROI" />
             </p:NodeReference>
@@ -372,7 +368,7 @@
             <Pin Id="TxtifKQZfQyQVfO11sOktp" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="Fckm5aA0gmvQJl9SxFy447" Bounds="805,443,44,25" ShowValueBox="true" isIOBox="true" Value="Get">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -381,7 +377,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="G0NXFWginC6M5zwAwJcgLr" Bounds="815,607,44,25" ShowValueBox="true" isIOBox="true" Value="Set">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -390,7 +386,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="815,625,61,19" Id="NPFWAEWneAjQNIL3SVKfw9">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SetOption" />
             </p:NodeReference>
@@ -401,7 +397,7 @@
             <Pin Id="UCDRyS1vYy4PbQf4YFBzQO" Name="Is Supported" Kind="OutputPin" />
           </Node>
           <Node Bounds="815,652,109,19" Id="C6zhBQQdPRQPu9N89kcgHt">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SetAutoExposureROI" />
             </p:NodeReference>
@@ -410,7 +406,7 @@
             <Pin Id="KutRmgXeCXzNxCBtRgFguF" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="SRAmo4sHdZ4LB6gVlB5TBU" Bounds="171,484,105,19" ShowValueBox="true" isIOBox="true" Value="(experimental)">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -419,7 +415,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="815,685,97,19" Id="P8ArsbExTIwM8hvXYe08sU">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ResetAllToDefault" />
             </p:NodeReference>
@@ -427,7 +423,7 @@
             <Pin Id="JCyA7q4U91bP2Q4EYbKHvH" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="Q99AnoIWsQiPXJtbn7SDaT" Bounds="815,715,105,19" ShowValueBox="true" isIOBox="true" Value="(experimental)">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -436,7 +432,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="815,728,84,19" Id="Jp3V7U4g9hbNODSLZUMeRB">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense.Options" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="HardwareReset" />
             </p:NodeReference>
@@ -444,7 +440,7 @@
             <Pin Id="FfoXhrOHOMjQWwx6XhsNPA" Name="Reset" Kind="InputPin" />
           </Node>
           <Pad Id="LsuU7ZJxs5mMuqBmD9iKaH" Bounds="815,758,105,19" ShowValueBox="true" isIOBox="true" Value="(experimental)">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -453,7 +449,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="QwBkinLiYCuOCF9rc0rxtf" Bounds="430,479,105,19" ShowValueBox="true" isIOBox="true" Value="(experimental)">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -462,7 +458,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="930,542,35,19" Id="K3JGK7cKuUuLWN8vtuahXp">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Devices" />
               <CategoryReference Kind="Category" Name="RealSense" />
@@ -502,5 +498,5 @@
   </Patch>
   <NugetDependency Id="P46lNCmsqRBNDLHA9o3deD" Location="VL.Skia" Version="2020.1.3" />
   <NugetDependency Id="IStpBBnesi2ME0Mas3eWRc" Location="VL.Core" Version="2020.1.3" />
-  <NugetDependency Id="NMSVuJ2Gp4HQArItUfffVm" Location="VL.Devices.RealSense" Version="0.0.0.0" />
+  <NugetDependency Id="NMSVuJ2Gp4HQArItUfffVm" Location="VL.Devices.RealSense" Version="1.4.0" />
 </Document>
