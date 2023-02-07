@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="B3rGtyZDXvLOgYGrDxnNa6" LanguageVersion="2022.5.0-0536-gb07a1658b7" Version="0.128">
-  <NugetDependency Id="DOfXRi7MKyxNeGRyD8tI9g" Location="VL.CoreLib" Version="2021.3.0" />
+<Document xmlns:p="property" Id="B3rGtyZDXvLOgYGrDxnNa6" LanguageVersion="2022.5.0-0558-g23e76e599d" Version="0.128">
+  <NugetDependency Id="DOfXRi7MKyxNeGRyD8tI9g" Location="VL.CoreLib" Version="2022.5.0-0558-g23e76e599d" />
   <Patch Id="QC65oeU7EANNM5KfSEYMcT">
     <Canvas Id="D1nHjsj3mzlNOpT1n6i9K7" DefaultCategory="Devices.RealSense" CanvasType="FullCategory">
       <Canvas Id="IoCc0ICIZtZM01JqAumDzg" Name="Internal" Position="96,142">
@@ -275,24 +275,6 @@
           <Patch Id="D24G8UrwcI5PBwt3s43RDl">
             <Canvas Id="ULP5jVnIbthP3ercVbFfVy" BordersChecked="false" CanvasType="Group" />
             <ProcessDefinition Id="Cq26sV8bFH9OGlIEX160BL" IsHidden="true" />
-          </Patch>
-        </Node>
-        <!--
-
-    ************************ Stream ************************
-
--->
-        <Node Name="Stream" Bounds="337,339" Id="KdX9dVhZ61jMnG2qdY9wnG">
-          <p:NodeReference>
-            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
-            <FullNameCategoryReference ID="Primitive" />
-          </p:NodeReference>
-          <p:TypeAnnotation LastCategoryFullName="Intel.RealSense" LastDependency="Intel.RealSense.dll">
-            <Choice Kind="TypeFlag" Name="Stream" />
-          </p:TypeAnnotation>
-          <Patch Id="MjPmVfk6uPiMKdDocnPshO">
-            <Canvas Id="RvJfbRf75EvNFLiY4PHVm1" BordersChecked="false" CanvasType="Group" />
-            <ProcessDefinition Id="LGULOQckYmZLG0VKPEVPUS" IsHidden="true" />
           </Patch>
         </Node>
         <Pad Id="ADnOZGlKHwHQMsRZn0dpKJ" Bounds="329,263,144,39" ShowValueBox="true" isIOBox="true" Value="Forwards">
@@ -3862,7 +3844,7 @@
             <Link Id="RKz7ye2FZixLTcx9KKtMS6" Ids="PrBSYN5jkYJPT44xxlNonz,JT2uYrypfiTLR9SeEeLUum" />
             <Patch Id="VLJcXB5bp2yPq4uqSMVsHz" Name="Create">
               <Pin Id="DSqeRmpiCRbNCSaxMC0tbF" Name="Device" Kind="InputPin">
-                <p:TypeAnnotation LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
+                <p:TypeAnnotation LastCategoryFullName="VL.Devices.RealSense" LastDependency="VL.Devices.RealSense.dll">
                   <Choice Kind="TypeFlag" Name="RealSenseDevice" />
                 </p:TypeAnnotation>
               </Pin>
@@ -6455,187 +6437,6 @@
               <Pin Id="HmDL1AARiW0M6TlGtDp5hF" Name="Distortion Model" Kind="OutputPin" Bounds="675,578" />
               <Pin Id="Jbtqrj4IaVmQJa2cQjTv5S" Name="Distortion coefficients" Kind="OutputPin" Bounds="783,578" />
             </Patch>
-          </Patch>
-        </Node>
-        <!--
-
-    ************************ RealSenseDevice ************************
-
--->
-        <Node Name="RealSenseDevice" Bounds="198,730" Id="Ssf5BcmBj2KLc6tB0rYWl4">
-          <p:NodeReference>
-            <Choice Kind="ForwardDefinition" Name="Forward" />
-            <FullNameCategoryReference ID="Primitive" />
-          </p:NodeReference>
-          <p:TypeAnnotation LastCategoryFullName="VL.Devices.RealSense" LastDependency="VL.Devices.RealSense.dll">
-            <Choice Kind="TypeFlag" Name="RealSenseDevice" />
-          </p:TypeAnnotation>
-          <Patch Id="MOw7nQR3UWMM0m5D8dkV20">
-            <Canvas Id="F4yW8nlmUbtM3kHvmUKyDP" CanvasType="Group">
-              <!--
-
-    ************************ CreateDefault ************************
-
--->
-              <Node Name="CreateDefault" Bounds="577,388,100,50" Id="DrW7IoVX0ejNMthlRKHA6v">
-                <p:NodeReference>
-                  <Choice Kind="OperationDefinition" Name="Operation" />
-                  <FullNameCategoryReference ID="Primitive" />
-                </p:NodeReference>
-                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-                <Patch Id="TO61Xbh8nXKMLr16PDpN3P">
-                  <Node Bounds="577,388,10,10" AutoConnect="true" Id="Fkzp31JiZXqPs2e8nYWrdo">
-                    <p:NodeReference LastCategoryFullName="VL.Devices.RealSense.RealSenseDevice" LastDependency="VL.Devices.RealSense.dll">
-                      <Choice Kind="OperationNode" Name="CreateDefault" />
-                      <FullNameCategoryReference ID="VL.Devices.RealSense.RealSenseDevice" />
-                    </p:NodeReference>
-                    <Pin Id="UyJIQLrRmgjOsqx4a3pbJf" Name="Result" Kind="OutputPin" />
-                  </Node>
-                  <Pin Id="Jl4BPmubNCLMrWXgHDVj8X" Name="Result" Kind="OutputPin" />
-                </Patch>
-              </Node>
-            </Canvas>
-            <ProcessDefinition Id="UEo5lMgaB1BMWhKNLrSMnM" IsHidden="true">
-              <Fragment Id="JC9uB3ziTjDNKGoRPthos4" Patch="DrW7IoVX0ejNMthlRKHA6v" Enabled="true" />
-            </ProcessDefinition>
-          </Patch>
-        </Node>
-        <Pad Id="CExMv2YVaxoLrcOKuxh3FY" Bounds="182,545,144,35" ShowValueBox="true" isIOBox="true" Value="Forwards">
-          <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
-            <Choice Kind="TypeFlag" Name="String" />
-          </p:TypeAnnotation>
-          <p:ValueBoxSettings>
-            <p:fontsize p:Type="Int32">17</p:fontsize>
-            <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-          </p:ValueBoxSettings>
-        </Pad>
-        <!--
-
-    ************************ ColorFramerate ************************
-
--->
-        <Node Name="ColorFramerate" Bounds="196,620" Id="CK5gJC4hsdYMuxyJVEGVOZ">
-          <p:NodeReference>
-            <Choice Kind="ForwardDefinition" Name="Forward" />
-            <FullNameCategoryReference ID="Primitive" />
-          </p:NodeReference>
-          <p:TypeAnnotation LastCategoryFullName="VL.Devices.RealSense" LastDependency="VL.Devices.RealSense.dll">
-            <Choice Kind="TypeFlag" Name="ColorFramerate" />
-          </p:TypeAnnotation>
-          <Patch Id="Bfdp0lbnmBVNU9ypYKb0t4">
-            <Canvas Id="UtwvGTWxGC3N9S5ZIkXfhi" CanvasType="Group">
-              <!--
-
-    ************************ CreateDefault ************************
-
--->
-              <Node Name="CreateDefault" Bounds="507,326,112,82" Id="IwghEcG6o6HPFZ0M0UGYPG">
-                <p:NodeReference>
-                  <Choice Kind="OperationDefinition" Name="Operation" />
-                  <FullNameCategoryReference ID="Primitive" />
-                </p:NodeReference>
-                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-                <Patch Id="DDxcZFj17ZlLi7WJl7LvJh">
-                  <Node Bounds="519,358,79,19" AutoConnect="true" Id="TBPsKgZ0WvfLnGvtcwR9xA">
-                    <p:NodeReference LastCategoryFullName="VL.Devices.RealSense.ColorFramerate" LastDependency="VL.Devices.RealSense.dll">
-                      <Choice Kind="OperationNode" Name="CreateDefault" />
-                      <FullNameCategoryReference ID="VL.Devices.RealSense.ColorFramerate" />
-                    </p:NodeReference>
-                    <Pin Id="PGyq64H2W0fPtbGl8WuQ92" Name="Result" Kind="OutputPin" />
-                  </Node>
-                  <Pin Id="KofD5lmGca5QJwT25qiqar" Name="Result" Kind="OutputPin" />
-                </Patch>
-              </Node>
-            </Canvas>
-            <ProcessDefinition Id="Ny0oN2bd7AVNxSFGHLZAj9" IsHidden="true">
-              <Fragment Id="JWKJTpKZmDAPu0RbUT0nSq" Patch="IwghEcG6o6HPFZ0M0UGYPG" Enabled="true" />
-            </ProcessDefinition>
-          </Patch>
-        </Node>
-        <!--
-
-    ************************ ColorResolution ************************
-
--->
-        <Node Name="ColorResolution" Bounds="197,658" Id="JVTZDjnq8qwQXOeU6BBlGe">
-          <p:NodeReference>
-            <Choice Kind="ForwardDefinition" Name="Forward" />
-            <FullNameCategoryReference ID="Primitive" />
-          </p:NodeReference>
-          <p:TypeAnnotation LastCategoryFullName="VL.Devices.RealSense" LastDependency="VL.Devices.RealSense.dll">
-            <Choice Kind="TypeFlag" Name="ColorResolution" />
-          </p:TypeAnnotation>
-          <Patch Id="GiSNlVDB8ZCNH3q1GYqxSV">
-            <Canvas Id="NdttPLLvBlyL9dVonSx2rB" CanvasType="Group">
-              <!--
-
-    ************************ CreateDefault ************************
-
--->
-              <Node Name="CreateDefault" Bounds="499,416,100,50" Id="BsZLRvn1jpjPCBomwYhQXq">
-                <p:NodeReference>
-                  <Choice Kind="OperationDefinition" Name="Operation" />
-                  <FullNameCategoryReference ID="Primitive" />
-                </p:NodeReference>
-                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-                <Patch Id="JovhBecDbE3LuQaEhE1gJt">
-                  <Node Bounds="499,416,10,10" AutoConnect="true" Id="HsGQPiqyFK8M0UQ4qRFpMW">
-                    <p:NodeReference LastCategoryFullName="VL.Devices.RealSense.ColorResolution" LastDependency="VL.Devices.RealSense.dll">
-                      <Choice Kind="OperationNode" Name="CreateDefault" />
-                      <FullNameCategoryReference ID="VL.Devices.RealSense.ColorResolution" />
-                    </p:NodeReference>
-                    <Pin Id="F72A18bfXSeMMLlxdlL288" Name="Result" Kind="OutputPin" />
-                  </Node>
-                  <Pin Id="N77AaJwDA5qPLdvn9LiNY6" Name="Result" Kind="OutputPin" />
-                </Patch>
-              </Node>
-            </Canvas>
-            <ProcessDefinition Id="AcZCFCjvrUMLxal2Q0ms7B" IsHidden="true">
-              <Fragment Id="RQfwcnTh7U8Mi86VkG9LQg" Patch="BsZLRvn1jpjPCBomwYhQXq" Enabled="true" />
-            </ProcessDefinition>
-          </Patch>
-        </Node>
-        <!--
-
-    ************************ DepthResolution ************************
-
--->
-        <Node Name="DepthResolution" Bounds="197,694" Id="Esdfr5dN5DfLZfhYJqu0ug">
-          <p:NodeReference>
-            <Choice Kind="ForwardDefinition" Name="Forward" />
-            <FullNameCategoryReference ID="Primitive" />
-          </p:NodeReference>
-          <p:TypeAnnotation LastCategoryFullName="VL.Devices.RealSense" LastDependency="VL.Devices.RealSense.dll">
-            <Choice Kind="TypeFlag" Name="DepthResolution" />
-          </p:TypeAnnotation>
-          <Patch Id="DqH4IsNfmBWOENmPTAPP8z">
-            <Canvas Id="QWZBvSrvjOcNym8v2dOHG9" CanvasType="Group">
-              <!--
-
-    ************************ CreateDefault ************************
-
--->
-              <Node Name="CreateDefault" Bounds="480,342,112,82" Id="Hp7RLsdhQjKPkWV2biVtCS">
-                <p:NodeReference>
-                  <Choice Kind="OperationDefinition" Name="Operation" />
-                  <FullNameCategoryReference ID="Primitive" />
-                </p:NodeReference>
-                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-                <Patch Id="Jbn1qvV9b7GPSbLwL4FRb6">
-                  <Node Bounds="492,374,79,19" AutoConnect="true" Id="ID5yfNNdd05PSfWXidhTga">
-                    <p:NodeReference LastCategoryFullName="VL.Devices.RealSense.DepthResolution" LastDependency="VL.Devices.RealSense.dll">
-                      <Choice Kind="OperationNode" Name="CreateDefault" />
-                      <FullNameCategoryReference ID="VL.Devices.RealSense.DepthResolution" />
-                    </p:NodeReference>
-                    <Pin Id="EwxNCIGuujnOMGKXFBy8vS" Name="Result" Kind="OutputPin" />
-                  </Node>
-                  <Pin Id="Tgr31Hg1UXrO2JAVo239jj" Name="Result" Kind="OutputPin" />
-                </Patch>
-              </Node>
-            </Canvas>
-            <ProcessDefinition Id="IYOIyCaKDsFLfxDvjPq2eI" IsHidden="true">
-              <Fragment Id="IAwS4IkF5Z3PrSnlOIJ3HY" Patch="Hp7RLsdhQjKPkWV2biVtCS" Enabled="true" />
-            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -11200,6 +11001,33 @@
           <Link Id="SHAUVeJYCMNOwgtzVtarJ4" Ids="N0b7fR1TIqjLAfAqN8aTw0,JN5gKbnpFcfNcJayU1FfXm" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ Stream ************************
+
+-->
+      <Node Name="Stream" Bounds="738,391" Id="PwT3S8I68daLUEbdsMQcFo">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="Intel.RealSense" LastDependency="Intel.RealSense.dll">
+          <Choice Kind="TypeFlag" Name="Stream" />
+        </p:TypeAnnotation>
+        <Patch Id="CeF956ugpRmNyRSvMfcwk1">
+          <Canvas Id="Hslw6SwRqxQL84jdsUgP3X" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="APjYij3rBx1N7C5BQykW8m" IsHidden="true" />
+        </Patch>
+      </Node>
+      <Pad Id="NZoxOrHc72YM6UWPxvBTwh" Bounds="730,315,144,39" ShowValueBox="true" isIOBox="true" Value="Forwards">
+        <p:TypeAnnotation>
+          <Choice Kind="TypeFlag" Name="String" />
+        </p:TypeAnnotation>
+        <p:ValueBoxSettings>
+          <p:fontsize p:Type="Int32">19</p:fontsize>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+        </p:ValueBoxSettings>
+      </Pad>
     </Canvas>
     <!--
 
@@ -11225,7 +11053,7 @@
   <PlatformDependency Id="GgZ04bRydoKLCEJ0EJoZ9U" Location="System" />
   <PlatformDependency Id="MEi00LwOVkJQJln6BsocKF" Location="System.Runtime" />
   <PlatformDependency Id="St20cYQsuDvMrEwLnbYFXM" Location="System.Runtime.InteropServices" />
-  <NugetDependency Id="MBwkEfA6Y4FNTTjLfxAsYw" Location="VL.Core" Version="2021.3.0" />
+  <NugetDependency Id="MBwkEfA6Y4FNTTjLfxAsYw" Location="VL.Core" Version="2022.5.0-0558-g23e76e599d" />
   <PlatformDependency Id="CP2SRXNk7y3M1h6x3HA9bf" Location="../../vvvv-private/vvvv50/VVVV.Gamma/src/bin/Debug/net472/System.Reactive.dll" />
   <PlatformDependency Id="D4Vj6IfleIZOCATx6fd6iF" Location="./lib/net461/VL.Devices.RealSense.dll" />
   <PlatformDependency Id="OjarwE48LezNbmTLvA3HOK" Location="./lib/net461/Intel.Realsense.dll" />

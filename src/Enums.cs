@@ -7,6 +7,7 @@ using VL.Lib.Collections;
 using VL.Core;
 using Intel.RealSense;
 using System.Reactive.Linq;
+using VL.Core.CompilerServices;
 
 namespace VL.Devices.RealSense
 {
@@ -57,7 +58,7 @@ namespace VL.Devices.RealSense
         {
         }
 
-        //this method needs to be imported in VL to set the default
+        [CreateDefault]
         public static RealSenseDevice CreateDefault()
         {
             //use method of base class if nothing special required
@@ -80,7 +81,7 @@ namespace VL.Devices.RealSense
         {
         }
 
-        //this method needs to be imported in VL to set the default
+        [CreateDefault]
         public static DepthResolution CreateDefault()
         {
             //use method of base class if nothing special required
@@ -103,7 +104,7 @@ namespace VL.Devices.RealSense
         {
         }
 
-        //this method needs to be imported in VL to set the default
+        [CreateDefault]
         public static ColorResolution CreateDefault()
         {
             //use method of base class if nothing special required
@@ -126,7 +127,7 @@ namespace VL.Devices.RealSense
         {
         }
 
-        //this method needs to be imported in VL to set the default
+        [CreateDefault]
         public static ColorFramerate CreateDefault()
         {
             //use method of base class if nothing special required
@@ -149,7 +150,7 @@ namespace VL.Devices.RealSense
         {
         }
 
-        //this method needs to be imported in VL to set the default
+        [CreateDefault]
         public static DepthFramerate CreateDefault()
         {
             //use method of base class if nothing special required
