@@ -1,47 +1,18 @@
 # VL.Devices.RealSense
-Set of nodes to use [Intel RealSense](https://www.intelrealsense.com/) depth cameras in vl.
+Set of nodes to use [Intel RealSense](https://www.intelrealsense.com/) depth cameras in VL. Built against version 2.53.1.4623 of the [RealSense SDK](https://github.com/IntelRealSense/librealsense).
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
 
-The development was sponsored by [wirmachenbunt](https://wirmachenbunt.de/).
-
 ## Using the library
-In order to use this library with vl you have to install the nuget that is available via nuget.org.
-
-Open VL, go to 
-
-    Quad menu > Manage Nugets > Commandline   
-
-and then type:
+In order to use this library you'll have to install the nuget that is available via nuget.org. For information on how to use nugets with VL, see [Managing Nugets](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) in the documentation. As described there you go to the commandline and then type:
 
     nuget install VL.Devices.RealSense
 
-For more about installing and referencing nugets [read here](https://vvvv.gitbooks.io/the-gray-book/content/en/reference/libraries/dependencies.html#_manage_nugets).
+Once the VL.Devices.RealSense nuget is installed and referenced in your VL document you'll see the category "Devices.RealSense" in the nodebrowser. Press F1 to open the Help Browser and search for the term "realsense" to see relevant how-to patches.
 
-Once the VL.Devices.RealSense nuget is installed and referenced in your vl document you'll see the category "RealSense" under "Devices" in the nodebrowser. 
+## Sponsoring
+Development of this library was partially sponsored by:
+- [wirmachenbunt](https://wirmachenbunt.de/)
 
-VL help patches can be found here:
-
-    "VL.Devices.RealSense\help\"
-
-## Contributing to the development
-
-### 1. Clone this repository
-
-Clone it into a directory like:
- 
-    X:\vl-libs\VL.Devices.RealSense
-
-### 2. Build the C# Project
-Open
-
-    X:\vl-libs\VL.Devices.RealSense\src\VL.Devices.RealSense.sln
-    
-in VisualStudio and build it. This is necessary for a few things that cannot yet be expressed in vl directly.
-
-### 3. Reference VL.Devices.RealSense.vl
-
-In the vl document where you want to have access to the RealSense nodeset, add a dependency to:
-
-	X:\vl-libs\VL.Devices.RealSense\VL.Devices.RealSense.vl
+For custom development requests, please [get in touch](mailto:devvvvs@vvvv.org).
