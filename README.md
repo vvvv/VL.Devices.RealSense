@@ -1,5 +1,7 @@
 # VL.Devices.RealSense
-Set of nodes to use [Intel RealSense](https://www.intelrealsense.com/) depth cameras in VL. Built against version 2.53.1.4623 of the [RealSense SDK](https://github.com/IntelRealSense/librealsense).
+A package for using [RealSense](https://www.intelrealsense.com/) depth cameras by Intel in VL.
+
+Built against version 2.53.1.4623 of the [RealSense SDK](https://github.com/IntelRealSense/librealsense).
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
