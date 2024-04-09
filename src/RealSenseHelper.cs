@@ -59,7 +59,7 @@ namespace VL.Devices.RealSense
                         // Invert X and Y
                         var x = new Vector3(-1f, -1f, 1f);
                         for (int i = 0; i < count; i++)
-                            pointBuffer[i] = pointBuffer[i] * x;
+                            pointBuffer[i] = Vector3.Modulate(pointBuffer[i], x);
 
                         return pointBuffer.GetSegment(0, count);
                     });
