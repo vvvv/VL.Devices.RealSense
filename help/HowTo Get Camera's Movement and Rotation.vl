@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FeHEaZr9YkAQSNdInGnkEL" LanguageVersion="2020.1.1.107" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="FeHEaZr9YkAQSNdInGnkEL" LanguageVersion="2025.7.0-0384-g212a8f1596" Version="0.128">
   <Patch Id="JBtPzl71qIKNFbTrwnyTGp">
     <Canvas Id="SFmkqv266JHLuOC9PkL2Tn" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -16,16 +16,17 @@
           <Canvas Id="NXRHdQaiLsgQIeOTNfEqLv" CanvasType="Group">
             <ControlPoint Id="Ogbxxt9tkVhPJZX5yAzwFQ" Bounds="223,472" />
             <Node Bounds="221,405,75,19" Id="BYn06zHdVBSPQ52Ab9g1CK">
-              <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Get Camera's Movement and Rotation.vl">
+              <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo Get Camera's Movement and Rotation.vl">
                 <Choice Kind="ProcessNode" Name="ProjectPoints" />
               </p:NodeReference>
+              <Pin Id="Sb3JdvpHaGvPFhI7ihphZl" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="NCrVxJnACAuNadL1YwGYeE" Name="Input" Kind="InputPin" />
               <Pin Id="ASaDIQx1UdRLvNQpJ1z81y" Name="Camera" Kind="InputPin" />
               <Pin Id="VrMXz7JqM1gMOWaL7E3nkw" Name="Output" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="IFpqu3vBbiZOB55fJGkugb" Bounds="293,315" />
             <Node Bounds="291,356,64,19" Id="CSuY7P7Zq1HLulmG1uybDs">
-              <p:NodeReference LastCategoryFullName="3D.Matrix" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="3D.Matrix" LastDependency="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Transform" />
                 <CategoryReference Kind="RecordType" Name="Matrix" NeedsToBeDirectParent="true" />
@@ -36,10 +37,10 @@
             </Node>
             <ControlPoint Id="PsQTFm1yOy5NA9DA9F4zno" Bounds="352,315" />
             <Pad Id="HI2KWqB9BkfMhH7GoFtk2j" Bounds="223,266,95,34" ShowValueBox="true" isIOBox="true">
-              <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+              <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.Collections.vl">
                 <Choice Kind="TypeFlag" Name="Spread" />
                 <p:TypeArguments>
-                  <TypeReference LastCategoryFullName="3D" LastSymbolSource="CoreLibBasics.vl">
+                  <TypeReference LastCategoryFullName="3D" LastDependency="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Vector3" />
                   </TypeReference>
                 </p:TypeArguments>
@@ -85,7 +86,7 @@
         <Patch Id="VJWzDByqN2NLTyH7bFTyoH">
           <Canvas Id="Qv0kap3KzQfPBLvluCnPr7" CanvasType="Group">
             <Node Bounds="239,416,88,113" Id="AtEyUEcdTK7L4NT6UkSKIo">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -96,7 +97,7 @@
                 <Patch Id="F56MjSx6OmVNdzZx1ObXrl" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="OL8pMHxLbWwMKobdVZsMKU" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="251,451,64,19" Id="GuIFUyvXIfyOm9k4PR4lWv">
-                  <p:NodeReference LastCategoryFullName="3D.Vector3" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="3D.Vector3" LastDependency="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Vector3Type" Name="Vector3" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Transform" />
@@ -106,7 +107,7 @@
                   <Pin Id="EW5QxCaXsCzNZCsrBb3Z72" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="251,488,63,19" Id="IFIWA5Af9BoOIynKYGNTiT">
-                  <p:NodeReference LastCategoryFullName="3D.Vector3" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="3D.Vector3" LastDependency="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToVector2" />
                     <CategoryReference Kind="Vector3Type" Name="Vector3" NeedsToBeDirectParent="true" />
@@ -156,14 +157,19 @@
       </p:NodeReference>
       <Patch Id="AakuIj5uHvGOzeYYASa5w1">
         <Canvas Id="OmMTMn4stX9OcpjNA5bkqW" CanvasType="Group">
-          <Node Bounds="490,241,145,19" Id="Qqb0vd0geSWNCTV551UdPM">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+          <Node Bounds="490,241,165,19" Id="Qqb0vd0geSWNCTV551UdPM">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RealSense" />
             </p:NodeReference>
+            <Pin Id="ElfH1LPLA21LVOSYtfL49z" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Pyd9RL7SnZgO50iwHPgXBl" Name="Device" Kind="InputPin" />
             <Pin Id="LLw3YsxI4OwLX5omOztdnq" Name="Color Resolution" Kind="InputPin" />
             <Pin Id="AjPtMVEszXpLTHQYcyksRl" Name="Depth Resolution" Kind="InputPin" />
+            <Pin Id="Oo6hTU70NFRQFwVffHOYpz" Name="Enable Color" Kind="InputPin" />
+            <Pin Id="T0CzLWTUE2OQNFYlhL2ihX" Name="Enable Depth" Kind="InputPin" />
+            <Pin Id="V2LLJC6HDR9MfrPGVmNEGf" Name="Enable Infrared" Kind="InputPin" />
+            <Pin Id="DAkubfVVQKNL4gSrAJUxah" Name="Enable IMU" Kind="InputPin" />
             <Pin Id="JntpoynBZmALnoQByIyr7P" Name="Options" Kind="InputPin" />
             <Pin Id="DWUz2koPmhvMMjw4G3k0iq" Name="Enabled" Kind="InputPin" />
             <Pin Id="UgGCxSAMcyWMXhBOZNCdZJ" Name="Output" Kind="OutputPin" />
@@ -171,11 +177,12 @@
             <Pin Id="POn3oC6MUB8MKAQS9aBxm3" Name="Error" Kind="OutputPin" />
           </Node>
           <Node Bounds="490,294,54,19" Id="FUaYeASzgbxMWyT1KnIw6x">
-            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastSymbolSource="VL.Devices.RealSense.vl">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="IMUData" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="FxiCY6GjccJQXgUes88f1G" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="KfxBNXHmAhsMdbUThaJh0r" Name="Input" Kind="InputPin" />
             <Pin Id="KwdrAvzr15vN4iYbwJcPop" Name="Enabled" Kind="InputPin" />
             <Pin Id="STxFbzhLUR6QDN2UBMVo1K" Name="Accelerometer" Kind="OutputPin" />
@@ -192,7 +199,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="AkVLlcvwNSGLdfqnDyGiMR" Bounds="129,253,186,19" ShowValueBox="true" isIOBox="true" Value="For more information check:">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -201,7 +208,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="KTZbPHQkKosPX1PWrUs2D9" Bounds="129,280,207,19" ShowValueBox="true" isIOBox="true" Value="https://www.intelrealsense.com/how-to-getting-imu-data-from-d435i-and-t265">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -210,7 +217,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="C9SNfumVUoPLGvZGTFN7BO" Bounds="129,349,187,96" ShowValueBox="true" isIOBox="true" Value="Note:&#xD;&#xA;for D435i Camera the IMU sensor is not calibrated.&#xD;&#xA;&#xD;&#xA;Here is the Calibration Tool:&#xD;&#xA;">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -219,12 +226,20 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="U2plHdyABaxMK4Ip3IBfV1" Bounds="129,449,187,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/IntelRealSense/librealsense/tree/development/tools/rs-imu-calibration#rs-imu-calibration-tool">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="C0ZsFzHLTY6MaTQ6xJmNLS" Comment="Enable IMU" Bounds="612,200,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>
@@ -237,10 +252,11 @@
         <Link Id="RA8jXfsw59BMFNJnc2dwAF" Ids="UgGCxSAMcyWMXhBOZNCdZJ,KfxBNXHmAhsMdbUThaJh0r" />
         <Link Id="OBB8vf17jOHOop69iypLba" Ids="STxFbzhLUR6QDN2UBMVo1K,ISNYvrmHYqwPtr5RlJD9J8" />
         <Link Id="MLavVKckgbkMM2rykcOqg6" Ids="HCGM1bpvq8dMBfLvGTMukw,TZVFQ07GjFALgd51e5xQfi" />
+        <Link Id="TDIPH6MCOWKPk82nFuLS4p" Ids="C0ZsFzHLTY6MaTQ6xJmNLS,DAkubfVVQKNL4gSrAJUxah" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.1-0104-gfc43b7deff" />
-  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.1-0104-gfc43b7deff" />
+  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2025.7.0-0384-g212a8f1596" />
+  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2025.7.0-0384-g212a8f1596" />
   <NugetDependency Id="I0lXz4TBK4iM7uTgOyHpOI" Location="VL.Devices.RealSense" Version="0.0.0.0" />
 </Document>
