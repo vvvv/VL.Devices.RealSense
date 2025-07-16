@@ -11,6 +11,30 @@ using VL.Core.CompilerServices;
 
 namespace VL.Devices.RealSense
 {
+    //https://github.com/IntelRealSense/librealsense/blob/e1688cc318457f7dd57abcdbedd3398062db3009/wrappers/unity/Assets/RealSenseSDK2.0/Scripts/ProcessingBlocks/RsSpatialFilter.cs#L29
+    public enum HoleFillingMode
+    {
+        Disabled,
+        HoleFill2PixelRadius,
+        HoleFill4PixelRadius,
+        HoleFill8PixelRadius,
+        HoleFill16PixelRadius,
+        Unlimited,
+    }
+
+    //https://github.com/IntelRealSense/librealsense/blob/e1688cc318457f7dd57abcdbedd3398062db3009/wrappers/unity/Assets/RealSenseSDK2.0/Scripts/ProcessingBlocks/RsTemporalFilter.cs#L23
+    public enum PersistencyMode
+    {
+        Disabled, //Persistency filter is not activated and no hole filling occurs.
+        ValidIn8of8, //Persistency activated if the pixel was valid in 8 out of the last 8 frames
+        ValidIn2ofLast3, //Activated if the pixel was valid in two out of the last 3 frames
+        ValidIn2ofLast4, //Activated if the pixel was valid in two out of the last 4 frames
+        ValidIn2of8, //Activated if the pixel was valid in two out of the last 8 frames
+        ValidIn1ofLast2, //Activated if the pixel was valid in one of the last two frames
+        ValidIn1ofLast5, //Activated if the pixel was valid in one out of the last 5 frames
+        ValidIn1ofLast8, //Activated if the pixel was valid in one out of the last 8 frames
+        AlwaysOn //Persistency will be imposed regardless of the stored history(most aggressive filtering)
+    }
 
     public class RealSenseDeviceDefinition : DynamicEnumDefinitionBase<RealSenseDeviceDefinition>
     {

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="B3rGtyZDXvLOgYGrDxnNa6" LanguageVersion="2022.5.0-0558-g23e76e599d" Version="0.128">
-  <NugetDependency Id="DOfXRi7MKyxNeGRyD8tI9g" Location="VL.CoreLib" Version="2022.5.0-0558-g23e76e599d" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="B3rGtyZDXvLOgYGrDxnNa6" LanguageVersion="2025.7.0-0407-g8675153500" Version="0.128">
+  <NugetDependency Id="DOfXRi7MKyxNeGRyD8tI9g" Location="VL.CoreLib" Version="2025.7.0-0407-g8675153500" />
   <Patch Id="QC65oeU7EANNM5KfSEYMcT">
     <Canvas Id="D1nHjsj3mzlNOpT1n6i9K7" DefaultCategory="Devices.RealSense" CanvasType="FullCategory">
       <Canvas Id="IoCc0ICIZtZM01JqAumDzg" Name="Internal" Position="96,142">
@@ -1594,8 +1594,10 @@
                   <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="H7QlxNNnURpO2fcOXUyfHo" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="KBAxflsCRLEPQ95zh7xgRB" Name="Messages" Kind="InputPin" />
                 <Pin Id="Ij5nFwgQAIXPvRBDRYw7Gu" Name="Reset" Kind="InputPin" />
+                <Pin Id="QPSxaKRYhoKNCTQdNbAFp5" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="VhvFuw3tk0UQAxwp0DCf0L" Name="Result" Kind="OutputPin" />
                 <Patch Id="H5PaUGLL8wbNmPlu6KFn2S" ManuallySortedPins="true">
                   <Patch Id="L7hQCB69hfqOUzUB9JksKX" Name="Create" ManuallySortedPins="true" />
@@ -2888,6 +2890,7 @@
                     <CategoryReference Kind="RecordType" Name="IMUData" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="DKF4Aun6SptMdhraFACUiB" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="T73AXAQnVaiPufI8fImllE" Name="Accelerometer" Kind="InputPin" />
                   <Pin Id="Q70PZ6dTW2hNk0VL3PzFVK" Name="Gyroscope" Kind="InputPin" />
                   <Pin Id="DgQHYqw8OPILE7S6AjRAWS" Name="Output" Kind="StateOutputPin" />
@@ -3215,6 +3218,7 @@
                       <p:OuterCategoryReference Kind="Category" Name="RealSense" NeedsToBeDirectParent="true" />
                     </CategoryReference>
                   </p:NodeReference>
+                  <Pin Id="DeMqAVsj3qwLKXroHUAUQm" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="EIBB1AsVHFjPMXA05fDgAQ" Name="Size" Kind="InputPin" />
                   <Pin Id="HOzCvR9YJzWLgMM0ZjlT8K" Name="FOV" Kind="InputPin" />
                   <Pin Id="D97o2d1VlyOOGREUSsbrDU" Name="Focal Length" Kind="InputPin" />
@@ -3721,6 +3725,7 @@
                     <Pin Id="V6ByE2bt5s3PjjP6o9X9HD" Name="Message" Kind="OutputPin" />
                   </Node>
                 </Patch>
+                <Pin Id="PMgUK9OLAcVPEAE6ksRyHm" Name="Re Initialize" Kind="InputPin" IsHidden="true" />
               </Node>
               <ControlPoint Id="QeOD9ZH6Hs8OS95XmaJrUt" Bounds="861,828" />
               <Pad Id="L0B8yCtdODnMJyBkChFLg8" Bounds="861,754" />
@@ -4211,8 +4216,11 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
                 </p:NodeReference>
+                <Pin Id="BZ32SIwqmOcP1clkof8nKx" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="IOqBZPgs0pQOUf0EHp5IK6" Name="Initial Result" Kind="InputPin" IsHidden="true" />
                 <Pin Id="HxuDAUr8LeFNONubtdZyNk" Name="Async Notifications" Kind="InputPin" />
                 <Pin Id="NxnSNV3vv9rQPd8bdQ8zwO" Name="Reset" Kind="InputPin" />
+                <Pin Id="TjY4ID9UZMyQElMmBApDR2" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="LWrD5UgQx9BN1lDb6d26eA" Name="Value" Kind="OutputPin" />
                 <Pin Id="MGGSFBlUHaINpG8o4nQop0" Name="On Data" Kind="OutputPin" />
               </Node>
@@ -4410,6 +4418,7 @@
                   <Choice Kind="ProcessAppFlag" Name="ApplyFilter" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="Hcv3YGaUJq7LAGAXhXzMtd" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="S1avc85acZKPvbLrV3Lk96" Name="Input" Kind="InputPin" />
                 <Pin Id="KscrSk7t1CoLudRQgrxtWu" Name="Enabled" Kind="InputPin" />
                 <Pin Id="HrmV7G9TeMoNAjLgAua9er" Name="Output" Kind="OutputPin" />
@@ -4424,6 +4433,7 @@
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="ColorizeFilterBlock" />
                     </p:NodeReference>
+                    <Pin Id="NPQzPOXRRXDP7lSNWTl7FS" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="Vcf1iBuqSvyM4MxyCOV4jO" Name="Visual Preset" Kind="InputPin" />
                     <Pin Id="LLJVJ2bBhyCPf8AEvLBuvj" Name="Color Scheme" Kind="InputPin" />
                     <Pin Id="J6BBuqhqUvPQJ8s4HakI3E" Name="Output" Kind="OutputPin" />
@@ -4483,8 +4493,10 @@
                   <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="GgU1kZoLTGDQWvu2WuGXYn" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="VO13bvSVp07PYwlWC1AqiX" Name="Messages" Kind="InputPin" />
                 <Pin Id="Hnd4X0qn5kIOVuHrDl11F9" Name="Reset" Kind="InputPin" />
+                <Pin Id="FHH7Ss0UiXLLjeXKtxzd0f" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="EzyllmueJ6lLjhu9mQflV0" Name="Result" Kind="OutputPin" />
                 <Patch Id="CePAQRbGYW0O70O0KsxOWW" ManuallySortedPins="true">
                   <Patch Id="VDr8USPVzOQOXYTtr66PV4" Name="Create" ManuallySortedPins="true" />
@@ -4647,9 +4659,12 @@
                     <p:OuterCategoryReference Kind="Category" Name="Graphics" NeedsToBeDirectParent="true" />
                   </CategoryReference>
                 </p:NodeReference>
+                <Pin Id="Ac16yvv17KDLs5JSNp4G9L" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="EyeMuufYf1MNys8zyBeOCw" Name="Initial Result" Kind="InputPin" IsHidden="true" />
                 <Pin Id="JW0q7zC5kc3OAyORBioOKh" Name="Async Notifications" Kind="InputPin" />
                 <Pin Id="QJQZdRWPOGQLTQvMYb7XfY" Name="Timeout" Kind="InputPin" />
                 <Pin Id="Izzp7KcMtFFQCdKEUZF2zH" Name="Reset" Kind="InputPin" />
+                <Pin Id="CFa5NwIO98AN0vZmMEoQx9" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="DOaxLusoWMGPkWSMuJcDsr" Name="Result" Kind="OutputPin" />
                 <Pin Id="V6LFNycWwtTO2Mej07Fhcq" Name="Swap Count" Kind="OutputPin" />
                 <Pin Id="Ch7JBzAhgWgQVpCwMcleov" Name="Drop Count" Kind="OutputPin" />
@@ -4659,6 +4674,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="DepthImage (Raw Reactive)" />
                 </p:NodeReference>
+                <Pin Id="QfVueW7Q0vmNfumqmoCun9" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="I9G2R9tLLlJPU1a9kgKBI3" Name="Input" Kind="InputPin" />
                 <Pin Id="Iw6m7UpzovLOCQNCvuN9fg" Name="Output" Kind="OutputPin" />
               </Node>
@@ -4750,6 +4766,7 @@
                       <Choice Kind="OperationCallFlag" Name="Create" />
                     </p:NodeReference>
                     <Pin Id="JHX8aNjvPOUPOxHNApUqdw" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="L3S3XC1nUDiMbjUETyODNY" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   </Node>
                   <ControlPoint Id="U7vaYCpS1fzONxWRFGYkmT" Bounds="822,399" />
                   <Link Id="Irx5wletxZbPwXZukHB7p9" Ids="JHX8aNjvPOUPOxHNApUqdw,U7vaYCpS1fzONxWRFGYkmT" />
@@ -6342,6 +6359,7 @@
                       </CategoryReference>
                     </p:NodeReference>
                     <Pin Id="SdDFhLP28C6PmK8UC6zkVX" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="DWfcblwViVtNqOa9G7yNV0" Name="Output" Kind="OutputPin" IsHidden="true" />
                     <Pin Id="SWvsoVvOGV6NViEN7tU4cl" Name="Size" Kind="OutputPin" />
                     <Pin Id="QoXZiJkD77MQB2JcykQo1t" Name="FOV" Kind="OutputPin" />
                     <Pin Id="UiIEubmqCIiP0wb2Tbp9Ln" Name="Focal Length" Kind="OutputPin" />
@@ -6508,8 +6526,10 @@
                   <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="LIjufR7lZbsNqUT0LVm5JH" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="RN8TFHqBWi9OnKEdeHWv2B" Name="Messages" Kind="InputPin" />
                 <Pin Id="Pg9Zd2z6h3SLxSx6unAhFp" Name="Reset" Kind="InputPin" />
+                <Pin Id="Lkm98wKIPVZLYMsXxzzG3w" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="Lna3ndHEjgTNgyE8Iz8d3z" Name="Result" Kind="OutputPin" />
                 <Patch Id="M0a4HgAUZTqNnpLaGjfogX" ManuallySortedPins="true">
                   <Patch Id="C40n3aPY7diMBuPWjEnoa0" Name="Create" ManuallySortedPins="true" />
@@ -6624,8 +6644,10 @@
                   <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="SFtZ35Zb18OMZnTJIv79Mp" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="MMdZ4kcZn4qODQOzZRVMsX" Name="Messages" Kind="InputPin" />
                 <Pin Id="JnZRkT8vYjJNWGJuam0K06" Name="Reset" Kind="InputPin" />
+                <Pin Id="FbhN7zS2avxQd2N01mP770" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="MRhCMjgMHQIOfP8WwovKNv" Name="Result" Kind="OutputPin" />
                 <Patch Id="VLHPj4RAZS9L1lw5UViBB1" ManuallySortedPins="true">
                   <Patch Id="L6H36PEEajqL7cCvSL91oB" Name="Create" ManuallySortedPins="true" />
@@ -6789,8 +6811,10 @@
                   <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="AhDV3TEitznOhIoXnYzokO" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="F8CzNcb5265LtMoxrEvybT" Name="Messages" Kind="InputPin" />
                 <Pin Id="Kd833zQn0DWLQIlFi1EZFe" Name="Reset" Kind="InputPin" />
+                <Pin Id="DL0T13Zns7aLj0CvWcWGCC" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="AuN9SrHlkcONN7BsbvPtyI" Name="Result" Kind="OutputPin" />
                 <Patch Id="LnIPtxSbo8xMUTfcdqcKEj" ManuallySortedPins="true">
                   <Patch Id="LtpimJeIxW3NVX33qkyvxD" Name="Create" ManuallySortedPins="true" />
@@ -6861,8 +6885,10 @@
                   <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="Hc6B7SKT4J4Pc9u7ki29fJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="ITIrbbvbqLANmxYeTJdYVz" Name="Messages" Kind="InputPin" />
                 <Pin Id="SWxHh3VtGOCOwQKBihU48c" Name="Reset" Kind="InputPin" />
+                <Pin Id="PL9LR2AjoLQMI1Fhd7fY47" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="SUtoXxMhZ32O4H6eJPexFX" Name="Result" Kind="OutputPin" />
                 <Patch Id="EoccYUY3mWSN5oBYt70HvZ" ManuallySortedPins="true">
                   <Patch Id="TBJo8cQUMd0NAGJezRvuLO" Name="Create" ManuallySortedPins="true" />
@@ -7119,8 +7145,10 @@
                   <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="QW7kDzgo3ugPNnugI7ZyJo" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="ClnJzUgiRywOQZFlrxIlO3" Name="Messages" Kind="InputPin" />
                 <Pin Id="OhsyQ3MQa3uOcgKEw4ph3I" Name="Reset" Kind="InputPin" />
+                <Pin Id="P3my3B5TSvNQYv0rp5qgeb" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="Vn8ReC7IaXWMAuROp8CXRS" Name="Result" Kind="OutputPin" />
                 <Patch Id="MgGn6e8GEioN8i5jlNZELU" ManuallySortedPins="true">
                   <Patch Id="R0jwlOmJ5TzMUkvd09VYgg" Name="Create" ManuallySortedPins="true" />
@@ -7240,9 +7268,12 @@
                   <p:OuterCategoryReference Kind="Category" Name="Graphics" NeedsToBeDirectParent="true" />
                 </CategoryReference>
               </p:NodeReference>
+              <Pin Id="EhcXlPkEjLOPFw1YdhqBpv" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="SXnNuOqkDOYMyEel3pKGdE" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="TwJYxgVBfJUNXtY1ApZsGM" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="TuxAllwUJlwNJHJFMNct3n" Name="Timeout" Kind="InputPin" />
               <Pin Id="VeTZoaz2bEdQc2SmDIDAf0" Name="Reset" Kind="InputPin" />
+              <Pin Id="Utg6vVqSvWMQM8EgHx9Pea" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="EfhFMfGU8YgMeiyX2Yxswa" Name="Result" Kind="OutputPin" />
               <Pin Id="PYnNUvc08ChOG4fLi8BY8F" Name="Swap Count" Kind="OutputPin" />
               <Pin Id="TWmnyW7zXnmPCYvOeWpmU5" Name="Drop Count" Kind="OutputPin" />
@@ -7252,6 +7283,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ColorImage (Reactive)" />
               </p:NodeReference>
+              <Pin Id="U6SuRcJBfOkNMzFfksYNYc" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="O3upjjCq4oFObYaog1j1x2" Name="Input" Kind="InputPin" />
               <Pin Id="O7uTad63nu5Nk8mk8qz6eD" Name="Output" Kind="OutputPin" />
             </Node>
@@ -7293,9 +7325,12 @@
                   <p:OuterCategoryReference Kind="Category" Name="Graphics" NeedsToBeDirectParent="true" />
                 </CategoryReference>
               </p:NodeReference>
+              <Pin Id="OmnX2Uu3a6mNaVrPvn5Lnq" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="L4SmCDRuZAmN7z0EiLLkVh" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="IKkHDSLPkGRND80NFIjNhg" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="TLisyG1iSMWNHWrnmRJ8xF" Name="Timeout" Kind="InputPin" />
               <Pin Id="Rkr8sYKwp8BMVBp2Szpcxs" Name="Reset" Kind="InputPin" />
+              <Pin Id="OheydaXyksyM2V913Prl6D" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="JiJTcai5KCEPfFbo7TdrmG" Name="Result" Kind="OutputPin" />
               <Pin Id="NeUC1iKPFldLhFbNZrdoHc" Name="Swap Count" Kind="OutputPin" />
               <Pin Id="FTK8EAtWKQlP91H0KdWgxw" Name="Drop Count" Kind="OutputPin" />
@@ -7305,6 +7340,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="DepthImage (Reactive)" />
               </p:NodeReference>
+              <Pin Id="SNiy4yNRj8qNgU3TSjrHlD" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="KpbIyxSBMKtQKoH9uT6mZ7" Name="Input" Kind="InputPin" />
               <Pin Id="HZFrUsSvfdeMFMe5KnLvBQ" Name="Output" Kind="OutputPin" />
             </Node>
@@ -7756,8 +7792,11 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
                 </p:NodeReference>
+                <Pin Id="VlCjNR6AUC6NXjt6ObheNX" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="P1p2Q456D3oMgTfEAJ1Zwu" Name="Initial Result" Kind="InputPin" IsHidden="true" />
                 <Pin Id="TgxxoIKDEdkPafa1FvuviD" Name="Async Notifications" Kind="InputPin" />
                 <Pin Id="AWnO29VjeLSPtFm4RPneRr" Name="Reset" Kind="InputPin" />
+                <Pin Id="C0Pb4vh6tj0PgTiAWeSKA1" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="A9DaRPjFwt8P06fdqPESD3" Name="Value" Kind="OutputPin" />
                 <Pin Id="HbLhi5xm6noQCQaIuSSQBm" Name="On Data" Kind="OutputPin" />
               </Node>
@@ -7768,6 +7807,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Pipet (Reactive)" />
                 </p:NodeReference>
+                <Pin Id="I4bGzzIZDZTN9afVheCb6a" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="HgjY3hqFboaONSbI3BX6d9" Name="Input" Kind="InputPin" />
                 <Pin Id="UWh6xNoYL4oP4XURLcrqnI" Name="Position" Kind="InputPin" />
                 <Pin Id="DpRxZzswV3HLCNNSxAM3w9" Name="Output" Kind="OutputPin" />
@@ -8063,6 +8103,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="PointCloud (Reactive)" />
                 </p:NodeReference>
+                <Pin Id="LVXX53cyWYUM7ox72VAZpS" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="GqLyzZpfi3xLmSKQOvZ2hU" Name="Input" Kind="InputPin" />
                 <Pin Id="Q5PTQeg6rsCOzTGNfhlmZa" Name="Enabled" Kind="InputPin" />
                 <Pin Id="PTP1MI33ru4O2GlBJkL2dj" Name="Output" Kind="OutputPin" />
@@ -8074,9 +8115,12 @@
                   <Choice Kind="ProcessAppFlag" Name="HoldLatestCopy" />
                   <CategoryReference Kind="Category" Name="Collections" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
+                <Pin Id="PnMrv6G705mMOmEFxk8SCg" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="NCJnSYlqcsyLrnzJ90eQC1" Name="Initial Result" Kind="InputPin" IsHidden="true" />
                 <Pin Id="B9a85NAJuuXONESi2uuZud" Name="Async Notifications" Kind="InputPin" />
                 <Pin Id="PBFCOcXPt8MNFjJyT9NPZg" Name="Timeout" Kind="InputPin" />
                 <Pin Id="CS3DawVRYhlMosYzP1qzzG" Name="Reset" Kind="InputPin" />
+                <Pin Id="S5W6ib6vnzOO4RpP6JxBuK" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="C4CU2gEfNZ7MqC3hMfO2lM" Name="Result" Kind="OutputPin" />
                 <Pin Id="E3w7RoZaVvVPvxFBdVrYma" Name="Swap Count" Kind="OutputPin" />
                 <Pin Id="IDyji5kCSxMLCnRmj2XqhX" Name="Drop Count" Kind="OutputPin" />
@@ -8198,6 +8242,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="PipetCore" />
                   </p:NodeReference>
+                  <Pin Id="HD3Wbqga1TpPkOk2VtKiEZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="TCnnVsVW2SuMqHDxBpr1Cr" Name="Input" Kind="InputPin" />
                   <Pin Id="NT5TCRnkGlEQaNQoZfzmK0" Name="Position" Kind="InputPin" />
                   <Pin Id="NqPTPXnnpdNNApKPcpYbyv" Name="Output" Kind="OutputPin" />
@@ -8240,8 +8285,11 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
               </p:NodeReference>
+              <Pin Id="Nyw4pKk3802OMEsJWplPpZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="BIcAK70MfLkPWuEJTyLBYH" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="OJyGZqOojpvOhB8sj0T2kX" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="QbadoYfVvPkLj8P4s97Dko" Name="Reset" Kind="InputPin" />
+              <Pin Id="AUuDMPBHjujOdwM5pBrzeW" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="CNDUW1ReAZ8NJiGcT5Gzq3" Name="Value" Kind="OutputPin" />
               <Pin Id="TuVLOyNiBobLtvp5A52j7w" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -8250,6 +8298,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="IMUData (Reactive)" />
               </p:NodeReference>
+              <Pin Id="UmU8k3AS4LrMEZt2T1LFG7" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="PCzvIIS5SyNLOfLwvVKRRv" Name="Input" Kind="InputPin" />
               <Pin Id="QtrlUtCZbG1QYvkJQOmuHG" Name="Enabled" Kind="InputPin" />
               <Pin Id="P68rQVmAI5hMNwmvq27KNu" Name="Output" Kind="OutputPin" />
@@ -8308,6 +8357,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="RealSenseCore" />
               </p:NodeReference>
+              <Pin Id="DjkHqBaJOLwOGoodhtODTM" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="MEOjKGV5NNqLhjW13CRwee" Name="Device Provider" Kind="InputPin" />
               <Pin Id="PRxBFlya5pCNKIvWTsYYTG" Name="Enable" Kind="InputPin" />
               <Pin Id="Lg3HBU1uRcXN7xGGTIwfLk" Name="Output" Kind="OutputPin" />
@@ -8353,6 +8403,7 @@
                         <Choice Kind="OperationCallFlag" Name="Create" />
                         <CategoryReference Kind="ClassType" Name="ActivePipelineCamera" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
+                      <Pin Id="K9SepawRbN5MJohdp6sDJd" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="BUIfmqYfM0xNwOOoDQutEb" Name="Device" Kind="InputPin" />
                       <Pin Id="LrczFHJ2DawNEKjjdz3wQC" Name="Color Resolution" Kind="InputPin" />
                       <Pin Id="FpPj6mf98U3OyjSmSUPOuL" Name="Enable Color" Kind="InputPin" />
@@ -8400,6 +8451,7 @@
                 <CategoryReference Kind="ClassType" Name="Reference" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
               </p:NodeReference>
+              <Pin Id="HRM6vOgy2xlMLYuPE4g6YA" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="RERqcJO6LuKLKo6BxT1Ok0" Name="Data" Kind="InputPin" />
               <Pin Id="RLhrhvu02qdNfPMWrJCKYT" Name="Output" Kind="StateOutputPin" />
             </Node>
@@ -8592,9 +8644,12 @@
                   <p:OuterCategoryReference Kind="Category" Name="Graphics" NeedsToBeDirectParent="true" />
                 </CategoryReference>
               </p:NodeReference>
+              <Pin Id="S5euJpJzNhAPmZ4MA37Lru" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="UgAJMHmFgH6OkYAB35Bcqh" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="AEfM3RCdv8oPiD9xei3GiM" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="EDXHsV9PSTsO50HsmAOvGH" Name="Timeout" Kind="InputPin" />
               <Pin Id="FQvF0HTIDbbOzMA3HAz164" Name="Reset" Kind="InputPin" />
+              <Pin Id="TMZ2FxsBnPyNCshGjgT2mw" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="MCup6Z94Yc1MeRYCfpR38t" Name="Result" Kind="OutputPin" />
               <Pin Id="KfltFeOgdUjMsx7Vh4HMnN" Name="Swap Count" Kind="OutputPin" />
               <Pin Id="F540F5a29Z6NsXdDp3TwFk" Name="Drop Count" Kind="OutputPin" />
@@ -8604,6 +8659,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ColorizedDepthImage (Reactive)" />
               </p:NodeReference>
+              <Pin Id="TViaTx2LCnkMqeJxJdtYJg" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="EQHAG5sMrYPPRGjS3XmP4e" Name="Input" Kind="InputPin" />
               <Pin Id="OOJQmqgh9AfMUINhsWJFS1" Name="Output" Kind="OutputPin" />
             </Node>
@@ -8612,6 +8668,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ColorizeFilter" />
               </p:NodeReference>
+              <Pin Id="POpu5YiGQDkMymy7c9ddrk" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="EKORvN1saiNQVsDdfoJihC" Name="Input" Kind="InputPin" />
               <Pin Id="SO9rbFNBbKGPEFWALRWNcZ" Name="Visual Preset" Kind="InputPin" />
               <Pin Id="AXiWqniB1btN7dGUOQTh5x" Name="Color Scheme" Kind="InputPin" />
@@ -8665,6 +8722,7 @@
                   <Choice Kind="ProcessAppFlag" Name="ApplyFilter" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="U8vfjDUrU6oLgSEgeNHiCm" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="TGJ851PvCM5LwNUFnQppEj" Name="Input" Kind="InputPin" />
                 <Pin Id="LLjScWnVKZHOnwH1eq35ff" Name="Enabled" Kind="InputPin" />
                 <Pin Id="HI0Agxle9hROrUZrnQmR5R" Name="Output" Kind="OutputPin" />
@@ -8679,6 +8737,7 @@
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="DecimationFilterBlock" />
                     </p:NodeReference>
+                    <Pin Id="ObRh3WbJj9LP9JoXbRsS3n" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="VULx7xSz0TwMe5rFB7h4ez" Name="Magnitude" Kind="InputPin" />
                     <Pin Id="NHdI8QLXaYZLKANvzxhY4F" Name="Output" Kind="OutputPin" />
                   </Node>
@@ -8728,6 +8787,7 @@
                   <Choice Kind="ProcessAppFlag" Name="ApplyFilter" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="E1f6QkgFFP5OrV422igIUP" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="LxvKlsejvUzMFk8aBThqVq" Name="Input" Kind="InputPin" />
                 <Pin Id="GqDDnUB1fXYL0qtrqQZI0a" Name="Enabled" Kind="InputPin" />
                 <Pin Id="CT3Tyelq7dZN5Zn4LgxK7H" Name="Output" Kind="OutputPin" />
@@ -8742,6 +8802,7 @@
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="HoleFillingFilterBlock" />
                     </p:NodeReference>
+                    <Pin Id="LANM4Wnrfi0PuwzWqTOYNI" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="M2gA6ZZgENiMyEIybf0GGo" Name="Mode" Kind="InputPin" />
                     <Pin Id="OA2buyqwtCzMR01UJYAKfD" Name="Output" Kind="OutputPin" />
                   </Node>
@@ -8794,6 +8855,7 @@
                   <Choice Kind="ProcessAppFlag" Name="ApplyFilter" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="UTzX0lBLldbLJBEn0zNnyz" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="UNDFZKPD1lgLRvdPAaB50r" Name="Input" Kind="InputPin" />
                 <Pin Id="Jov0k58l21gQSp42R4oMHq" Name="Enabled" Kind="InputPin" />
                 <Pin Id="GStrHbAbjLHP3AOE3Wd1EW" Name="Output" Kind="OutputPin" />
@@ -8808,6 +8870,7 @@
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="SpatialFilterBlock" />
                     </p:NodeReference>
+                    <Pin Id="MPufHWpW1hZOodB35o2dGH" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="E1CpGnXZhlAPeoo9YIKg6K" Name="Magnitude" Kind="InputPin" />
                     <Pin Id="C63XbBt1IYLPk8axEcbS8h" Name="Smooth Alpha" Kind="InputPin" />
                     <Pin Id="VMXlmyjfVEDPAIYoxicw67" Name="Smooth Delta" Kind="InputPin" />
@@ -8861,15 +8924,16 @@
           <Patch Id="Ix71ImliF2fNQv0xK6cT0x">
             <Canvas Id="Pf4preOFz62P9R9wFhq7ru" CanvasType="Group">
               <ControlPoint Id="UNsx3YMt90jL7LqjZP6g15" Bounds="303,470" />
-              <ControlPoint Id="VzPvTcqZ19dPaAA8zfVYd4" Bounds="345,305" />
-              <ControlPoint Id="FjbHHOYSey8Ml2sACyhYDk" Bounds="436,305" />
-              <ControlPoint Id="OtjT5WUXPGTMFQFAuxucQd" Bounds="288,306" />
-              <ControlPoint Id="KyNpQm0bmfFMuf1FwIexeA" Bounds="528,303" />
+              <ControlPoint Id="VzPvTcqZ19dPaAA8zfVYd4" Bounds="345,300" />
+              <ControlPoint Id="FjbHHOYSey8Ml2sACyhYDk" Bounds="436,300" />
+              <ControlPoint Id="OtjT5WUXPGTMFQFAuxucQd" Bounds="288,300" />
+              <ControlPoint Id="KyNpQm0bmfFMuf1FwIexeA" Bounds="632,300" />
               <Node Bounds="306,340,134,87" Id="F5SSWpLAN1pMZho3XlbWxK">
                 <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastDependency="VL.Devices.RealSense.vl">
                   <Choice Kind="ProcessAppFlag" Name="ApplyFilter" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="B9OjU4b9jzaNqk35oDwTBi" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Ot9m7d897msO62dliy9pYM" Name="Input" Kind="InputPin" />
                 <Pin Id="J8AgEFXQTj3Ma4Ja4HBPtD" Name="Enabled" Kind="InputPin" />
                 <Pin Id="EW8Ofnu1ifjOwFWHzy8GzZ" Name="Output" Kind="OutputPin" />
@@ -8884,12 +8948,15 @@
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="TemporalFilterBlock" />
                     </p:NodeReference>
+                    <Pin Id="SG0Y97iLfyOMuQlbnoGv23" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="RQcUYMJ88uHQFifGbVbpII" Name="Smooth Alpha" Kind="InputPin" />
                     <Pin Id="BHs2yZf8NPDQEtBDeEYwSW" Name="Smooth Delta" Kind="InputPin" />
                     <Pin Id="TyGErtGc29IP5XTSQ7JZIM" Name="Output" Kind="OutputPin" />
+                    <Pin Id="FQCPHRbk3LSMWoD8fuxod3" Name="Persistency Mode" Kind="InputPin" />
                   </Node>
                 </Patch>
               </Node>
+              <ControlPoint Id="GQ3OG0V9kaFOmOWWnPnfUl" Bounds="521,300" />
             </Canvas>
             <ProcessDefinition Id="Pg9pOPoGNK9QE2Q26iIdqN">
               <Fragment Id="OW4575VY1TpQHKjSfB1UQO" Patch="AjNuCQ7OFjBLLwAILcHIQs" Enabled="true" />
@@ -8912,9 +8979,12 @@
               <Pin Id="Vs0QJ6x2QbXPEhSaS3g2kK" Name="Input" Kind="InputPin" Bounds="352,193" />
               <Pin Id="V6p0Y82viJuQaY4p4soFvO" Name="Smooth Alpha" Kind="InputPin" Bounds="775,217" />
               <Pin Id="HBRHgfk5DZWLiVT4Lk2mjU" Name="Smooth Delta" Kind="InputPin" Bounds="870,226" />
+              <Pin Id="MWBKTUjljWcQJOa7GmCDIz" Name="Persistency Mode" Kind="InputPin" />
               <Pin Id="D5SH8qh6gFNLSOzhpUkX1M" Name="Enabled" Kind="InputPin" Bounds="1244,120" />
               <Pin Id="LJZckQks5fAPd1LDx3Nh4e" Name="Output" Kind="OutputPin" Bounds="765,635" />
             </Patch>
+            <Link Id="O8A22hnhYRELUKLk8ZlRjB" Ids="GQ3OG0V9kaFOmOWWnPnfUl,FQCPHRbk3LSMWoD8fuxod3" />
+            <Link Id="I9HuucpkD46P2kEIqGvgfe" Ids="MWBKTUjljWcQJOa7GmCDIz,GQ3OG0V9kaFOmOWWnPnfUl" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -8938,6 +9008,7 @@
                   <Choice Kind="ProcessAppFlag" Name="ApplyFilter" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="E7KeQIdru6KOgFUWerrrLc" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="TfZ8d71iDIzQdBOBp6t9cE" Name="Input" Kind="InputPin" />
                 <Pin Id="FyUfBXn8QS3OCYXXj1UMJK" Name="Enabled" Kind="InputPin" />
                 <Pin Id="UUTMp7bHbzvOSD3sfF6Unc" Name="Output" Kind="OutputPin" />
@@ -8952,6 +9023,7 @@
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="ThresholdFilterBlock" />
                     </p:NodeReference>
+                    <Pin Id="FfeWA8En1k4QV02ClHiWIn" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="JjRa5RAfkfILztW1BYnqrO" Name="Min Distance" Kind="InputPin" />
                     <Pin Id="KCZwaqz81xKOd758oNDg97" Name="Max Distance" Kind="InputPin" />
                     <Pin Id="VMzEfcu7DQXN3fGSxAddjc" Name="Output" Kind="OutputPin" />
@@ -9062,8 +9134,10 @@
                   <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
+                <Pin Id="M2F5szgionrNzJKExeOmBT" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Umpw2DONXeXNvWo1JTS3WW" Name="Messages" Kind="InputPin" />
                 <Pin Id="Jrab8klgenHQcWwzy9Fvoj" Name="Reset" Kind="InputPin" />
+                <Pin Id="JXmaOL4UFVkNHRpMptAljA" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="FEmcXtZSmSsOEUCAOS8gzr" Name="Result" Kind="OutputPin" />
                 <Patch Id="AlJ7ndiIPraQG133yXCT77" ManuallySortedPins="true">
                   <Patch Id="AcVMExVioWuNbgHjQ4M882" Name="Create" ManuallySortedPins="true" />
@@ -9303,15 +9377,15 @@
             </p:NodeReference>
             <Patch Id="BHOCeQzdNmSNkZbf9T1sP7">
               <Canvas Id="GDzWoktc7k0MPi3Ju3hUOv" CanvasType="Group">
-                <Node Bounds="400,174,444,522" Id="AGeFzMwXaP9OfuQiTmfMke">
+                <Node Bounds="400,176,552,724" Id="AGeFzMwXaP9OfuQiTmfMke">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ProcessStatefulRegion" Name="Cache" />
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
-                  <ControlPoint Id="CIilhVPuiAhNMLPZTcPiLk" Bounds="726,190" Alignment="Top" />
-                  <ControlPoint Id="FK869EWqp08PyL7Uda45CU" Bounds="829,190" Alignment="Top" />
-                  <ControlPoint Id="OPst3leVbYsMPV3HTChFwL" Bounds="415,690" Alignment="Bottom" />
+                  <ControlPoint Id="CIilhVPuiAhNMLPZTcPiLk" Bounds="726,182" Alignment="Top" />
+                  <ControlPoint Id="FK869EWqp08PyL7Uda45CU" Bounds="829,182" Alignment="Top" />
+                  <ControlPoint Id="OPst3leVbYsMPV3HTChFwL" Bounds="415,894" Alignment="Bottom" />
                   <Pin Id="OJMiVe7R0HgNyBV3So7b1u" Name="Force" Kind="InputPin" />
                   <Pin Id="QZtqJJRJY1kMSV3pPcbAk8" Name="Dispose Cached Outputs" Kind="InputPin" />
                   <Pin Id="NN8TkYEg2sNPbhJVBGwpVD" Name="Has Changed" Kind="OutputPin" />
@@ -9407,11 +9481,48 @@
                       </p:NodeReference>
                       <Pin Id="QyOGu4omqcGMxDTZnctzda" Name="Output" Kind="StateOutputPin" />
                     </Node>
+                    <Node Bounds="485,750,81,26" Id="DS9lBbG1xzNNqywI5EkcYs">
+                      <p:NodeReference LastCategoryFullName="Intel.RealSense.IOptionsContainer" LastDependency="Intel.Realsense.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="IOptionsContainer" />
+                        <Choice Kind="OperationCallFlag" Name="GetItem" />
+                      </p:NodeReference>
+                      <Pin Id="KpjG0tN9CYgP20j1NfiPB1" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="FPMHXWbKY50OgnnfolCIQc" Name="Option" Kind="InputPin" />
+                      <Pin Id="Rx45FVZvsWRMRdtLPxlbuy" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="EGfvIHkA6SiPdAktFf8I0y" Name="Item" Kind="OutputPin" />
+                    </Node>
+                    <Pad Id="DcnkBqZfhdnO77FLNIxvuy" Comment="Option" Bounds="563,716,167,15" ShowValueBox="true" isIOBox="true" Value="HolesFill">
+                      <p:TypeAnnotation LastCategoryFullName="Intel.RealSense" LastDependency="Intel.Realsense.dll">
+                        <Choice Kind="TypeFlag" Name="Option" />
+                      </p:TypeAnnotation>
+                    </Pad>
+                    <Node Bounds="561,854,55,26" Id="Cb73ze1IEsFMatxoKaK8qs">
+                      <p:NodeReference LastCategoryFullName="Intel.RealSense.IOption" LastDependency="Intel.Realsense.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="IOption" />
+                        <Choice Kind="OperationCallFlag" Name="SetValue" />
+                      </p:NodeReference>
+                      <Pin Id="HEH32lukKhHMr0NAEBHoWU" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="NyWCwLVcR1bN9U1gRbjewa" Name="Value" Kind="InputPin" />
+                      <Pin Id="KIgyIoZ9Je3Puvkti7UYE7" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                    <Node Bounds="611,797,76,19" Id="PnbjAgfU4jcP46PPlKaEUO">
+                      <p:NodeReference LastCategoryFullName="Devices.RealSense.DepthFilters" LastDependency="VL.Devices.RealSense.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationNode" Name="ClampOption" />
+                      </p:NodeReference>
+                      <Pin Id="GcpEh9IVPvxNRoVvpFYEGn" Name="Option" Kind="InputPin" />
+                      <Pin Id="SkKeaVbq3l6OlOOyq9tRbK" Name="Value" Kind="InputPin" />
+                      <Pin Id="AiAU99475hWMQ33pIxDM8U" Name="Output" Kind="OutputPin" />
+                    </Node>
                   </Patch>
+                  <ControlPoint Id="DDCImdmLUhYQJI0bMijszI" Bounds="937,182" Alignment="Top" />
                 </Node>
-                <ControlPoint Id="FQT37iZvi4WOa9XlCQvAGd" Bounds="415,730" />
+                <ControlPoint Id="FQT37iZvi4WOa9XlCQvAGd" Bounds="415,940" />
                 <ControlPoint Id="OgGuanUlTZ8MjfjkmRjNBg" Bounds="726,142" />
                 <ControlPoint Id="EOokCTHplBoLBovNz36h6I" Bounds="829,140" />
+                <ControlPoint Id="P3xBqTkzwmNPetE7mpoUsb" Bounds="937,140" />
               </Canvas>
               <ProcessDefinition Id="C5EYCB7mTlePyy1HZM4Rh8">
                 <Fragment Id="RbZbpuWcodcO76tON5Api5" Patch="NBBCEQpYL7HQAlpZZeBnBz" Enabled="true" />
@@ -9450,7 +9561,20 @@
                   </p:TypeAnnotation>
                 </Pin>
                 <Pin Id="Mpc1jm0q4YrK9gB4RqVoFq" Name="Output" Kind="OutputPin" Bounds="765,635" />
+                <Pin Id="TCO6UulL4RPMbFkZy7ORzT" Name="Persistency Mode" Kind="InputPin" DefaultValue="ValidIn2ofLast4">
+                  <p:TypeAnnotation LastCategoryFullName="VL.Devices.RealSense" LastDependency="VL.Devices.RealSense.dll">
+                    <Choice Kind="TypeFlag" Name="PersistencyMode" />
+                  </p:TypeAnnotation>
+                </Pin>
               </Patch>
+              <Link Id="JAGDnSzD9A4OJ9HJddoI9e" Ids="DcnkBqZfhdnO77FLNIxvuy,FPMHXWbKY50OgnnfolCIQc" />
+              <Link Id="KVKKea5QOwhOWLDdFZoA3v" Ids="EGfvIHkA6SiPdAktFf8I0y,HEH32lukKhHMr0NAEBHoWU" />
+              <Link Id="TpSgmRs1BsgPC2BWcseCPZ" Ids="EGfvIHkA6SiPdAktFf8I0y,GcpEh9IVPvxNRoVvpFYEGn" />
+              <Link Id="CY4H5h6SkMePoatZLUKzY6" Ids="AiAU99475hWMQ33pIxDM8U,NyWCwLVcR1bN9U1gRbjewa" />
+              <Link Id="SIrI821VCiVO1WimSQdJmF" Ids="UEw60qFzK0TPLoZBoBcBrb,KpjG0tN9CYgP20j1NfiPB1" />
+              <Link Id="VbWJu2RUbRIOHz1GOt0BOk" Ids="DDCImdmLUhYQJI0bMijszI,SkKeaVbq3l6OlOOyq9tRbK" />
+              <Link Id="LbIJAS6jvwrNSV1K4LnUXL" Ids="P3xBqTkzwmNPetE7mpoUsb,DDCImdmLUhYQJI0bMijszI" />
+              <Link Id="H7t3farccITOm0S9tNYvKX" Ids="TCO6UulL4RPMbFkZy7ORzT,P3xBqTkzwmNPetE7mpoUsb" IsHidden="true" />
             </Patch>
           </Node>
           <!--
@@ -9705,7 +9829,11 @@
                     <Choice Kind="TypeFlag" Name="Integer32" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="JlsUisXD9g9QZ4Qa9nTOHe" Name="Hole Filling" Kind="InputPin" Bounds="995,227" />
+                <Pin Id="JlsUisXD9g9QZ4Qa9nTOHe" Name="Hole Filling" Kind="InputPin" Bounds="995,227">
+                  <p:TypeAnnotation LastCategoryFullName="VL.Devices.RealSense" LastDependency="VL.Devices.RealSense.dll">
+                    <Choice Kind="TypeFlag" Name="HoleFillingMode" />
+                  </p:TypeAnnotation>
+                </Pin>
                 <Pin Id="GDdyOjzh7twNxbI3r2ctwf" Name="Output" Kind="OutputPin" Bounds="765,635" />
               </Patch>
               <Patch Id="KGf6yG2npTbNUHuFXx0uMh" Name="Dispose" />
@@ -9955,6 +10083,7 @@
                 <Choice Kind="ProcessAppFlag" Name="ApplyFilter" />
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               </p:NodeReference>
+              <Pin Id="TSG2RLeMVOsOCDoYu7iVqX" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="C3sCwHADjLPL2qDidtgXUM" Name="Input" Kind="InputPin" />
               <Pin Id="PvyrGzSUzy5MvA04HcNYZp" Name="Enabled" Kind="InputPin" />
               <Pin Id="VJQfaMTAfIpOb9dLPnkpb4" Name="Output" Kind="OutputPin" />
@@ -9969,6 +10098,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="AlignBlock" />
                   </p:NodeReference>
+                  <Pin Id="Jrh1iX35IOBNCduAlBY0SV" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="DPqSY8DPLP8M0ExaZlT0sE" Name="Align To" Kind="InputPin" />
                   <Pin Id="RFVnsvMM8iVMxhCr4uYgoi" Name="Output" Kind="OutputPin" />
                 </Node>
@@ -10969,9 +11099,12 @@
                   <p:OuterCategoryReference Kind="Category" Name="Graphics" NeedsToBeDirectParent="true" />
                 </CategoryReference>
               </p:NodeReference>
+              <Pin Id="Q0bqEyrlquyLC4PdDHlkSG" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="MtP99v4HLQMMjmLUtTQAmm" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="JN5gKbnpFcfNcJayU1FfXm" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="EtTxZtrqyAFLsqQV7sFvGy" Name="Timeout" Kind="InputPin" />
               <Pin Id="BYsCN5X3gICNJmRjWsAx2i" Name="Reset" Kind="InputPin" />
+              <Pin Id="C0C1ojk3VV0Oe2DTH8ROda" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="NCyNvap5ErNOcCaAM47xZn" Name="Result" Kind="OutputPin" />
               <Pin Id="T4arJaGlnD6LkQo72MzTCM" Name="Swap Count" Kind="OutputPin" />
               <Pin Id="CmM0d2nWJovM38zpGgpezy" Name="Drop Count" Kind="OutputPin" />
@@ -10981,6 +11114,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="InfraredImage (Reactive)" />
               </p:NodeReference>
+              <Pin Id="Oou4JEpDS86PyqOFfEVuju" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="M7vxGJJHgjULF0xxY6a4Sz" Name="Input" Kind="InputPin" />
               <Pin Id="N0b7fR1TIqjLAfAqN8aTw0" Name="Output" Kind="OutputPin" />
             </Node>
@@ -11053,7 +11187,7 @@
   <PlatformDependency Id="GgZ04bRydoKLCEJ0EJoZ9U" Location="System" />
   <PlatformDependency Id="MEi00LwOVkJQJln6BsocKF" Location="System.Runtime" />
   <PlatformDependency Id="St20cYQsuDvMrEwLnbYFXM" Location="System.Runtime.InteropServices" />
-  <NugetDependency Id="MBwkEfA6Y4FNTTjLfxAsYw" Location="VL.Core" Version="2022.5.0-0558-g23e76e599d" />
+  <NugetDependency Id="MBwkEfA6Y4FNTTjLfxAsYw" Location="VL.Core" Version="2025.7.0-0407-g8675153500" />
   <PlatformDependency Id="CP2SRXNk7y3M1h6x3HA9bf" Location="../../vvvv-private/vvvv50/VVVV.Gamma/src/bin/Debug/net472/System.Reactive.dll" />
   <PlatformDependency Id="D4Vj6IfleIZOCATx6fd6iF" Location="./lib/net461/VL.Devices.RealSense.dll" />
   <PlatformDependency Id="OjarwE48LezNbmTLvA3HOK" Location="./lib/net461/Intel.Realsense.dll" />
