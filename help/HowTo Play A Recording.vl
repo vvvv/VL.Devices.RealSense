@@ -2,7 +2,7 @@
 <Document xmlns:p="property" xmlns:r="reflection" Id="UnT5FCc2tEHMJGDzjCiLL3" LanguageVersion="2025.7.4" Version="0.128">
   <NugetDependency Id="CEG7hnBizKyLBUtgMdRjyw" Location="VL.CoreLib" Version="2025.7.4" />
   <Patch Id="TeOf69aN8LOPTVe6mFlq4m">
-    <Canvas Id="UJKMTvGq4nJOfdWxJZkmNI" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <Canvas Id="UJKMTvGq4nJOfdWxJZkmNI" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
 
     ************************ Application ************************
@@ -70,7 +70,7 @@
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="AccMYsPqLtVOvVdnmmxXSG" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Mby7vbNESerMThHqOOCTry" Name="Bounds" Kind="InputPin" DefaultValue="2174, 268, 1134, 887">
+            <Pin Id="Mby7vbNESerMThHqOOCTry" Name="Bounds" Kind="InputPin" DefaultValue="874, 419, 1134, 887">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastDependency="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -205,7 +205,7 @@
             <Pin Id="PQLyf7ALb9ULbz4tqURPRT" Name="Enabled" Kind="InputPin" />
             <Pin Id="AULM8vKzMgvM8Wk4xPVl7q" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="IRhSYmMmEvHQPz8MkKDs24" Comment="" Bounds="879,210,878,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\Users\SebastianHuber\Downloads\20260826_103119.db3">
+          <Pad Id="IRhSYmMmEvHQPz8MkKDs24" Comment="" Bounds="879,210,878,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\PathToYourRecording.db3">
             <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Path" />
             </p:TypeAnnotation>
@@ -242,6 +242,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="Mi9F1LdFNhVPLQxST4D3XU" Comment="Duration" Bounds="1233,531,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="C0OHWDISp6MPAMO4TvJT3J" Comment="Error" Bounds="406,580,278,94" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="JoM8Fs8mqmcL3th8j1KMrz" Name="Create" />
         <Patch Id="Qt7vqP256j0PYzOpeJijNU" Name="Update" />
@@ -262,7 +263,6 @@
         <Link Id="JhpOQpzRPziPgutBsjlNQK" Ids="Q7vWtw9m9nGPjc9RW1QFDT,At5RZPHDziHLxAJaNTPr0t" />
         <Link Id="Q8osONoKXHuLTiuyu3n2Hw" Ids="D2r3xkCxC3WQXAVsTxN9dV,SCEaNvi2sX7P3wJtEVv1UL" />
         <Link Id="Jw5aFeU5zCFLql0QwJ2x2P" Ids="AULM8vKzMgvM8Wk4xPVl7q,OCJvqiqO8q6Nx11aWEue7v" />
-        <Link Id="OyL6h2QfnVPOMU2OdxUj3f" Ids="IRhSYmMmEvHQPz8MkKDs24,SsUfKUr5M4cQOla8RqHTOg" />
         <Link Id="Cu8a5Aqhtb5Potsrlovm1P" Ids="IYT3nHuYyIJOpnzT8DavYc,Ne3DbbzY0dcLq19auEvlEm" />
         <Link Id="Ci5Ar0gSXykPxPdXQwcmQ8" Ids="ISA0rgW9uWKLB9SaYBYjPc,C1S24kIOpx9NBCdT0Q87YK" />
         <Link Id="AaRnwPY3q6pPCStGNKx1x7" Ids="TLQbskIp2d0MgtKkcxuAxT,L4AWhjmlg4lP09fQVj8ecm" />
@@ -270,6 +270,8 @@
         <Link Id="JBNdyjB8AzlPlyBLs6kyxB" Ids="VxUaRuSKivUNjRBMpg7MUP,TLOxyyUVny5N4VHrmp30SG" />
         <Link Id="H1cIMeXOyqNQEqUMK7No1p" Ids="CBFXBOThDVBLsmJ2EB35sv,TwWUGyl0T14Lo3lIZD4vWu" />
         <Link Id="NG8UDA28SLSLLa6Kf6d3lJ" Ids="U8e4eerGzFFLSQvAhOZGtP,Mi9F1LdFNhVPLQxST4D3XU" />
+        <Link Id="G1MuZz2pCymNuEJDUGOKfz" Ids="IV1XvIfhcLGPgOhx1EXLGT,C0OHWDISp6MPAMO4TvJT3J" />
+        <Link Id="TWpSj36C0IfLMhfPQGh1Xu" Ids="IRhSYmMmEvHQPz8MkKDs24,SsUfKUr5M4cQOla8RqHTOg" />
       </Patch>
     </Node>
   </Patch>
