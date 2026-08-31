@@ -70,7 +70,7 @@
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="AccMYsPqLtVOvVdnmmxXSG" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Mby7vbNESerMThHqOOCTry" Name="Bounds" Kind="InputPin" DefaultValue="1692, 341, 1134, 887">
+            <Pin Id="Mby7vbNESerMThHqOOCTry" Name="Bounds" Kind="InputPin" DefaultValue="2174, 268, 1134, 887">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastDependency="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
