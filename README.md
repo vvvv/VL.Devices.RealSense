@@ -16,8 +16,9 @@ For use with vvvv, the visual live-programming environment for .NET: http://vvvv
 - When making a pull-request, please make sure to read the general [guidelines on contributing to vvvv libraries](https://thegraybook.vvvv.org/reference/extending/contributing.html)
 
 ## Credits
-Built against version 2.57.7 of the [RealSense SDK 2.0](https://github.com/realsenseai/librealsense).
+Built against version 2.58.3 of the [RealSense SDK 2.0](https://github.com/realsenseai/librealsense).
 
 ## Sponsoring
 Development of this library was partially sponsored by:
 - [wirmachenbunt](https://wirmachenbunt.de/)
+- [SCHNELLE BUNTE BILDER](https://schnellebuntebilder.de/)
