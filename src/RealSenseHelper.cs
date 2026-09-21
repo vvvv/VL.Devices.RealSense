@@ -30,13 +30,36 @@ namespace VL.Devices.RealSense
             return frameSet.FirstOrDefault<T>(stream, format);
         }
 
+        /// <summary>
+        /// Copies the vertices into <paramref name="destination"/>, inverting X and Y in the same pass.
+        /// Replaces CopyVertices followed by a separate invert loop, which walked the data twice.
+        /// </summary>
+        /// <remarks>
+        /// Reads the native rs2_vertex buffer (float xyz[3]) directly, reinterpreted as Vector3.
+        /// Both are three sequential floats, so the layouts match 1:1.
+        /// </remarks>
+        internal static unsafe void CopyAndTransformVertices(this Points points, Vector3[] destination)
+        {
+            var vertexData = points.VertexData;
+            if (vertexData == IntPtr.Zero)
+                return;
+
+            var count = Math.Min(points.Count, destination.Length);
+            var source = new ReadOnlySpan<Vector3>(vertexData.ToPointer(), count);
+            for (int i = 0; i < count; i++)
+            {
+                var v = source[i];
+                destination[i] = new Vector3(-v.X, -v.Y, v.Z);
+            }
+        }
+
         public static IObservable<IReadOnlyList<Vector3>> SelectPointCloud(this IObservable<FrameSet> frames)
         {
             return Observable.Using(
                 () => new PointCloud(),
                 pc =>
                 {
-                    var pointBuffer = new Vector3[0];
+                    var pointBuffer = Array.Empty<Vector3>();
                     return frames.Select(frameSet =>
                     {
                         using var frame = frameSet.AsFrame();
@@ -47,19 +70,17 @@ namespace VL.Devices.RealSense
                             .FirstOrDefaultGeneric<Points>(Stream.Depth, Format.Xyz32f);
                         //using var points = pc.Process<Points>(frame);
 
+                        // FirstOrDefault returns null if the frameset carries no Xyz32f depth frame
+                        if (points is null)
+                            return pointBuffer.GetSegment(0, 0);
+
                         // Grow buffer
                         var count = points.Count;
                         if (count > pointBuffer.Length)
                             pointBuffer = new Vector3[count];
 
-                        // Copy vertices
-                        if (points.VertexData != IntPtr.Zero)
-                            points.CopyVertices(pointBuffer);
-
-                        // Invert X and Y
-                        var x = new Vector3(-1f, -1f, 1f);
-                        for (int i = 0; i < count; i++)
-                            pointBuffer[i] = Vector3.Modulate(pointBuffer[i], x);
+                        // Copy vertices and invert X and Y in one pass over the native buffer
+                        points.CopyAndTransformVertices(pointBuffer);
 
                         return pointBuffer.GetSegment(0, count);
                     });
