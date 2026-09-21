@@ -12124,7 +12124,7 @@
             </Pin>
             <Pin Id="Sd8RuS3r38PNVpDEahPiUH" Name="Loop" Kind="InputPin" DefaultValue="True" />
             <Pin Id="HEuMat2FJQkP40XBwtnosM" Name="Output" Kind="OutputPin" Bounds="510,411" />
-            <Pin Id="T5lDEgjSX5COTaXHPM1Nn8" Name="Realtime" Kind="InputPin">
+            <Pin Id="T5lDEgjSX5COTaXHPM1Nn8" Name="Realtime" Kind="InputPin" Summary="When Realtime is False, Frames are played back in the speed of the mainloop">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>

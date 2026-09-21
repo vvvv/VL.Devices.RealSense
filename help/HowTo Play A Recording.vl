@@ -241,6 +241,37 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="38,364,115,19" Id="UgPv4gb7C5cOTNEBbId6NH">
+            <p:NodeReference LastCategoryFullName="Devices.RealSense" LastDependency="VL.Devices.RealSense.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="RealSense" />
+              <Choice Kind="ProcessAppFlag" Name="ColorizedDepthImage" />
+            </p:NodeReference>
+            <Pin Id="KvkcPi5qVmALcK4CmQEzID" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="MeZQa8nBjNxP2HHTesGkCY" Name="Input" Kind="InputPin" />
+            <Pin Id="K8KmfbgBk7PMrfmVqSUbUK" Name="Visual Preset" Kind="InputPin" />
+            <Pin Id="JfXWGyv9M47PSUyKjyvGHg" Name="Color Scheme" Kind="InputPin" />
+            <Pin Id="VOc8ERzxjh3OtgptqkOpFv" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Vi60YE9gFchPTTyT6YuPN8" Comment="" Bounds="40,434,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HFCNP1E0WG5OgopgCtLiAk" Bounds="322,48,257,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/realsenseai/librealsense/releases">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">7</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OT5va3CwaVGLCuZ0Mkap0e" Bounds="322,27,304,19" ShowValueBox="true" isIOBox="true" Value="Download the Realsense Viewer here to capture a recording:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">7</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="JoM8Fs8mqmcL3th8j1KMrz" Name="Create" />
         <Patch Id="Qt7vqP256j0PYzOpeJijNU" Name="Update" />
@@ -268,7 +299,9 @@
         <Link Id="I759GpTeTcOL2tX7O1TPJs" Ids="I8hdXAwM1bOOG8gw6Y0c40,GbTtZfv00d8QT9lu0ZbpF3" />
         <Link Id="Az0qx7URx5WM4EJ2cJwhcJ" Ids="UefDHbmcWOnQR1efM4pcUK,At5RZPHDziHLxAJaNTPr0t" />
         <Link Id="DpvtqnVSUyDPhU9iLpCGPA" Ids="LLvlh4TiRI6NmWqYhbrmDW,O1rbzPQKwSbN9agzOcIFyR" />
-        <Link Id="GT8qbirNVp2N98GLQzrNaf" Ids="IRhSYmMmEvHQPz8MkKDs24,SsUfKUr5M4cQOla8RqHTOg" />
+        <Link Id="Ai243Mw1X26LS5mkJOchZu" Ids="D2r3xkCxC3WQXAVsTxN9dV,MeZQa8nBjNxP2HHTesGkCY" />
+        <Link Id="PVNbEyaTrFfLTMd9LQvcB4" Ids="VOc8ERzxjh3OtgptqkOpFv,Vi60YE9gFchPTTyT6YuPN8" />
+        <Link Id="DcTVqqorrXjMtcW2dwqrMy" Ids="IRhSYmMmEvHQPz8MkKDs24,SsUfKUr5M4cQOla8RqHTOg" />
       </Patch>
     </Node>
   </Patch>
