@@ -32,11 +32,9 @@ namespace VL.Devices.RealSense
 
         /// <summary>
         /// Copies the vertices into <paramref name="destination"/>, inverting X and Y in the same pass.
-        /// Replaces CopyVertices followed by a separate invert loop, which walked the data twice.
         /// </summary>
         /// <remarks>
         /// Reads the native rs2_vertex buffer (float xyz[3]) directly, reinterpreted as Vector3.
-        /// Both are three sequential floats, so the layouts match 1:1.
         /// </remarks>
         internal static unsafe void CopyAndTransformVertices(this Points points, Vector3[] destination)
         {
